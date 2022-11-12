@@ -6,40 +6,41 @@
         title="Help"
     ></i>
     <HelpModal v-show="modalVisible" @close="closeModal"/>
-    <ToggleSwitch :initShowBusses="showBusses" /> 
+    <ToggleSwitch :initShowVehicleList="showVehicleList" /> 
     <div class="lists">
-        <!-- <RoutesList v-if="showBusses"/> -->
-        <BussesList v-if="showBusses" :planObj="planBusses"/>
-        <StationsList v-if="!showBusses" :planObj="planObj"/>
+        <VehiclesList v-if="showVehicleList" :fleetObj="fleetObj" :tripsObj="tripsObj"/>
+        <DeptsList v-if="!showVehicleList" :deptsObj="deptsObj" :fleetObj="fleetObj" :tripsObj="tripsObj"/>
     </div>
   </div>
 </template>
 
 <script>
 import ToggleSwitch from './ToggleSwitch.vue';
-// import RoutesList from './RoutesList.vue';
-import StationsList from './StationsList.vue';
-import BussesList from './BussesList.vue';
+import DeptsList from './DeptsList.vue';
+import VehiclesList from './VehiclesList.vue';
 import HelpModal from './HelpModal.vue';
 
 export default {
     name: 'ListContainer',
     components: {
         ToggleSwitch,
-        // RoutesList,
-        StationsList,
-        BussesList,
+        DeptsList,
+        VehiclesList,
         HelpModal
     },
     props: {
-        planObj: {
-            type: Object,
-            required: true,
-        },
-        planBusses: {
+        fleetObj: {
             type: Object,
             required: true
-        }
+        },
+        tripsObj: {
+            type: Object,
+            required: true
+        },
+        deptsObj: {
+            type: Object,
+            required: true
+        },
     },
     data() {
         return {
@@ -47,8 +48,8 @@ export default {
         };
     },
     computed: {
-        showBusses: function () {
-            return this.$store.state.showBusses;
+        showVehicleList: function () {
+            return this.$store.state.showVehicleList;
         }
     },
     methods: {
@@ -58,9 +59,6 @@ export default {
         closeModal() {
             this.modalVisible = false;
         },
-        toggleView(showBussesVal) {
-            // this.$store.dispatch('changeShowBusses', showBussesVal);
-        }
     },
 };
 

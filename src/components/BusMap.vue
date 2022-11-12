@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 /* eslint-disable */
 <template>
   <div>
@@ -7,22 +8,16 @@
 </template>
 
 <script>
+import { toRaw } from 'vue';
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-control-geocoder/dist/Control.Geocoder.css';
 import L from 'leaflet';
 import voronoi from '@turf/voronoi';
 import bbox from '@turf/bbox';
-import busRoutes from '../data/BusRoutes_UTA.json';
-import greenBusIcon from '../assets/images/busIconGreen.png';
-import busIcon from '../assets/images/busIcon.png';
-import orangeIcon from '../assets/images/orange_icon2.png';
-import chargingStationIcon from '../assets/images/chargingStationBlue.png';
-import busStops from '../data/BusStops_UTA.json';
-import p20Stations from '../data/stationLocations/p20.json';
-import p60Stations from '../data/stationLocations/p60.json';
-import p180Stations from '../data/stationLocations/p180.json';
 import tazRegions from '../data/supplementary_data/taz_region_data.json';
+import idleContour from '../data/trip_data/idle_contour.json';
 import pollutantConcentrations from '../data/supplementary_data/pollutant_concentrations.json';
+import stopMarker from '../assets/images/orange_icon2.png';
 
 export default {
   name: 'BusMap',
@@ -31,437 +26,61 @@ export default {
       center: [40.7608, -111.891],
       zoom: 12,
       map: null,
-      busMarkers: null,
-      stationMarkers: null,
       economicLegend: this.createLegend('economic'),
       pollutantLegend: this.createLegend('pollutant'),
-      routeStyle: {
-        color: 'blue',
-        opacity: 0.5,
-        weight: 2,
-      },
-      busStopStyle: {
-        radius: 1,
-        fillColor: 'black',
-        color: '#000',
-        weight: 1,
-        opacity: 0.8,
-        fillOpacity: 0.8
-      },
-      unclickedRouteStyle: {
-        opacity: 0.65,
-        weight: 3,
-        color: 'blue',
-      },
-      clickedRouteStyle: {
-        opacity: 0.8,
-        weight: 4,
-        color: 'red',
-      },
-      selectedBus: -1,
-      selectedRoute: -1,
-      selectedStation: -1,
-      hoveredRoute: -1,
     };
   },
   computed: {
-    busLocations: function () {
-      return this.$store.state.busLocations;  
+    stateSelectedVehicle: function () {
+      return this.$store.state.selectedVehicle;
     },
-    showBusPanel: function () {
-      return this.$store.state.showBusses;
+    fromDate: function () {
+      return this.$store.state.fromDate;
     },
-    plan: function () {
-      return this.$store.state.plan;
+    toDate: function () {
+      return this.$store.state.toDate;
     },
-    stateSelectedBus: function () {
-      return this.$store.state.selectedBus;
+    selectedTrips: function () {
+      return this.$store.state.selectedTrips;
     },
-    stateSelectedStation: function () {
-      return this.$store.state.selectedStation;
-    },
-    routeFocused: function () {
-      return this.$store.state.routeFocused;
-    },
-    blackIcon: function () {
+    stopIcon: function () {
       return L.icon({
-        iconUrl: busIcon,
-        iconSize: [20, 20],
+        iconUrl: stopMarker,
+        iconSize: [26, 26],
+        iconAnchor: [13, 26]
       });
-    },
-    greenIcon: function () {
-      return L.icon({
-        iconUrl: greenBusIcon,
-        iconSize: [20, 20],
-      });
-    },
-    blackIconHighlighted: function () {
-      return L.icon({
-        iconUrl: busIcon,
-        iconSize: [30, 30],
-      });
-    },
-    greenIconHighlighted: function () {
-      return L.icon({
-        iconUrl: greenBusIcon,
-        iconSize: [30, 30],
-      });
-    },
-    pollutantIcon: function () {
-      return L.icon({
-        iconUrl: orangeIcon,
-        iconSize: [25, 25],
-      });
-    },
-    stationPanelIcon: function () {
-      return L.icon({
-        iconUrl: chargingStationIcon,
-        iconSize: [40, 40],
-        class: 'station'
-      });
-    },
-    stationPanelIconHighlighted: function () {
-      return L.icon({
-        iconUrl: chargingStationIcon,
-        iconSize: [50, 50],
-        class: 'station'
-      });
-    },
-    info: function () {
-      const info = L.control({ position: 'bottomleft' });
-      info.onAdd = function (map) {
-        this._div = L.DomUtil.create('div', 'info');
-        return this._div;
-      };
-      info.show = function (layer) {
-        if (layer.feature.properties.N___CO_TAZ) {
-          this._div.innerHTML = '<p>TAZ ID: <b>' + layer.feature.properties.N___CO_TAZ + '</b> </p>';
-        } else if (layer.feature.properties.PM25) {
-          this._div.innerHTML = '<p>PM2.5_ATM_ug/m3: <b>' + layer.feature.properties.PM25 + '</b> </p>';
-        }
-      };
-      info.hide = function () {
-        this._div.innerHTML = '';
-      };
-
-      return info;
     },
   },
   watch: {
-    busLocations: {
-      handler: function () {
-        if (this.busMarkers != null) {
-          this.updateBusPositions();
-        }
-      },
-      deep: true
-    },
-    plan: function () {
-      this.stationMarkers.eachLayer((layer) => {
-        this.map.removeLayer(layer);
+    fromDate: function () {
+      this.stopMarkers.eachLayer((layer) => {
+        toRaw(this.map).removeLayer(layer);
       });
-      this.selectedStation = -1;
-
-      if (this.plan === 'p20') {
-        this.drawStationPanels(p20Stations);
-      } else if (this.plan === 'p60') {
-        this.drawStationPanels(p60Stations);
-      } else {
-        this.drawStationPanels(p180Stations);
-      }
-    },
-    stateSelectedBus: function () {
-      if (this.busMarkers != null) {
-        let selectedLayer = null;
-        this.busMarkers.eachLayer((layer) => {
-          if (this.busLocations.features[layer.bus].properties.id === this.stateSelectedBus) {
-            selectedLayer = layer;
-          }
-        });
-        if (selectedLayer != null) {
-          this.highlightBus(selectedLayer, this);
-        }
-      }
-    },
-    stateSelectedStation: function () {
-      if (this.stationMarkers != null) {
-        let selectedLayer = null;
-        this.stationMarkers.eachLayer((layer) => {
-          if (this.busLocations.features[layer.bus].properties.id === this.stateSelectedBus) {
-            selectedLayer = layer;
-          }
-        });
-        if (selectedLayer != null) {
-          this.highlightBus(selectedLayer, this);
-        }
-      }
-    },
+      this.drawStops();
+    }, 
+    toDate: function () {
+      this.stopMarkers.eachLayer((layer) => {
+        toRaw(this.map).removeLayer(layer);
+      });
+      this.drawStops();
+    }, 
+    stateSelectedVehicle: function () {
+      this.stopMarkers.eachLayer((layer) => {
+        toRaw(this.map).removeLayer(layer);
+      });
+      this.drawStops();
+    }, 
+    selectedTrips: function () {
+      if (this.stopMarkers) {
+        this.stopMarkers.eachLayer((layer) => {
+        toRaw(this.map).removeLayer(layer);
+      });
+      } 
+      
+      this.drawStops();
+    }, 
   },
   methods: {
-    drawStationPanels(stationLocations) {
-      const ref = this;
-      function onEachFeature(feature, layer) {
-        layer.setZIndexOffset(-100);
-        layer.setOpacity(0.9);
-        layer.bindTooltip(`<p><b>Station ID: </b> ${feature.properties.stop_id}</p>
-                           <p><b>Stop Name: </b> ${feature.properties.stop_name}</p>
-                           <p><b>Number of stations: </b>${feature.properties.num_stations}</p>`);
-        layer.on({
-            click: function () {
-              ref.$store.dispatch('changeStation', feature.properties.stop_id);
-              if (ref.showBusPanel) {
-                ref.$store.dispatch('changeShowBusses', false);
-              }
-              ref.highlightStation(layer);
-            }
-        });
-      }
-      this.stationMarkers = L.geoJson(stationLocations, {
-        pointToLayer: function (feature, latlng) {
-            return L.marker(latlng, { icon: ref.stationPanelIcon });
-        },
-        onEachFeature: onEachFeature
-      });
-
-      this.stationMarkers.addTo(this.map);
-    },
-    highlightStation(layer) {
-      if (this.selectedBus !== -1) {
-        const oldBusLayer = this.busMarkers._layers[this.selectedBus];
-        const oldBus = this.busLocations.features[oldBusLayer.bus];
-        if (oldBus.properties.converted) {
-          oldBusLayer.setIcon(this.greenIcon);
-          oldBusLayer.setZIndexOffset(-50);
-        } else {
-          oldBusLayer.setIcon(this.blackIcon);
-          oldBusLayer.setZIndexOffset(-50);
-        }
-        this.selectedBus = -1;
-      }
-      const layerId = layer._leaflet_id;
-      if (this.selectedStation === -1) {
-        // if no station is selected, highlight the station
-        this.selectedStation = layerId;
-        layer.setIcon(this.stationPanelIconHighlighted);
-        layer.setZIndexOffset(50);
-      } else {
-        // if a station is selected, unhighlight the bus
-        const oldLayer = this.stationMarkers._layers[this.selectedStation];
-        oldLayer.setIcon(this.stationPanelIcon);
-        oldLayer.setZIndexOffset(-50);
-        if (layerId === this.selectedStation) {
-          // if the selected station is clicked, unselect it
-          this.selectedStation = -1;
-        } else {
-          // if another station is clicked, highlight it
-          this.selectedStation = layerId;
-          layer.setIcon(this.stationPanelIconHighlighted);
-          layer.setZIndexOffset(50);
-        }
-      }
-    },
-    drawBuses() {
-      const ref = this;      
-      function onEachFeature(feature, layer) {
-        layer.bindTooltip(`<p><b>Bus ID:</b> ${feature.properties.id}</p>
-                           <p><b>Bus Route:</b> ${feature.properties.route}</p>
-                           <p>${feature.properties.converted ? 'Converted' : 'Not converted'}</p>`);
-        layer.on({
-            click: function () {
-              const bus = ref.busLocations.features[layer.bus];
-              if (ref.stateSelectedBus === bus.properties.id) {
-                ref.highlightBus(layer, ref);
-              } else {
-                ref.$store.dispatch('changeBus', bus.properties.id);
-              }
-              if (!ref.showBusPanel) {
-                ref.$store.dispatch('changeShowBusses', true);
-              }
-            }
-        });
-      }
-      this.busMarkers = L.geoJson(this.busLocations, { 
-          pointToLayer: function (feature, latlng) {
-            if (feature.properties.converted) {
-              return L.marker(latlng, { icon: ref.greenIcon });
-            }
-            return L.marker(latlng, { icon: ref.blackIcon });
-          },
-          onEachFeature: onEachFeature,
-       });
-
-       let i = 0;
-       this.busMarkers.eachLayer((layer) => {
-         layer.bus = i;
-         i++;
-       });
-
-       this.busMarkers.addTo(this.map);
-    },
-    highlightBus(layer) {
-      if (this.selectedStation !== -1) {
-        const oldStationLayer = this.stationMarkers._layers[this.selectedStation];
-        oldStationLayer.setIcon(this.stationPanelIcon);
-        oldStationLayer.setZIndexOffset(-50);
-        this.selectedStation = -1;
-      }
-
-      const layerId = layer._leaflet_id;
-      const bus = this.busLocations.features[layer.bus];
-      if (this.selectedBus === -1) {
-        // if no bus is selected, highlight the bus
-        this.highlightBusHelper(layer, bus.properties.converted);
-        this.selectedBus = layerId;
-      } else {
-        // if a bus is selected, unhighlight the bus
-        const oldLayer = this.busMarkers._layers[this.selectedBus];
-        const oldBus = this.busLocations.features[oldLayer.bus];
-        if (oldBus.properties.converted) {
-          oldLayer.setIcon(this.greenIcon);
-          oldLayer.setZIndexOffset(-50);
-        } else {
-          oldLayer.setIcon(this.blackIcon);
-          oldLayer.setZIndexOffset(-50);
-        }
-        if (layerId === this.selectedBus) {
-          // if the selected bus is clicked, unselect it
-          this.selectedBus = -1;
-        } else {
-          // if another bus is clicked, highlight it
-          this.highlightBusHelper(layer, bus.properties.converted);
-          this.selectedBus = layerId;
-        }
-      }
-    },
-    highlightBusHelper(layer, converted) {
-      if (converted) {
-        layer.setIcon(this.greenIconHighlighted); 
-      } else {
-        layer.setIcon(this.blackIconHighlighted);
-      }
-      layer.setZIndexOffset(50);
-      if (!this.map.getBounds().contains(layer.getLatLng())) {
-        this.map.panTo(layer.getLatLng());
-      }
-    },
-    drawRoutes() {
-      const ref = this;
-
-      const routeRenderer = L.canvas({ padding: 0.3, tolerance: 7 });
-
-      const tooltip = L.control({ position: 'bottomright' });
-      tooltip.onAdd = function (map) {
-        this._div = L.DomUtil.create('div', 'route-tooltip');
-        return this._div;
-      };
-      tooltip.show = function (route) {
-        this._div.innerHTML = (route ? `<p>Bus Route: <b>${route.properties.LineAbbr} - ${route.properties.LineName} </b> </p>` : '');
-      };
-      tooltip.removeFrom = function () {
-        this._div.innerHTML = '';
-      };
-      tooltip.addTo(ref.map);
-
-      function onEachFeature(feature, layer) {
-        let isClicked = false;
-        layer.on({
-          click: function () {
-            ref.showAllBuses();
-            ref.highlightRoute(layer, tooltip);
-            layer.bringToFront();
-          },
-          contextmenu: function (e) {
-            if (!ref.routeFocused) {
-              if (!isClicked) {
-                layer.bringToBack();
-                layer.fire('mouseout');
-                tooltip.removeFrom();
-              } else {
-                layer.bringToBack();
-                layer.fire('mouseover');
-                tooltip.show(layer.feature);
-              }
-            }
-          },
-          mouseover: function () {
-            if (!ref.routeFocused) {
-              tooltip.show(layer.feature);
-              layer.setStyle({
-                opacity: 0.65,
-                weight: 4,
-                color: '#ff4278',
-              });
-              layer.bringToFront();
-              isClicked = false;
-            } 
-          },
-          mouseout: function () {
-            if (!ref.routeFocused) {
-              layer.setStyle(ref.unclickedRouteStyle);
-              isClicked = true;
-            }
-          }
-        });
-      }
-      const routesOverlay = L.geoJson(busRoutes, { 
-        style: this.unclickedRouteStyle,  
-        onEachFeature: onEachFeature,
-        renderer: routeRenderer
-      });
-      return routesOverlay;
-    },
-    highlightRoute(layer, tooltip) {
-      if (this.selectedRoute === -1) {
-        this.selectedRoute = layer._leaflet_id;
-        layer.setStyle(this.clickedRouteStyle);
-        layer.bringToFront();
-        tooltip.show(layer.feature);
-        this.hideBusesOffRoute(layer);
-        this.$store.dispatch('changeRouteFocused', true);
-        this.$store.dispatch('changeRouteFocusedNum', layer.feature.properties.LineAbbr);
-      } else {
-        if (this.selectedRoute === layer._leaflet_id) {
-          this.selectedRoute = -1;
-          layer.setStyle(this.unclickedRouteStyle);
-          // if multiple overlapping routes, select and delselct one to push it to the back
-          this.showAllBuses(); 
-          this.$store.dispatch('changeRouteFocused', false);
-          this.$store.dispatch('changeRouteFocusedNum', -1);
-        } else {
-          const oldLayer = this.routesOverlay._layers[this.selectedRoute];
-          oldLayer.setStyle(this.unclickedRouteStyle);
-          this.selectedRoute = layer._leaflet_id;
-          layer.setStyle(this.clickedRouteStyle);
-          layer.bringToFront();
-          tooltip.show(layer.feature);
-          this.showAllBuses();
-          this.hideBusesOffRoute(layer);
-          this.$store.dispatch('changeRouteFocusedNum', layer.feature.properties.LineAbbr);
-        }
-      }
-    },
-    showAllBuses() {
-      const allBuses = [];
-      this.busLocations.features.map(bus => {
-          bus.properties.show = true;
-          allBuses.push(bus.properties.id);
-          return bus;
-      });
-
-      this.$store.dispatch('changeBussesToShow', allBuses);
-    },
-    hideBusesOffRoute(layer) {
-      // Get the buses not on the route
-      const otherBuses = this.busLocations.features.filter(bus => bus.properties.route !== layer.feature.properties.LineAbbr);
-      const routeBuses = this.busLocations.features.filter(bus => bus.properties.route === layer.feature.properties.LineAbbr);
-
-      otherBuses.map(bus => {
-          bus.properties.show = false;
-          return bus;
-      });
-
-      this.$store.dispatch('changeBussesToShow', routeBuses.map(bus => bus.properties.id));
-    },
     drawMap() {
       const osmMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -478,26 +97,16 @@ export default {
         doubleClickZoom: false,
       });
 
-      this.routesOverlay = this.drawRoutes();
-      this.routesOverlay.addTo(this.map);
-
-      const busStopStyle = this.busStopStyle;
-      const busStopOverlay = L.geoJson(busStops, {
-        pointToLayer: function (feature, latlng) {
-          return L.circleMarker(latlng, busStopStyle);
-        }
-      });
-      busStopOverlay.addTo(this.map);
-
       const pollutantConcentrationOverlay = this.drawPollutantConcentrationOverlay();
 
       const economicOverlay = this.drawTazOverlay();
 
+      const contour = L.geoJson(idleContour);
+
       const overlays = {
         'Economic Data by Region': economicOverlay,
         'Pollutant Concentrations': pollutantConcentrationOverlay,
-        'Bus Stops': busStopOverlay,  
-        'Bus Routes': this.routesOverlay,
+        'Idle Time Heatmap': contour
       };
 
       const baseMaps = {
@@ -684,38 +293,38 @@ export default {
       };
       return legend;
     },
-    updateBusPositions() {
-      this.busMarkers.eachLayer((layer) => {
-        const bus = this.busLocations.features[layer.bus];
-        if (!bus.properties.show && this.map.hasLayer(layer)) {
-          this.map.removeLayer(layer);
-        } else if (bus.properties.show) {
-          if (!this.map.hasLayer(layer)) {
-            this.map.addLayer(layer);
-          }
-          layer.bindTooltip(`<p><b>Bus ID:</b> ${bus.properties.id}</p>
-                           <p><b>Bus Route:</b> ${bus.properties.route}</p>
-                           <p>${bus.properties.converted ? 'Converted' : 'Not converted'}</p>`);
-          const coords = bus.geometry.coordinates;
-          if (layer._latlng.lng !== coords[0] || layer._latlng.lat !== coords[1]) {
-            layer.setLatLng([coords[1], coords[0]]);
-          }
-          if (bus.properties.converted) {
-            layer.setIcon(this.greenIcon);
-          } else {
-            layer.setIcon(this.blackIcon);
-          }
+    drawStops() {
+      const ref = this;      
+      let timeSelectedTrips = [];
+      if (this.selectedTrips.length > 0) {
+        timeSelectedTrips = this.selectedTrips.filter(el => new Date(el.date) >= ref.fromDate && new Date(el.date) <= ref.toDate);
+      } 
+      const selectedTripsGeojson = [];
+      timeSelectedTrips.forEach(trip => {
+        if (trip.show) {
+          selectedTripsGeojson.push(...trip.geojson);
         }
       });
-    },
+      function onEachFeature(feature, layer) {
+        layer.bindTooltip(`<p><b>Vehicle:</b> ${feature.properties.vehicle}</p>
+                           <p><b>Stop Start:</b> ${feature.properties.startTime}</p>
+                           <p><b>Stop End:</b> ${feature.properties.endTime}</p>
+                           <p><b>Duration:</b> ${feature.properties.stopDuration} minutes</p>
+                           <p><b>Idle Duration:</b> ${feature.properties.idleDuration} minutes</p>
+                           <p><b>Stop Number:</b> ${feature.properties.stopNum}</p>`);
+      }
+      this.stopMarkers = L.geoJSON(selectedTripsGeojson, {
+        pointToLayer: function (feature, latlng) {
+             return L.marker(latlng, { icon: ref.stopIcon });
+        },
+        onEachFeature: onEachFeature,
+      });
+      this.stopMarkers.addTo(toRaw(this.map));
+    }
   },
   mounted() {
     this.drawMap();
-
-    this.$nextTick(() => {
-      this.drawStationPanels(p20Stations);
-      this.drawBuses();
-    });
+    this.drawStops();
   },
   beforeUnmount() {
     if (this.map) {
@@ -727,7 +336,7 @@ export default {
 
 <style scoped>
 #mapContainer {
-  min-height: 57vh;
+  min-height: 60vh;
   background-color: #fff;
   margin: .25em;
   padding: .25em;
@@ -735,11 +344,6 @@ export default {
   flex:5;
 }
 
-@media (max-height: 550px) {
-  #mapContainer {
-    min-height: 54vh;
-  }
-}
 @media (max-height: 400px) {
   #mapContainer {
     min-height: 45vh;

@@ -35,5 +35,7 @@ module.exports = {
     'no-param-reassign': 'off',
     'no-lonely-if': 'off',
     'consistent-return': 'off',
+    'func-names': 'off',
+    'arrow-body-style': 'off',
     },
 };

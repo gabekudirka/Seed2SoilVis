@@ -1,7 +1,18 @@
 import { createStore } from 'vuex';
+import { ref } from 'vue';
 
 export default createStore({
     state: {
+        selectedVehicle: 'UFOU6379',
+        selectedTrips: [],
+        selectedDept: '',
+        minDate: ref(new Date('2022-09-27T00:00:00')),
+        maxDate: ref(new Date('2022-09-29T00:00:00')),
+        fromDate: ref(new Date('2022-09-27T00:00:00')),
+        toDate: ref(new Date('2022-09-29T00:00:00')),
+        showVehicles: true,
+        showVehicleList: true,
+
         plan: 'p20',
         selectedBus: '1025',
         selectedRoute: '2X',
@@ -31,6 +42,28 @@ export default createStore({
     },
     getters: {},
     mutations: {
+        CHANGE_SELECTED_VEHICLE(state, vehicleId) {
+            state.selectedVehicle = vehicleId;
+        },
+        CHANGE_SELECTED_DEPT(state, dept) {
+            state.selectedDept = dept;
+        },
+        CHANGE_FROM_DATE(state, date) {
+            state.fromDate = date;
+        },
+        CHANGE_TO_DATE(state, date) {
+            state.toDate = date;
+        },
+        CHANGE_SELECTED_TRIPS(state, trips) {
+            state.selectedTrips = trips;
+        },
+        CHANGE_PANEL_VIEW(state, showVehicles) {
+            state.showVehicles = showVehicles;
+        },
+        CHANGE_LIST_VIEW(state, showVehicleList) {
+            state.showVehicleList = showVehicleList;
+        },
+
         CHANGE_PLAN(state, plan) {
             state.plan = plan;
         },
@@ -59,11 +92,32 @@ export default createStore({
             state.routeFocused = routeFocused;
         },
         CHANGE_ROUTE_FOCUSED_NUM(state, routeFocusedNum) {
-            console.log(routeFocusedNum);
             state.routeFocusedNum = routeFocusedNum;
         }
     },
     actions: {
+        changeVehicle({ commit }, payload) {
+            commit('CHANGE_SELECTED_VEHICLE', payload);
+        },
+        changeDept({ commit }, payload) {
+            commit('CHANGE_SELECTED_DEPT', payload);
+        },
+        changeFromDate({ commit }, payload) {
+            commit('CHANGE_FROM_DATE', payload);
+        },
+        changeToDate({ commit }, payload) {
+            commit('CHANGE_TO_DATE', payload);
+        },
+        changeSelectedTrips({ commit }, payload) {
+            commit('CHANGE_SELECTED_TRIPS', payload);
+        },
+        changePanelView({ commit }, payload) {
+            commit('CHANGE_PANEL_VIEW', payload);
+        }, 
+        changeListView({ commit }, payload) {
+            commit('CHANGE_LIST_VIEW', payload);
+        }, 
+
         changePlan({ commit }, payload) {
             commit('CHANGE_PLAN', payload);
         },

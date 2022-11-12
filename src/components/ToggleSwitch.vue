@@ -3,13 +3,13 @@
     <button
         class="button toggle"
         @click="toggle"
-        :class="[!showBusses ? 'active' : '']"
-    >Stations</button>
+        :class="[!showVehicleList ? 'active' : '']" 
+    >Departments</button>
     <button
         class="button toggle"
         @click="toggle"
-        :class="[showBusses ? 'active' : '']"
-    >Buses</button>
+        :class="[showVehicleList ? 'active' : '']"
+    >Vehicles</button>
     </div>
 </template>
 
@@ -18,32 +18,32 @@
 export default {
     name: 'ToggleSwitch',
     props: {
-        initShowBusses: {
+        initShowVehicleList: {
             type: Boolean,
             default: true
         }
     },
     data() {
         return {
-            showBusses: this.initShowBusses,
+            showVehicleList: this.initShowVehicleList,
         };
     },
     computed: {
-        showBussesState: function () {
-            return this.$store.state.showBusses;
+        showVehicleListState: function () {
+            return this.$store.state.showVehicleList;
         }
     },
     watch: {
-        showBussesState: function () {
+        showVehicleListState: function () {
             this.changeToggle();
         }
     },
     methods: {
        toggle() {
-            this.$store.dispatch('changeShowBusses', !this.showBusses);
+            this.$store.dispatch('changeListView', !this.showVehicleList);
         },
         changeToggle() {
-            this.showBusses = !this.showBusses;
+            this.showVehicleList = !this.showVehicleList;
         }
     },
 };
