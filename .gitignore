@@ -24,7 +24,7 @@ pnpm-debug.log*
 
 #data
 /data_input
-src/data
+#src/data
 
 #virtual environments
 /venv

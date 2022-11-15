@@ -1,0 +1,903 @@
+Device,DeviceGroup,StartDate,Duration,EndDate,Distance,StopDuration,Location,StopZoneType,IdleDuration,MaxSpeed
+FO15921,Hospital ITS,28-Sep-22,0:02,9/28/2022 9:39,1,0:02,"175 E 800 S, Salt Lake City, UT 84111, USA",,0:00,33
+FO15921,Hospital ITS,28-Sep-22,0:12,9/28/2022 9:54,4,0:51,"Campus: 46 Mario Capecchi Dr, Salt Lake City, UT 84132, USA",Campus,0:00,39
+FO15921,Hospital ITS,28-Sep-22,0:09,9/28/2022 10:55,2,0:02,"766 1300 E, Salt Lake City, UT 84102, USA",,0:02,43
+FO15921,Hospital ITS,28-Sep-22,0:21,9/28/2022 11:19,12,0:11,"790 N Cutler Dr, North Salt Lake, UT 84054, USA",,0:00,83
+FO15921,Hospital ITS,28-Sep-22,0:30,9/28/2022 12:01,10,1:03,"850 Richards St, Salt Lake City, UT 84101, USA",,0:00,62
+FO15921,Hospital ITS,28-Sep-22,0:02,9/28/2022 13:08,1,0:03,"175 E 800 S, Salt Lake City, UT 84111, USA",,0:00,31
+FO15921,Hospital ITS,28-Sep-22,0:13,9/28/2022 13:25,3,2:44,"75 W 900 S, Salt Lake City, UT 84101, USA",,0:00,37
+FO15921,Hospital ITS,28-Sep-22,0:01,9/28/2022 16:11,0,16:55,"850 Richards St, Salt Lake City, UT 84101, USA",,0:00,16
+UFOU6379,"Distribution, Hospital Courier",28-Sep-22,0:05,9/28/2022 7:07,1,0:34,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,31
+UFOU6379,"Distribution, Hospital Courier",28-Sep-22,0:03,9/28/2022 7:44,0,0:26,"Campus: 65 Mario Capecchi Dr, Salt Lake City, UT 84132, USA",Campus,0:01,15
+UFOU6379,"Distribution, Hospital Courier",28-Sep-22,0:03,9/28/2022 8:14,0,0:04,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,15
+UFOU6379,"Distribution, Hospital Courier",28-Sep-22,0:47,9/28/2022 9:06,22,0:07,"Farmington Health Center: University Ave @ 163 N, Farmington, UT 84025, USA",clinics,0:03,71
+UFOU6379,"Distribution, Hospital Courier",28-Sep-22,0:00,9/28/2022 9:14,0,0:35,"Farmington Health Center: 165 N University Ave, Farmington, UT 84025, USA",clinics,0:00,2
+UFOU6379,"Distribution, Hospital Courier",28-Sep-22,0:08,9/28/2022 9:57,1,0:04,"Uni Farmington: 225-291 S 200 W, Farmington, UT 84025, USA",Customer Zone,0:00,32
+UFOU6379,"Distribution, Hospital Courier",28-Sep-22,0:09,9/28/2022 10:11,5,0:14,"Centerville Health Center: Main St @ 26 S, Centerville, UT 84014, USA",Customer Zone,0:00,70
+UFOU6379,"Distribution, Hospital Courier",28-Sep-22,0:38,9/28/2022 11:05,36,0:16,"Stansbury Clinic: 220 Millpond, Stansbury Park, UT 84074, USA",clinics,0:00,75
+UFOU6379,"Distribution, Hospital Courier",28-Sep-22,0:34,9/28/2022 11:55,27,0:07,"2832 S Redwood Rd, West Valley City, UT 84119, USA",,0:00,76
+UFOU6379,"Distribution, Hospital Courier",28-Sep-22,0:05,9/28/2022 12:08,2,0:19,"Redwood Geofence: 1525 W 2100 S Expy, Salt Lake City, UT 84119, USA",Customer Zone,0:00,39
+UFOU6379,"Distribution, Hospital Courier",28-Sep-22,0:11,9/28/2022 12:38,5,0:07,"Mountain West Mother's Milk Bank: 2995 S W Temple, South Salt Lake, UT 84115, USA",Customer Zone,0:00,63
+UFOU6379,"Distribution, Hospital Courier",28-Sep-22,0:16,9/28/2022 13:03,10,0:18,"Westridge Health Center: 3730 W 4700 S, West Valley City, UT 84118, USA",Customer Zone,0:00,70
+UFOU6379,"Distribution, Hospital Courier",28-Sep-22,0:17,9/28/2022 13:38,10,0:20,"Anthony's House: 403 E 2700 S, South Salt Lake, UT 84115, USA",Customer Zone,0:00,65
+UFOU6379,"Distribution, Hospital Courier",28-Sep-22,0:18,9/28/2022 14:18,6,0:03,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,42
+UFOU6379,"Distribution, Hospital Courier",28-Sep-22,0:05,9/28/2022 14:26,1,0:09,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,33
+UFOU6379,"Distribution, Hospital Courier",28-Sep-22,0:00,9/28/2022 14:36,0,1:14,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,0
+UFOU6379,"Distribution, Hospital Courier",28-Sep-22,0:04,9/28/2022 15:55,1,15:05,"Campus: Mario Capecchi Dr / 1900 E (NB), Salt Lake City, UT 84132, USA",Campus,0:00,25
+UOFU1513,DISTRO INVENTORY,28-Sep-22,0:07,9/28/2022 12:39,1,0:06,"Campus: Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:00,23
+UOFU1513,DISTRO INVENTORY,28-Sep-22,0:06,9/28/2022 12:52,2,0:07,"Campus: 423 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,34
+UOFU1513,DISTRO INVENTORY,28-Sep-22,0:05,9/28/2022 13:05,1,25:45:00,"Campus: S 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,29
+UOFU1948,Biomedical engineering,28-Sep-22,0:29,9/28/2022 9:22,13,1:06,"7454 S 95 E, Midvale, UT 84047, USA",,0:00,68
+UOFU1948,Biomedical engineering,28-Sep-22,0:15,9/28/2022 10:43,11,0:39,"1525 2100 S, Salt Lake City, UT 84119, USA",,0:00,76
+UOFU1948,Biomedical engineering,28-Sep-22,0:21,9/28/2022 11:45,16,0:22,"11503 4000 W, South Jordan, UT 84009, USA",,0:00,72
+UOFU1948,Biomedical engineering,28-Sep-22,0:06,9/28/2022 12:15,2,44:21:00,"5180 Duckhorn Dr, South Jordan, UT 84095, USA",,0:00,43
+UOFU4210,Facilities engineering,28-Sep-22,0:05,9/28/2022 7:04,0,0:04,"5203 W Daybreak Pkwy, South Jordan, UT 84095, USA",,0:00,15
+UOFU4210,Facilities engineering,28-Sep-22,0:36,9/28/2022 7:45,31,2:17,"145 UT-265, Orem, UT 84058, USA",,0:00,75
+UOFU4210,Facilities engineering,28-Sep-22,0:43,9/28/2022 10:46,44,0:10,"48 W 1500 N, Nephi, UT 84648, USA",,0:00,79
+UOFU4210,Facilities engineering,28-Sep-22,0:01,9/28/2022 10:58,0,0:17,"1392 N Main St, Nephi, UT 84648, USA",,0:00,25
+UOFU4210,Facilities engineering,28-Sep-22,0:01,9/28/2022 11:16,0,0:07,"48 W 1500 N, Nephi, UT 84648, USA",,0:00,35
+UOFU4210,Facilities engineering,28-Sep-22,0:42,9/28/2022 12:07,44,2:26,"145 UT-265, Orem, UT 84058, USA",,0:00,80
+UOFU4210,Facilities engineering,28-Sep-22,0:48,9/28/2022 15:21,32,0:00,"5223 Duckhorn Dr, South Jordan, UT 84095, USA",,0:00,78
+UOFU4210,Facilities engineering,28-Sep-22,0:00,9/28/2022 15:22,0,15:37,"5223 Duckhorn Dr, South Jordan, UT 84095, USA",,0:00,9
+UOFU4212,Customer Service,28-Sep-22,0:11,9/28/2022 21:07,0,104:56:00,"Campus: Hospital Helipad 2, 71-99 S 2030 E, Salt Lake City, UT 84132, USA",Campus,0:00,14
+UOFU4326,Huntsman,28-Sep-22,0:14,9/28/2022 12:36,2,0:05,"Campus: 1950 Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:00,33
+UOFU4326,Huntsman,28-Sep-22,0:00,9/28/2022 12:41,0,0:06,"Campus: 1950 Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:00,7
+UOFU4326,Huntsman,28-Sep-22,0:05,9/28/2022 12:53,1,0:07,"Campus: 65 Mario Capecchi Dr, Salt Lake City, UT 84132, USA",Campus,0:00,27
+UOFU4326,Huntsman,28-Sep-22,0:04,9/28/2022 13:05,1,164:12:00,"Campus: 1950 Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:00,32
+UOFU4420 Mark,UEN,28-Sep-22,1:27,9/28/2022 9:09,71,2:17,"5 College Dr, Orem, UT 84058, USA",,0:00,75
+UOFU4420 Mark,UEN,28-Sep-22,1:13,9/28/2022 12:40,70,18:47,"2929 W 175 N, West Point, UT 84015, USA",,0:00,79
+UOFU4431,Facilities engineering,28-Sep-22,0:04,9/28/2022 6:10,0,0:07,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,14
+UOFU4431,Facilities engineering,28-Sep-22,0:10,9/28/2022 6:28,1,1:14,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,27
+UOFU4431,Facilities engineering,28-Sep-22,0:09,9/28/2022 7:52,2,0:03,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,34
+UOFU4431,Facilities engineering,28-Sep-22,0:02,9/28/2022 7:58,0,1:17,"Campus: 10 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,23
+UOFU4431,Facilities engineering,28-Sep-22,0:07,9/28/2022 9:22,2,0:46,"Campus: 685 Madsen, 556 Mario Capecchi Dr, Salt Lake City, UT 84148, USA",Campus,0:01,34
+UOFU4431,Facilities engineering,28-Sep-22,0:08,9/28/2022 10:17,1,0:10,"Campus: Orthopaedic Center, 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,38
+UOFU4431,Facilities engineering,28-Sep-22,0:04,9/28/2022 10:33,1,0:01,"Campus: 10 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,41
+UOFU4431,Facilities engineering,28-Sep-22,0:15,9/28/2022 10:50,4,0:37,"246 E 200 S, Salt Lake City, UT 84111, USA",,0:00,42
+UOFU4431,Facilities engineering,28-Sep-22,0:01,9/28/2022 11:29,0,0:57,"377 E 200 S, Salt Lake City, UT 84111, USA",,0:00,26
+UOFU4431,Facilities engineering,28-Sep-22,0:12,9/28/2022 12:39,3,114:25:00,"Campus: 10 1900 E, Salt Lake City, UT 84132, USA",Campus,0:02,40
+UOFU4528,Hospital Courier,28-Sep-22,0:12,9/28/2022 8:38,3,1:17,"Campus: 30 N 1900 E, Salt Lake City, UT 84132, Fifth floor 2B10, Salt Lake City, UT 84132, USA",Campus,0:00,49
+UOFU4528,Hospital Courier,28-Sep-22,0:07,9/28/2022 10:03,1,0:06,"Campus: Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:00,25
+UOFU4528,Hospital Courier,28-Sep-22,0:08,9/28/2022 10:17,2,0:06,"Campus: 423 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,32
+UOFU4528,Hospital Courier,28-Sep-22,0:05,9/28/2022 10:29,1,0:01,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,27
+UOFU4528,Hospital Courier,28-Sep-22,0:00,9/28/2022 10:31,0,0:03,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:03,7
+UOFU4528,Hospital Courier,28-Sep-22,0:07,9/28/2022 10:42,1,0:54,"Campus: 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,19
+UOFU4528,Hospital Courier,28-Sep-22,0:04,9/28/2022 11:41,1,0:08,"Campus: 30 N 1900 E, Salt Lake City, UT 84132, Fifth floor 2B10, Salt Lake City, UT 84132, USA",Campus,0:00,23
+UOFU4528,Hospital Courier,28-Sep-22,0:09,9/28/2022 12:00,3,44:05:00,"BSB and Friends: 127 500 E, Salt Lake City, UT 84102, USA",Customer Zone,0:00,48
+UOFU4557 Jerry,UEN,28-Sep-22,0:37,9/28/2022 9:31,26,1:55,"5 College Dr, Orem, UT 84058, USA",,0:00,81
+UOFU4557 Jerry,UEN,28-Sep-22,0:29,9/28/2022 11:56,11,0:04,"9590 Canyon Rd, Pleasant Grove, UT 84062, USA",,0:00,48
+UOFU4557 Jerry,UEN,28-Sep-22,0:06,9/28/2022 12:07,2,3:28,"10443 Morgan Blvd, Cedar Hills, UT 84062, USA",,0:00,40
+UOFU4557 Jerry,UEN,28-Sep-22,0:35,9/28/2022 16:10,19,14:32,"12007 Nicklaus Rd, Sandy, UT 84092, USA",,0:00,64
+UOFU4595,Facilities engineering,28-Sep-22,0:03,9/28/2022 10:40,1,0:00,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,32
+UOFU4595,Facilities engineering,28-Sep-22,0:00,9/28/2022 10:42,0,0:03,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,6
+UOFU4595,Facilities engineering,28-Sep-22,0:15,9/28/2022 11:01,5,0:12,"1280 Stringham Ave, Salt Lake City, UT 84106, USA",,0:00,43
+UOFU4595,Facilities engineering,28-Sep-22,0:12,9/28/2022 11:26,5,1:39,"Campus: 10 1900 E, Salt Lake City, UT 84132, USA",Campus,0:01,43
+UOFU4595,Facilities engineering,28-Sep-22,0:33,9/28/2022 13:39,28,0:58,"225-291 S 200 W, Farmington, UT 84025, USA",,0:10,78
+UOFU4595,Facilities engineering,28-Sep-22,0:03,9/28/2022 14:42,1,2:01,"115 N University Ave, Farmington, UT 84025, USA",,0:03,39
+UOFU4595,Facilities engineering,28-Sep-22,0:41,9/28/2022 17:24,27,16:29,"Campus: 10 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,79
+UOFU4639,Cardio,28-Sep-22,0:31,9/28/2022 9:58,22,2:34,"1734 Redstone Ave, Park City, UT 84098, USA",,0:00,86
+UOFU4639,Cardio,28-Sep-22,0:35,9/28/2022 13:07,22,137:49:00,"Campus: University Hospital, Salt Lake City, UT 84132, USA",Campus,0:00,85
+UOFU4642,Huntsman,28-Sep-22,0:07,9/28/2022 20:13,1,1:00,"Campus: 1950 Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:00,19
+UOFU4642,Huntsman,28-Sep-22,0:06,9/28/2022 21:20,1,0:44,"Campus: 1950 Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:00,21
+UOFU4642,Huntsman,28-Sep-22,0:08,9/28/2022 22:13,1,0:04,"Campus: 1950 Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:00,29
+UOFU4642,Huntsman,28-Sep-22,0:11,9/28/2022 22:29,1,0:16,"Campus: 1950 Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:00,30
+UOFU4642,Huntsman,28-Sep-22,0:12,9/28/2022 22:57,3,0:21,"Campus: 1950 Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:00,38
+UOFU4642,Huntsman,28-Sep-22,0:09,9/28/2022 23:29,1,0:02,"Campus: Primary Children�s Medical Center, Salt Lake City, UT 84132, USA",Campus,0:00,19
+UOFU4642,Huntsman,28-Sep-22,0:07,9/28/2022 23:38,0,10:14,"Campus: 1950 Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:00,16
+UOFU4664,Venues,28-Sep-22,0:01,9/28/2022 7:40,0,0:05,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,22
+UOFU4664,Venues,28-Sep-22,0:01,9/28/2022 7:46,0,0:53,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,4
+UOFU4664,Venues,28-Sep-22,0:02,9/28/2022 8:41,0,0:58,"Campus, Facilities, Fleet Building: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:04,12
+UOFU4664,Venues,28-Sep-22,0:01,9/28/2022 9:41,0,5:29,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,8
+UOFU4664,Venues,28-Sep-22,0:02,9/28/2022 15:12,0,16:20,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,19
+UOFU4689,UNI,28-Sep-22,0:02,9/28/2022 12:05,0,0:02,"12 W 3900 S, Murray, UT 84107, USA",,0:00,33
+UOFU4689,UNI,28-Sep-22,0:18,9/28/2022 12:26,11,0:25,"Campus: 501 Chipeta Way, Salt Lake City, UT 84108, USA",Campus,0:00,69
+UOFU4689,UNI,28-Sep-22,0:19,9/28/2022 13:11,11,0:03,"61 W 3900 S, Millcreek, UT 84107, USA",,0:00,81
+UOFU4689,UNI,28-Sep-22,0:00,9/28/2022 13:15,0,2:06,"61 W 3900 S, Millcreek, UT 84107, USA",,0:00,4
+UOFU4689,UNI,28-Sep-22,0:00,9/28/2022 15:22,0,9:22,"61 W 3900 S, Millcreek, UT 84107, USA",,0:00,4
+UOFU4690,Rehabilitation,28-Sep-22,0:09,9/28/2022 13:20,1,1:02,"Campus: 300 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,26
+UOFU4690,Rehabilitation,28-Sep-22,0:07,9/28/2022 14:31,2,43:18:00,"Campus: Hospital Generating Plant, Salt Lake City, UT 84132, USA",Campus,0:00,24
+UOFU4707,Geology,28-Sep-22,0:20,9/28/2022 13:55,5,2:10,"240 N Redwood Rd, Salt Lake City, UT 84116, USA",,0:00,37
+UOFU4707,Geology,28-Sep-22,0:22,9/28/2022 16:29,5,15:54,"Campus: 545599 1455 E, Salt Lake City, UT 84112, USA",Campus,0:00,40
+UOFU4711,OUTREACH AND NETWORK DEV,28-Sep-22,0:01,9/28/2022 6:07,0,0:10,"8946 Pineview Dr, Huntsville, UT 84317, USA",,0:00,11
+UOFU4711,OUTREACH AND NETWORK DEV,28-Sep-22,0:47,9/28/2022 7:05,46,0:27,"928 Autumn Ave, Salt Lake City, UT 84116, USA",,0:00,89
+UOFU4711,OUTREACH AND NETWORK DEV,28-Sep-22,0:00,9/28/2022 7:33,0,4:26,"928 Autumn Ave, Salt Lake City, UT 84116, USA",,0:00,3
+UOFU4711,OUTREACH AND NETWORK DEV,28-Sep-22,0:00,9/28/2022 11:59,0,1:46,"930 Autumn Ave, Salt Lake City, UT 84116, USA",,0:00,4
+UOFU4711,OUTREACH AND NETWORK DEV,28-Sep-22,0:25,9/28/2022 14:11,23,0:09,"1095 N Main St Suite #2, Layton, UT 84041, USA",,0:00,86
+UOFU4711,OUTREACH AND NETWORK DEV,28-Sep-22,0:23,9/28/2022 14:44,16,0:02,"5150 W Old Hwy Rd, Morgan, UT 84050, USA",,0:00,71
+UOFU4711,OUTREACH AND NETWORK DEV,28-Sep-22,0:20,9/28/2022 15:07,14,18:04,"8946 Pineview Dr, Huntsville, UT 84317, USA",,0:00,68
+UOFU4712,OUTREACH AND NETWORK DEV,28-Sep-22,0:00,9/28/2022 7:52,0,0:30,"Campus, Facilities, Fleet Building: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,2
+UOFU4712,OUTREACH AND NETWORK DEV,28-Sep-22,0:00,9/28/2022 8:22,0,0:03,"Campus, Facilities, Fleet Building: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,1
+UOFU4712,OUTREACH AND NETWORK DEV,28-Sep-22,0:05,9/28/2022 8:32,1,168:46:00,"Campus, Facilities: 1745 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,26
+UOFU4714,Rehabilitation,28-Sep-22,0:00,9/28/2022 6:15,0,0:10,"Campus: 729 Arapeen Dr, Salt Lake City, UT 84108, USA",Campus,0:10,3
+UOFU4714,Rehabilitation,28-Sep-22,0:12,9/28/2022 6:39,4,8:30,"1055 S 700 E, Salt Lake City, UT 84105, USA",,0:02,38
+UOFU4714,Rehabilitation,28-Sep-22,0:15,9/28/2022 15:24,3,16:06,"Campus: 729 Arapeen Dr, Salt Lake City, UT 84108, USA",Campus,0:00,40
+UOFU4733,Huntsman,28-Sep-22,0:15,9/28/2022 6:31,2,0:03,"Campus: E. Campus Chiller, Salt Lake City, UT 84112, USA",Campus,0:03,21
+UOFU4733,Huntsman,28-Sep-22,0:41,9/28/2022 7:16,8,0:04,"1306 S 2100 E, Salt Lake City, UT 84108, USA",,0:00,35
+UOFU4733,Huntsman,28-Sep-22,1:29,9/28/2022 8:50,16,0:03,"Campus: 2000 Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:00,37
+UOFU4733,Huntsman,28-Sep-22,0:15,9/28/2022 9:09,2,0:03,"Campus: E. Campus Chiller, Salt Lake City, UT 84112, USA",Campus,0:03,22
+UOFU4733,Huntsman,28-Sep-22,0:23,9/28/2022 9:36,4,0:04,"Campus: E. Campus Chiller, Salt Lake City, UT 84112, USA",Campus,0:04,21
+UOFU4733,Huntsman,28-Sep-22,0:42,9/28/2022 10:23,6,0:08,"Campus: E. Campus Chiller, Salt Lake City, UT 84112, USA",Campus,0:08,24
+UOFU4733,Huntsman,28-Sep-22,0:03,9/28/2022 10:36,1,0:12,"Campus: E. Campus Chiller, Salt Lake City, UT 84112, USA",Campus,0:12,26
+UOFU4733,Huntsman,28-Sep-22,0:15,9/28/2022 11:04,3,0:02,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,38
+UOFU4733,Huntsman,28-Sep-22,0:01,9/28/2022 11:08,0,0:01,"Campus, Facilities, Fleet Building: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,7
+UOFU4733,Huntsman,28-Sep-22,0:00,9/28/2022 11:10,0,0:35,"Campus, Facilities, Fleet Building: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,1
+UOFU4733,Huntsman,28-Sep-22,0:00,9/28/2022 11:46,0,0:11,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,1
+UOFU4733,Huntsman,28-Sep-22,0:06,9/28/2022 12:04,1,0:08,"Campus: 2000 Cir of Hope Dr, Salt Lake City, UT 84112, USA",Campus,0:00,39
+UOFU4733,Huntsman,28-Sep-22,0:11,9/28/2022 12:24,2,0:08,"Campus: 2000 Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:08,24
+UOFU4733,Huntsman,28-Sep-22,0:09,9/28/2022 12:42,2,0:39,"Campus: 2000 Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:07,23
+UOFU4733,Huntsman,28-Sep-22,0:06,9/28/2022 13:28,1,0:00,"Campus: 2000 Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:00,24
+UOFU4733,Huntsman,28-Sep-22,0:04,9/28/2022 13:33,1,0:34,"Campus: 2000 Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:34,24
+UOFU4733,Huntsman,28-Sep-22,0:26,9/28/2022 14:34,4,0:17,"Campus: 2000 Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:00,25
+UOFU4733,Huntsman,28-Sep-22,0:42,9/28/2022 15:34,6,0:04,"Campus: Ezekiel R. and Enda Dumke Bldg, Salt Lake City, UT 84132, USA",Campus,0:00,21
+UOFU4733,Huntsman,28-Sep-22,0:06,9/28/2022 15:45,1,0:04,"Campus: 15 N Medical Dr, Salt Lake City, UT 84132, USA",Campus,0:04,21
+UOFU4733,Huntsman,28-Sep-22,0:35,9/28/2022 16:25,4,0:03,"Campus: 12 Medical Plaza, Salt Lake City, UT 84112, USA",Campus,0:03,23
+UOFU4733,Huntsman,28-Sep-22,1:30,9/28/2022 17:59,12,0:05,"Campus: 85 Medical Dr N, Salt Lake City, UT 84132, USA",Campus,0:05,25
+UOFU4733,Huntsman,28-Sep-22,0:28,9/28/2022 18:32,5,0:09,"Campus: 85 Medical Dr N, Salt Lake City, UT 84132, USA",Campus,0:00,25
+UOFU4733,Huntsman,28-Sep-22,0:13,9/28/2022 18:55,2,11:19,"Campus: E. Campus Chiller, Salt Lake City, UT 84112, USA",Campus,0:02,21
+UOFU4758,Commuter Services Maintenance,28-Sep-22,0:10,9/28/2022 7:05,2,0:30,"Campus: 220 Chase St, Salt Lake City, UT 84113, USA",Campus,0:14,35
+UOFU4758,Commuter Services Maintenance,28-Sep-22,0:07,9/28/2022 7:44,1,0:10,"food zone: 209 1300 E, Salt Lake City, UT 84102, USA",Customer Zone,0:01,35
+UOFU4758,Commuter Services Maintenance,28-Sep-22,0:21,9/28/2022 8:16,5,0:15,"Campus: Building 215, Salt Lake City, UT 84102, USA",Campus,0:00,35
+UOFU4758,Commuter Services Maintenance,28-Sep-22,0:19,9/28/2022 8:51,2,0:06,"Campus: 20 S 2030 E, Salt Lake City, UT 84132, USA",Campus,0:03,32
+UOFU4758,Commuter Services Maintenance,28-Sep-22,0:08,9/28/2022 9:07,1,0:01,"Campus: 400 S 900 E, Salt Lake City, UT 84102, USA",Campus,0:01,34
+UOFU4758,Commuter Services Maintenance,28-Sep-22,0:01,9/28/2022 9:10,0,0:00,"Campus: 400 S 900 E, Salt Lake City, UT 84102, USA",Campus,0:00,0
+UOFU4758,Commuter Services Maintenance,28-Sep-22,0:02,9/28/2022 9:12,0,0:11,"Campus: Sterling Sill Center, Salt Lake City, UT 84112, USA",Campus,0:00,11
+UOFU4758,Commuter Services Maintenance,28-Sep-22,0:08,9/28/2022 9:32,2,0:03,"Campus: Building 215, Salt Lake City, UT 84102, USA",Campus,0:00,33
+UOFU4758,Commuter Services Maintenance,28-Sep-22,0:08,9/28/2022 9:44,1,0:06,"Campus: 220 Chase St, Salt Lake City, UT 84113, USA",Campus,0:00,32
+UOFU4758,Commuter Services Maintenance,28-Sep-22,0:00,9/28/2022 9:51,0,0:00,"Campus: 600 Chase St, Salt Lake City, UT 84113, USA",Campus,0:00,10
+UOFU4758,Commuter Services Maintenance,28-Sep-22,0:00,9/28/2022 9:52,0,0:00,"Campus: 32 Potter St, Salt Lake City, UT 84113, USA",Campus,0:00,18
+UOFU4758,Commuter Services Maintenance,28-Sep-22,0:01,9/28/2022 9:53,0,0:21,"Campus: 188 Pollock Rd, Salt Lake City, UT 84108, USA",Campus,0:17,23
+UOFU4758,Commuter Services Maintenance,28-Sep-22,0:00,9/28/2022 10:15,0,0:00,"Campus: 311 Fort Douglas Blvd, Salt Lake City, UT 84113, USA",Campus,0:00,23
+UOFU4758,Commuter Services Maintenance,28-Sep-22,0:25,9/28/2022 10:41,5,0:04,"Campus: Alice Sheets Marriott Center for Dance, Salt Lake City, UT 84112, USA",Campus,0:04,40
+UOFU4758,Commuter Services Maintenance,28-Sep-22,0:01,9/28/2022 10:47,0,0:00,"Campus: 330 1500 E, Salt Lake City, UT 84112, USA",Campus,0:00,11
+UOFU4758,Commuter Services Maintenance,28-Sep-22,0:09,9/28/2022 10:57,2,0:04,"Campus: 666 Guardsman Way, Salt Lake City, UT 84102, USA",Campus,0:00,29
+UOFU4758,Commuter Services Maintenance,28-Sep-22,0:00,9/28/2022 11:01,0,0:00,"Campus: 666 Guardsman Way, Salt Lake City, UT 84102, USA",Campus,0:00,0
+UOFU4758,Commuter Services Maintenance,28-Sep-22,0:00,9/28/2022 11:03,0,10:31,"Campus: 666 Guardsman Way, Salt Lake City, UT 84102, USA",Campus,0:00,1
+UOFU4758,Commuter Services Maintenance,28-Sep-22,0:00,9/28/2022 21:34,0,8:59,"Campus: Building 215, Salt Lake City, UT 84102, USA",Campus,0:00,0
+UOFU4784 Paul,UEN,28-Sep-22,0:08,9/28/2022 10:41,2,0:04,"2995 Fort Union Blvd, Cottonwood Heights, UT 84121, USA",,0:00,34
+UOFU4784 Paul,UEN,28-Sep-22,0:16,9/28/2022 11:02,11,0:22,"Campus: Dolores Dor� Eccles Broadcast Center, 101 S Wasatch Dr, Salt Lake City, UT 84112, USA",Campus,0:00,73
+UOFU4784 Paul,UEN,28-Sep-22,0:24,9/28/2022 11:49,13,44:38:00,"7929 Oakledge Rd, Cottonwood Heights, UT 84121, USA",,0:01,64
+UOFU4812,Engineering District,28-Sep-22,0:02,9/28/2022 9:34,0,22:08,"Campus, Facilities, Fleet Building: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,0
+UOFU4917,Commuter Services Maintenance,28-Sep-22,0:03,9/28/2022 2:49,0,1:37,"Campus: 115 1455 E, Salt Lake City, UT 84112, USA",Campus,0:21,0
+UOFU4917,Commuter Services Maintenance,28-Sep-22,0:10,9/28/2022 4:38,1,1:05,"Campus: U South Campus Station (WB), Salt Lake City, UT 84119, USA",Campus,0:00,25
+UOFU4917,Commuter Services Maintenance,28-Sep-22,0:03,9/28/2022 5:47,1,0:02,"Campus: 666 Guardsman Way, Salt Lake City, UT 84102, USA",Campus,0:00,30
+UOFU4917,Commuter Services Maintenance,28-Sep-22,0:00,9/28/2022 5:50,0,15:40,"Campus: Building 215, Salt Lake City, UT 84102, USA",Campus,0:13,19
+UOFU4917,Commuter Services Maintenance,28-Sep-22,0:04,9/28/2022 21:34,0,0:06,"Campus: 666 Guardsman Way, Salt Lake City, UT 84102, USA",Campus,0:00,7
+UOFU4917,Commuter Services Maintenance,28-Sep-22,0:10,9/28/2022 21:50,2,4:18,"Campus: E. Campus Chiller, Salt Lake City, UT 84112, USA",Campus,0:00,32
+UOFU4918,Electronics,28-Sep-22,0:00,9/28/2022 12:40,0,0:02,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,5
+UOFU4918,Electronics,28-Sep-22,0:06,9/28/2022 12:49,2,0:07,"Campus: 827 University Village, Salt Lake City, UT 84108, USA",Campus,0:00,41
+UOFU4918,Electronics,28-Sep-22,0:00,9/28/2022 12:57,0,0:41,"Campus: 827 University Village, Salt Lake City, UT 84108, USA",Campus,0:00,0
+UOFU4918,Electronics,28-Sep-22,0:07,9/28/2022 13:47,2,43:33:00,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,38
+UOFU4922,Commuter services enforcement,28-Sep-22,0:07,9/28/2022 8:05,1,0:02,"Campus: 1901 S Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:00,29
+UOFU4922,Commuter services enforcement,28-Sep-22,0:00,9/28/2022 8:09,0,0:03,"Campus: Annex General Office, 1901 S Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:03,6
+UOFU4922,Commuter services enforcement,28-Sep-22,0:18,9/28/2022 8:32,1,0:03,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,25
+UOFU4922,Commuter services enforcement,28-Sep-22,0:14,9/28/2022 8:49,1,0:03,"Campus, Facilities: 1721 Campus Center Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:03,31
+UOFU4922,Commuter services enforcement,28-Sep-22,0:21,9/28/2022 9:14,0,0:04,"Campus, Facilities: 1830 1800 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:04,10
+UOFU4922,Commuter services enforcement,28-Sep-22,0:03,9/28/2022 9:23,0,0:03,"Campus: 1645 Campus Center Dr, Salt Lake City, UT 84112, USA",Campus,0:00,16
+UOFU4922,Commuter services enforcement,28-Sep-22,0:07,9/28/2022 9:33,0,0:03,"Campus: 400 S 900 E, Salt Lake City, UT 84102, USA",Campus,0:03,18
+UOFU4922,Commuter services enforcement,28-Sep-22,0:13,9/28/2022 9:50,0,0:03,"Campus: 171, Salt Lake City, UT 84112, USA",Campus,0:03,4
+UOFU4922,Commuter services enforcement,28-Sep-22,0:14,9/28/2022 10:09,1,0:03,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:03,18
+UOFU4922,Commuter services enforcement,28-Sep-22,0:25,9/28/2022 10:38,3,0:03,"Campus: Parking lot, 545 Guardsman Way, Salt Lake City, UT 84108, USA",Campus,0:03,34
+UOFU4922,Commuter services enforcement,28-Sep-22,0:19,9/28/2022 11:01,1,0:02,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,34
+UOFU4922,Commuter services enforcement,28-Sep-22,0:14,9/28/2022 11:19,1,0:03,"Campus: 595 Guardsman Way, Salt Lake City, UT 84108, USA",Campus,0:03,35
+UOFU4922,Commuter services enforcement,28-Sep-22,0:17,9/28/2022 11:40,1,19:11,"Campus: 311 Fort Douglas Blvd, Salt Lake City, UT 84113, USA",Campus,0:11,32
+UOFU4953,Core,28-Sep-22,0:04,9/28/2022 5:37,1,0:44,"Campus, Facilities: 1745 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,31
+UOFU4953,Core,28-Sep-22,0:18,9/28/2022 6:41,5,0:10,"Campus: 10 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,35
+UOFU4953,Core,28-Sep-22,0:06,9/28/2022 6:58,1,0:45,"Campus: 122 Central Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:00,26
+UOFU4953,Core,28-Sep-22,0:02,9/28/2022 7:46,0,0:49,"Campus: 1465 100 S, Salt Lake City, UT 84112, USA",Campus,0:00,19
+UOFU4953,Core,28-Sep-22,0:07,9/28/2022 8:42,2,0:31,"Campus, Facilities: 1745 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,31
+UOFU4953,Core,28-Sep-22,0:09,9/28/2022 9:23,2,0:50,"Campus: 1465 100 S, Salt Lake City, UT 84112, USA",Campus,0:00,32
+UOFU4953,Core,28-Sep-22,0:11,9/28/2022 10:25,3,0:27,"Campus: 666 Guardsman Way, Salt Lake City, UT 84102, USA",Campus,0:00,39
+UOFU4953,Core,28-Sep-22,0:04,9/28/2022 10:57,1,1:51,"Campus, Facilities: 1745 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,30
+UOFU4953,Core,28-Sep-22,0:19,9/28/2022 13:08,5,0:42,"Campus: Social and Behavioral Science, 380 1530 E, Salt Lake City, UT 84112, USA",Campus,0:00,35
+UOFU4953,Core,28-Sep-22,0:04,9/28/2022 13:56,1,1:48,"Campus, Facilities: 1745 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,25
+UOFU4953,Core,28-Sep-22,0:18,9/28/2022 16:02,5,13:25,"Campus: 666 Guardsman Way, Salt Lake City, UT 84102, USA",Campus,0:00,33
+UOFU4956,Academic District,28-Sep-22,0:01,9/28/2022 5:06,0,0:54,"Campus: Social and Behavioral Science, 380 1530 E, Salt Lake City, UT 84112, USA",Campus,0:00,21
+UOFU4956,Academic District,28-Sep-22,0:03,9/28/2022 6:04,1,1:31,"Campus: 1655 Campus Center Dr Rm 1120, Salt Lake City, UT 84112, USA",Campus,0:00,27
+UOFU4956,Academic District,28-Sep-22,0:03,9/28/2022 7:40,1,0:08,"food zone: 209 1300 E, Salt Lake City, UT 84102, USA",Customer Zone,0:00,30
+UOFU4956,Academic District,28-Sep-22,0:04,9/28/2022 7:53,1,0:48,"Campus: Social and Behavioral Science, 380 1530 E, Salt Lake City, UT 84112, USA",Campus,0:00,25
+UOFU4956,Academic District,28-Sep-22,0:03,9/28/2022 8:44,1,0:08,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,29
+UOFU4956,Academic District,28-Sep-22,0:03,9/28/2022 8:56,1,1:03,"Campus: Social and Behavioral Science, 380 1530 E, Salt Lake City, UT 84112, USA",Campus,0:00,27
+UOFU4956,Academic District,28-Sep-22,0:02,9/28/2022 10:02,1,0:03,"food zone: 209 1300 E, Salt Lake City, UT 84102, USA",Customer Zone,0:00,27
+UOFU4956,Academic District,28-Sep-22,0:07,9/28/2022 10:13,2,1:30,"Campus: 1768 Campus Center Dr, Salt Lake City, UT 84112, USA",Campus,0:00,34
+UOFU4956,Academic District,28-Sep-22,0:02,9/28/2022 11:46,1,1:19,"Campus: Social and Behavioral Science, 380 1530 E, Salt Lake City, UT 84112, USA",Campus,0:00,23
+UOFU4956,Academic District,28-Sep-22,0:07,9/28/2022 13:13,2,0:32,"Campus: Languages & Communication, Salt Lake City, UT 84112, USA",Campus,0:00,35
+UOFU4956,Academic District,28-Sep-22,0:07,9/28/2022 13:53,1,0:15,"Campus: Marriott Library, 295 1500 E, Salt Lake City, UT 84112, USA",Campus,0:06,23
+UOFU4956,Academic District,28-Sep-22,0:00,9/28/2022 14:09,0,1:49,"Campus: Social and Behavioral Science, 380 1530 E, Salt Lake City, UT 84112, USA",Campus,0:00,7
+UOFU4956,Academic District,28-Sep-22,0:01,9/28/2022 16:00,0,13:52,"Campus: U Social Work Building (EB), Salt Lake City, UT 84112, USA",Campus,0:00,17
+UOFU4970,Health Information,28-Sep-22,0:07,9/28/2022 10:18,2,0:11,"127 500 E, Salt Lake City, UT 84102, USA",,0:06,37
+UOFU4970,Health Information,28-Sep-22,0:09,9/28/2022 10:39,3,0:21,"Campus: 30 N 1900 E, Salt Lake City, UT 84132, Fifth floor 2B10, Salt Lake City, UT 84132, USA",Campus,0:00,39
+UOFU4970,Health Information,28-Sep-22,0:08,9/28/2022 11:09,3,0:02,"127 500 E, Salt Lake City, UT 84102, USA",,0:00,46
+UOFU4970,Health Information,28-Sep-22,0:03,9/28/2022 11:15,1,0:01,"613 400 S, Salt Lake City, UT 84102, USA",,0:00,26
+UOFU4970,Health Information,28-Sep-22,0:05,9/28/2022 11:22,2,22:48,"55 W 800 S, Salt Lake City, UT 84101, USA",,0:00,41
+UOFU4972,Radio pharmacy,28-Sep-22,0:22,9/28/2022 4:17,20,1:35,"Campus: 729 Arapeen Dr, Salt Lake City, UT 84108, USA",Campus,0:00,73
+UOFU4972,Radio pharmacy,28-Sep-22,0:07,9/28/2022 6:00,2,0:02,"Campus: 175 N Medical Dr, Salt Lake City, UT 84103, USA",Campus,0:00,32
+UOFU4972,Radio pharmacy,28-Sep-22,0:27,9/28/2022 6:30,11,0:11,"5121 S Cottonwood St, Murray, UT 84107, USA",,0:00,46
+UOFU4972,Radio pharmacy,28-Sep-22,0:20,9/28/2022 7:02,9,0:08,"3590 9000 S, West Jordan, UT 84088, USA",,0:00,50
+UOFU4972,Radio pharmacy,28-Sep-22,0:00,9/28/2022 7:12,0,0:04,"3580 9000 S, West Jordan, UT 84088, USA",,0:00,11
+UOFU4972,Radio pharmacy,28-Sep-22,0:51,9/28/2022 8:09,25,0:01,"Campus: 175 N Medical Dr, Salt Lake City, UT 84103, USA",Campus,0:00,71
+UOFU4972,Radio pharmacy,28-Sep-22,0:08,9/28/2022 8:19,2,0:05,"Campus: 729 Arapeen Dr, Salt Lake City, UT 84108, USA",Campus,0:00,40
+UOFU4972,Radio pharmacy,28-Sep-22,0:07,9/28/2022 8:31,2,0:05,"Campus: Hospital Generating Plant, Salt Lake City, UT 84132, USA",Campus,0:00,34
+UOFU4972,Radio pharmacy,28-Sep-22,0:08,9/28/2022 8:45,2,0:15,"Campus: 729 Arapeen Dr, Salt Lake City, UT 84108, USA",Campus,0:00,32
+UOFU4972,Radio pharmacy,28-Sep-22,0:08,9/28/2022 9:09,2,0:06,"Campus: 175 N Medical Dr, Salt Lake City, UT 84103, USA",Campus,0:00,34
+UOFU4972,Radio pharmacy,28-Sep-22,0:09,9/28/2022 9:25,2,3:27,"Campus: 729 Arapeen Dr, Salt Lake City, UT 84108, USA",Campus,0:00,32
+UOFU4972,Radio pharmacy,28-Sep-22,0:10,9/28/2022 13:03,2,0:03,"Campus: Hospital Generating Plant, Salt Lake City, UT 84132, USA",Campus,0:00,32
+UOFU4972,Radio pharmacy,28-Sep-22,0:08,9/28/2022 13:15,2,0:04,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,38
+UOFU4972,Radio pharmacy,28-Sep-22,0:09,9/28/2022 13:29,2,16:25,"Campus: 729 Arapeen Dr, Salt Lake City, UT 84108, USA",Campus,0:00,33
+UOFU4973,Hospital Courier,28-Sep-22,0:08,9/28/2022 7:03,1,0:34,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,32
+UOFU4973,Hospital Courier,28-Sep-22,0:18,9/28/2022 7:56,5,0:02,"Temporary Downtown Post Office: 30 W 900 S, Salt Lake City, UT 84101, USA",Customer Zone,0:00,37
+UOFU4973,Hospital Courier,28-Sep-22,0:08,9/28/2022 8:07,2,0:29,"BSB and Friends: 127 500 E, Salt Lake City, UT 84102, USA",Customer Zone,0:00,40
+UOFU4973,Hospital Courier,28-Sep-22,0:12,9/28/2022 8:49,1,0:22,"BSB and Friends: 535 E 100 S, Salt Lake City, UT 84102, USA",Customer Zone,0:00,30
+UOFU4973,Hospital Courier,28-Sep-22,0:01,9/28/2022 9:13,0,0:10,"BSB and Friends: 127 500 E, Salt Lake City, UT 84102, USA",Customer Zone,0:00,23
+UOFU4973,Hospital Courier,28-Sep-22,0:04,9/28/2022 9:27,1,0:04,"102 Tower: 102 S 200 E, Salt Lake City, UT 84111, USA",Customer Zone,0:00,27
+UOFU4973,Hospital Courier,28-Sep-22,0:01,9/28/2022 9:33,0,0:16,"250 Tower: 250b E 200 S, Salt Lake City, UT 84111, USA",Customer Zone,0:00,17
+UOFU4973,Hospital Courier,28-Sep-22,0:06,9/28/2022 9:55,1,0:17,"370 9th Ave, Salt Lake City, UT 84103, USA",,0:00,25
+UOFU4973,Hospital Courier,28-Sep-22,0:09,9/28/2022 10:22,2,0:04,"450 S 900 E, Salt Lake City, UT 84102, USA",,0:00,34
+UOFU4973,Hospital Courier,28-Sep-22,0:14,9/28/2022 10:41,4,0:27,"Uni Home and Autism: 240 E Morris Ave, Salt Lake City, UT 84115, USA",Customer Zone,0:00,34
+UOFU4973,Hospital Courier,28-Sep-22,0:26,9/28/2022 11:35,8,0:16,"6616 900 E, Salt Lake City, UT 84121, USA",,0:00,38
+UOFU4973,Hospital Courier,28-Sep-22,0:01,9/28/2022 11:53,0,0:06,"American Red Cross: 830 E Winchester St, Murray, UT 84107, USA",Customer Zone,0:00,9
+UOFU4973,Hospital Courier,28-Sep-22,0:20,9/28/2022 12:20,13,0:09,"Campus: 30 2000 E, Salt Lake City, UT 84112, USA",Campus,0:00,75
+UOFU4973,Hospital Courier,28-Sep-22,0:02,9/28/2022 12:32,0,0:30,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,29
+UOFU4973,Hospital Courier,28-Sep-22,0:08,9/28/2022 13:11,2,0:01,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,32
+UOFU4973,Hospital Courier,28-Sep-22,0:04,9/28/2022 13:17,1,1:21,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,39
+UOFU4973,Hospital Courier,28-Sep-22,0:02,9/28/2022 14:42,1,15:21,"Campus: Mario Capecchi Dr / 1900 E (NB), Salt Lake City, UT 84132, USA",Campus,0:00,31
+UOFU4974,Hospital Courier,28-Sep-22,0:05,9/28/2022 6:06,1,2:20,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,31
+UOFU4974,Hospital Courier,28-Sep-22,0:09,9/28/2022 8:36,3,1:56,"BSB and Friends: 530 E 100 S, Salt Lake City, UT 84102, USA",Customer Zone,0:00,35
+UOFU4974,Hospital Courier,28-Sep-22,0:10,9/28/2022 10:43,3,0:32,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,39
+UOFU4974,Hospital Courier,28-Sep-22,0:06,9/28/2022 11:22,1,0:02,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,31
+UOFU4974,Hospital Courier,28-Sep-22,0:04,9/28/2022 11:29,1,0:03,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,34
+UOFU4974,Hospital Courier,28-Sep-22,0:05,9/28/2022 11:38,1,0:11,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,37
+UOFU4974,Hospital Courier,28-Sep-22,0:26,9/28/2022 12:16,14,1:45,"3200 W 2555 S, West Valley City, UT 84119, USA",,0:00,75
+UOFU4974,Hospital Courier,28-Sep-22,0:20,9/28/2022 14:23,14,0:45,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,75
+UOFU4974,Hospital Courier,28-Sep-22,0:00,9/28/2022 15:09,0,0:40,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,0
+UOFU4974,Hospital Courier,28-Sep-22,0:04,9/28/2022 15:54,1,14:28,"Campus: 12 Medical Plaza, Salt Lake City, UT 84112, USA",Campus,0:00,25
+UOFU5004,UNI,28-Sep-22,0:33,9/28/2022 8:09,14,0:05,"Campus, Facilities, Fleet Building: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,76
+UOFU5004,UNI,28-Sep-22,0:00,9/28/2022 8:14,0,2:27,"Campus, Facilities, Fleet Building: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,0
+UOFU5004,UNI,28-Sep-22,0:00,9/28/2022 10:43,0,0:29,"Campus, Facilities, Fleet Building: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,0
+UOFU5004,UNI,28-Sep-22,0:03,9/28/2022 11:16,0,1:24,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,8
+UOFU5004,UNI,28-Sep-22,0:20,9/28/2022 13:01,13,0:05,"4797 Huntly Dr, Murray, UT 84107, USA",,0:05,91
+UOFU5004,UNI,28-Sep-22,0:02,9/28/2022 13:09,0,19:25,"19W 5th Ave, Murray, UT 84107, USA",,0:00,26
+UOFU5057,Facilities engineering,28-Sep-22,0:23,9/28/2022 9:02,7,0:49,"1766 W Redwood Depot Lane, Salt Lake City, UT 84104, USA",,0:00,42
+UOFU5057,Facilities engineering,28-Sep-22,0:03,9/28/2022 9:55,1,0:04,"1670 S Redwood Rd, Salt Lake City, UT 84104, USA",,0:00,43
+UOFU5057,Facilities engineering,28-Sep-22,0:30,9/28/2022 10:29,23,0:04,"5126 W Daybreak Pkwy, South Jordan, UT 84009, USA",,0:00,78
+UOFU5057,Facilities engineering,28-Sep-22,0:26,9/28/2022 11:00,21,0:34,"1766 W Redwood Depot Lane, Salt Lake City, UT 84104, USA",,0:00,70
+UOFU5057,Facilities engineering,28-Sep-22,0:03,9/28/2022 11:38,2,0:04,"1222 W 400 S, Salt Lake City, UT 84104, USA",,0:00,47
+UOFU5057,Facilities engineering,28-Sep-22,0:06,9/28/2022 11:50,2,1:57,"1810 West Redwood Depot Lane #1, Salt Lake City, UT 84104, USA",,0:00,47
+UOFU5057,Facilities engineering,28-Sep-22,0:04,9/28/2022 13:52,1,0:00,"423 S Redwood Rd, Salt Lake City, UT 84104, USA",,0:00,42
+UOFU5057,Facilities engineering,28-Sep-22,0:21,9/28/2022 14:14,6,0:00,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,39
+UOFU5057,Facilities engineering,28-Sep-22,0:00,9/28/2022 14:15,0,0:07,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,0
+UOFU5057,Facilities engineering,28-Sep-22,0:02,9/28/2022 14:24,0,43:48:00,"Campus: 10 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,21
+UOFU5058,Facilities engineering,28-Sep-22,0:20,9/28/2022 11:08,9,0:20,"1525 2100 S, Salt Lake City, UT 84119, USA",,0:00,71
+UOFU5058,Facilities engineering,28-Sep-22,0:20,9/28/2022 11:50,12,21:05,"Campus: 10 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,79
+UOFU5081,Science District,28-Sep-22,0:01,9/28/2022 8:10,0,0:20,"Campus: Alice Sheets Marriott Center for Dance, Salt Lake City, UT 84112, USA",Campus,0:00,15
+UOFU5081,Science District,28-Sep-22,0:02,9/28/2022 8:33,0,0:14,"Campus: 380 S 1530 E Beh S 502, Salt Lake City, UT 84112, USA",Campus,0:00,12
+UOFU5081,Science District,28-Sep-22,0:07,9/28/2022 8:55,1,1:20,"Campus, Facilities: 1721 Campus Center Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,27
+UOFU5081,Science District,28-Sep-22,0:04,9/28/2022 10:20,1,0:09,"Campus: 380 S 1530 E Beh S 502, Salt Lake City, UT 84112, USA",Campus,0:00,29
+UOFU5081,Science District,28-Sep-22,0:03,9/28/2022 10:34,0,0:25,"Campus: Biology, Salt Lake City, UT 84112, USA",Campus,0:00,11
+UOFU5081,Science District,28-Sep-22,0:02,9/28/2022 11:01,0,0:10,"Campus: 380 S 1530 E Beh S 502, Salt Lake City, UT 84112, USA",Campus,0:00,17
+UOFU5081,Science District,28-Sep-22,0:01,9/28/2022 11:14,0,0:45,"Campus: Alice Sheets Marriott Center for Dance, Salt Lake City, UT 84112, USA",Campus,0:00,15
+UOFU5081,Science District,28-Sep-22,0:10,9/28/2022 12:10,2,0:34,"Campus: Office Bldg 44, Salt Lake City, UT 84112, USA",Campus,0:00,31
+UOFU5081,Science District,28-Sep-22,0:03,9/28/2022 12:48,0,0:08,"Campus: Einar Nielsen Fieldhouse, Salt Lake City, UT 84112, USA",Campus,0:00,11
+UOFU5081,Science District,28-Sep-22,0:11,9/28/2022 13:08,1,0:10,"Campus: 380 S 1530 E Beh S 502, Salt Lake City, UT 84112, USA",Campus,0:00,26
+UOFU5081,Science District,28-Sep-22,0:04,9/28/2022 13:23,0,0:58,"Campus: 126, Salt Lake City, UT 84112, USA",Campus,0:00,24
+UOFU5081,Science District,28-Sep-22,0:02,9/28/2022 14:24,0,0:01,"Campus: Einar Nielsen Fieldhouse, Salt Lake City, UT 84112, USA",Campus,0:00,11
+UOFU5081,Science District,28-Sep-22,0:01,9/28/2022 14:27,0,0:31,"Campus: Biology, Salt Lake City, UT 84112, USA",Campus,0:00,14
+UOFU5081,Science District,28-Sep-22,0:07,9/28/2022 15:05,1,0:14,"Campus: 315 1400 E, Salt Lake City, UT 84112, USA",Campus,0:00,26
+UOFU5081,Science District,28-Sep-22,0:07,9/28/2022 15:28,2,16:13,"Campus: 380 S 1530 E Beh S 502, Salt Lake City, UT 84112, USA",Campus,0:00,27
+UOFU5097,Presidents District,28-Sep-22,0:07,9/28/2022 8:29,1,0:28,"Campus: Student Services, Salt Lake City, UT 84112, USA",Campus,0:00,15
+UOFU5097,Presidents District,28-Sep-22,0:05,9/28/2022 9:04,1,1:11,"Campus: 1379-1347 Presidents' Cir, Salt Lake City, UT 84112, USA",Campus,0:00,16
+UOFU5097,Presidents District,28-Sep-22,0:02,9/28/2022 10:18,0,0:07,"food zone: 209 1300 E, Salt Lake City, UT 84102, USA",Customer Zone,0:00,25
+UOFU5097,Presidents District,28-Sep-22,0:04,9/28/2022 10:29,0,2:19,"Campus: Physics Bldg, Salt Lake City, UT 84112, USA",Campus,0:00,18
+UOFU5097,Presidents District,28-Sep-22,0:04,9/28/2022 12:53,0,0:16,"food zone: 209 1300 E, Salt Lake City, UT 84102, USA",Customer Zone,0:01,18
+UOFU5097,Presidents District,28-Sep-22,0:05,9/28/2022 13:15,1,0:54,"Campus: 1379-1347 Presidents' Cir, Salt Lake City, UT 84112, USA",Campus,0:00,24
+UOFU5097,Presidents District,28-Sep-22,0:01,9/28/2022 14:11,0,0:06,"Campus: Intermountain Network Scientific CC, Salt Lake City, UT 84112, USA",Campus,0:00,11
+UOFU5097,Presidents District,28-Sep-22,0:02,9/28/2022 14:20,0,18:48,"Campus: Physics Bldg, Salt Lake City, UT 84112, USA",Campus,0:00,9
+UOFU5099,Engineering District,28-Sep-22,0:01,9/28/2022 7:37,0,1:38,"Campus: 36 S Wasatch Dr, Salt Lake City, UT 84112, USA",Campus,0:00,18
+UOFU5099,Engineering District,28-Sep-22,0:03,9/28/2022 9:18,0,0:21,"Campus: 50 Central Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:00,23
+UOFU5099,Engineering District,28-Sep-22,0:02,9/28/2022 9:42,0,0:24,"Campus: 36 S Wasatch Dr, Salt Lake City, UT 84112, USA",Campus,0:00,26
+UOFU5099,Engineering District,28-Sep-22,0:01,9/28/2022 10:08,0,0:35,"Campus: 128 Central Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:00,18
+UOFU5099,Engineering District,28-Sep-22,0:07,9/28/2022 10:51,2,0:04,"food zone: 209 S 1300 E, Salt Lake City, UT 84102, USA",Customer Zone,0:00,34
+UOFU5099,Engineering District,28-Sep-22,0:06,9/28/2022 11:03,1,0:47,"Campus: 50 Central Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:00,32
+UOFU5099,Engineering District,28-Sep-22,0:03,9/28/2022 11:54,0,0:49,"Campus: 36 S Wasatch Dr, Salt Lake City, UT 84112, USA",Campus,0:00,17
+UOFU5099,Engineering District,28-Sep-22,0:04,9/28/2022 12:48,1,0:13,"Campus: 195 Central Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:00,14
+UOFU5099,Engineering District,28-Sep-22,0:05,9/28/2022 13:08,1,0:10,"Campus: 101-199 S 1452 E, Salt Lake City, UT 84112, USA",Campus,0:00,34
+UOFU5099,Engineering District,28-Sep-22,0:05,9/28/2022 13:23,1,0:46,"Campus: Unnamed Road, Salt Lake City, UT 84112, USA",Campus,0:00,26
+UOFU5099,Engineering District,28-Sep-22,0:01,9/28/2022 14:11,0,0:06,"Campus: 36 S Wasatch Dr, Salt Lake City, UT 84112, USA",Campus,0:00,15
+UOFU5099,Engineering District,28-Sep-22,0:01,9/28/2022 14:18,0,0:04,"Campus: Hedco, Salt Lake City, UT 84112, USA",Campus,0:00,17
+UOFU5099,Engineering District,28-Sep-22,0:07,9/28/2022 14:30,1,0:12,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,29
+UOFU5099,Engineering District,28-Sep-22,0:06,9/28/2022 14:49,1,21:56,"Campus: Unnamed Road, Salt Lake City, UT 84112, USA",Campus,0:00,31
+UOFU5100,Presidents District,28-Sep-22,0:04,9/28/2022 8:24,0,0:40,"Campus: 201 Presidents' Cir, Salt Lake City, UT 84112, USA",Campus,0:00,14
+UOFU5100,Presidents District,28-Sep-22,0:01,9/28/2022 9:06,0,1:15,"Campus: 347, Salt Lake City, UT 84112, USA",Campus,0:00,7
+UOFU5100,Presidents District,28-Sep-22,0:01,9/28/2022 10:23,0,0:02,"Campus: 201 1455 E, Salt Lake City, UT 84112, USA",Campus,0:00,8
+UOFU5100,Presidents District,28-Sep-22,0:00,9/28/2022 10:27,0,0:14,"Campus: Student Services, Salt Lake City, UT 84112, USA",Campus,0:00,1
+UOFU5100,Presidents District,28-Sep-22,0:10,9/28/2022 10:52,1,0:05,"food zone: 221 1300 E, Salt Lake City, UT 84102, USA",Customer Zone,0:00,21
+UOFU5100,Presidents District,28-Sep-22,0:04,9/28/2022 11:02,0,21:29,"Campus: Physics Bldg, Salt Lake City, UT 84112, USA",Campus,0:00,18
+UOFU5102,Hospital Courier,28-Sep-22,0:07,9/28/2022 6:47,1,1:01,"Campus: 30 N 1900 E, Salt Lake City, UT 84132, Fifth floor 2B10, Salt Lake City, UT 84132, USA",Campus,0:00,30
+UOFU5102,Hospital Courier,28-Sep-22,0:05,9/28/2022 7:54,1,0:05,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,35
+UOFU5102,Hospital Courier,28-Sep-22,0:03,9/28/2022 8:04,1,0:08,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,34
+UOFU5102,Hospital Courier,28-Sep-22,0:09,9/28/2022 8:22,1,0:06,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,39
+UOFU5102,Hospital Courier,28-Sep-22,0:07,9/28/2022 8:36,1,0:04,"Foothill Post Office: 2255 E Sunnyside Ave, Salt Lake City, UT 84108, USA",Customer Zone,0:00,41
+UOFU5102,Hospital Courier,28-Sep-22,0:08,9/28/2022 8:49,2,0:08,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,33
+UOFU5102,Hospital Courier,28-Sep-22,0:00,9/28/2022 8:57,0,0:17,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,0
+UOFU5102,Hospital Courier,28-Sep-22,0:32,9/28/2022 9:48,17,0:17,"Intermountain Medical Center: 5067 Cottonwood St, Murray, UT 84107, USA",Customer Zone,0:00,80
+UOFU5102,Hospital Courier,28-Sep-22,0:27,9/28/2022 10:32,12,0:07,"Campus: 1821 UT-282, Salt Lake City, UT 84132, USA",Campus,0:00,68
+UOFU5102,Hospital Courier,28-Sep-22,0:06,9/28/2022 10:47,1,0:24,"Campus: 30 N 1900 E, Salt Lake City, UT 84132, Fifth floor 2B10, Salt Lake City, UT 84132, USA",Campus,0:00,34
+UOFU5102,Hospital Courier,28-Sep-22,0:01,9/28/2022 11:13,0,0:01,"Campus: 65 Mario Capecchi Dr, Salt Lake City, UT 84132, USA",Campus,0:00,16
+UOFU5102,Hospital Courier,28-Sep-22,0:18,9/28/2022 11:33,5,0:03,"Sugarhouse Health Center: 1280 Stringham Ave, Salt Lake City, UT 84106, USA",Customer Zone,0:00,41
+UOFU5102,Hospital Courier,28-Sep-22,0:25,9/28/2022 12:01,20,0:06,"Redstone Health Center: 1734 Redstone Ave, Park City, UT 84098, USA",Customer Zone,0:00,72
+UOFU5102,Hospital Courier,28-Sep-22,0:31,9/28/2022 12:40,22,2:07,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,71
+UOFU5102,Hospital Courier,28-Sep-22,0:08,9/28/2022 14:55,1,0:06,"Campus: 1950 Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:00,26
+UOFU5102,Hospital Courier,28-Sep-22,0:08,9/28/2022 15:10,2,0:04,"Campus: 423 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,31
+UOFU5102,Hospital Courier,28-Sep-22,0:04,9/28/2022 15:20,1,0:30,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,29
+UOFU5102,Hospital Courier,28-Sep-22,0:02,9/28/2022 15:52,1,15:05,"Campus: Eccles Broadcast Center, Salt Lake City, UT 84112, USA",Campus,0:00,33
+UOFU5103,Hospital Courier,28-Sep-22,0:04,9/28/2022 6:28,1,1:16,"Campus: 30 N 1900 E, Salt Lake City, UT 84132, Fifth floor 2B10, Salt Lake City, UT 84132, USA",Campus,0:00,29
+UOFU5103,Hospital Courier,28-Sep-22,0:06,9/28/2022 7:51,2,0:08,"Campus: 675 Arapeen Dr, Salt Lake City, UT 84108, USA",Campus,0:00,32
+UOFU5103,Hospital Courier,28-Sep-22,0:00,9/28/2022 8:00,0,0:02,"Campus: Unnamed Road, Salt Lake City, UT 84108, USA",Campus,0:00,15
+UOFU5103,Hospital Courier,28-Sep-22,0:06,9/28/2022 8:09,2,0:18,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,29
+UOFU5103,Hospital Courier,28-Sep-22,0:00,9/28/2022 8:28,0,0:55,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,0
+UOFU5103,Hospital Courier,28-Sep-22,0:05,9/28/2022 9:29,1,0:16,"Campus, Madsen Clinic: 555 Foothill Dr, Salt Lake City, UT 84112, USA","Campus, Customer Zone",0:00,33
+UOFU5103,Hospital Courier,28-Sep-22,0:04,9/28/2022 9:50,1,0:04,"Campus: 105 N Medical Dr, Salt Lake City, UT 84113, USA",Campus,0:00,37
+UOFU5103,Hospital Courier,28-Sep-22,0:01,9/28/2022 9:56,0,0:05,"Campus: 81 Mario Capecchi Dr, Salt Lake City, UT 84112, USA",Campus,0:00,21
+UOFU5103,Hospital Courier,28-Sep-22,0:04,9/28/2022 10:06,0,0:03,"Campus: Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:00,22
+UOFU5103,Hospital Courier,28-Sep-22,0:01,9/28/2022 10:10,0,0:30,"Campus: Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:00,0
+UOFU5103,Hospital Courier,28-Sep-22,0:03,9/28/2022 10:43,0,0:00,"Campus: 1857-1853, UT-282, Salt Lake City, UT 84132, USA",Campus,0:00,17
+UOFU5103,Hospital Courier,28-Sep-22,0:04,9/28/2022 10:49,1,0:03,"Campus: 295 Chipeta Way, Salt Lake City, UT 84108, USA",Campus,0:00,26
+UOFU5103,Hospital Courier,28-Sep-22,0:02,9/28/2022 10:55,1,0:03,"Campus: 530 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,31
+UOFU5103,Hospital Courier,28-Sep-22,0:01,9/28/2022 11:00,0,0:20,"Campus: Orthopaedic Center, 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,16
+UOFU5103,Hospital Courier,28-Sep-22,0:03,9/28/2022 11:24,1,0:05,"Campus: 501 Chipeta Way, Salt Lake City, UT 84108, USA",Campus,0:00,32
+UOFU5103,Hospital Courier,28-Sep-22,0:01,9/28/2022 11:32,0,0:03,"Campus: 615 Arapeen Dr, Salt Lake City, UT 84108, USA",Campus,0:00,30
+UOFU5103,Hospital Courier,28-Sep-22,0:00,9/28/2022 11:36,0,0:05,"Campus: 585 Arapeen Dr, Salt Lake City, UT 84108, USA",Campus,0:00,9
+UOFU5103,Hospital Courier,28-Sep-22,0:03,9/28/2022 11:45,1,0:00,"Campus, Madsen Clinic: 555 Foothill Dr, Salt Lake City, UT 84112, USA","Campus, Customer Zone",0:00,32
+UOFU5103,Hospital Courier,28-Sep-22,0:04,9/28/2022 11:50,1,0:55,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,39
+UOFU5103,Hospital Courier,28-Sep-22,0:06,9/28/2022 12:52,2,0:15,"Campus: 729 Arapeen Dr, Salt Lake City, UT 84108, USA",Campus,0:00,30
+UOFU5103,Hospital Courier,28-Sep-22,0:00,9/28/2022 13:08,0,0:00,"Campus: 729 Arapeen Dr, Salt Lake City, UT 84108, USA",Campus,0:00,15
+UOFU5103,Hospital Courier,28-Sep-22,0:02,9/28/2022 13:11,1,0:03,"Campus: 417 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,33
+UOFU5103,Hospital Courier,28-Sep-22,0:02,9/28/2022 13:16,0,0:02,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,31
+UOFU5103,Hospital Courier,28-Sep-22,0:02,9/28/2022 13:21,1,0:05,"Campus: 375 Chipeta Way A, Salt Lake City, UT 84108, USA",Campus,0:00,33
+UOFU5103,Hospital Courier,28-Sep-22,0:04,9/28/2022 13:32,1,0:03,"Campus: Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:00,30
+UOFU5103,Hospital Courier,28-Sep-22,0:02,9/28/2022 13:38,1,0:02,"Campus: Radiobiology Lab, Salt Lake City, UT 84132, USA",Campus,0:00,27
+UOFU5103,Hospital Courier,28-Sep-22,0:02,9/28/2022 13:43,1,1:44,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,29
+UOFU5103,Hospital Courier,28-Sep-22,0:06,9/28/2022 15:34,1,15:03,"Campus: Mario Capecchi Dr / 1900 E (NB), Salt Lake City, UT 84132, USA",Campus,0:00,27
+UOFU5113 Alberto,UEN,28-Sep-22,0:22,9/28/2022 0:28,15,5:40,"6563 Purple Sage Dr, West Jordan, UT 84081, USA",,0:00,75
+UOFU5113 Alberto,UEN,28-Sep-22,0:01,9/28/2022 6:10,0,0:19,"6553 S 4940 W, West Jordan, UT 84081, USA",,0:00,1
+UOFU5113 Alberto,UEN,28-Sep-22,0:00,9/28/2022 6:30,0,13:00,"6563 S 4940 W, West Jordan, UT 84081, USA",,0:00,2
+UOFU5113 Alberto,UEN,28-Sep-22,0:29,9/28/2022 20:01,26,0:44,"127 N 500 E, Lehi, UT 84043, USA",,0:02,75
+UOFU5113 Alberto,UEN,28-Sep-22,0:25,9/28/2022 21:11,17,1:23,"10310 S Redwood Rd, South Jordan, UT 84095, USA",,0:00,75
+UOFU5113 Alberto,UEN,28-Sep-22,0:14,9/28/2022 22:50,8,18:04,"6553 S 4940 W, West Jordan, UT 84081, USA",,0:00,63
+UOFU5119,Carpenter shop,28-Sep-22,0:01,9/28/2022 6:53,0,0:34,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,0
+UOFU5119,Carpenter shop,28-Sep-22,0:12,9/28/2022 7:40,3,0:08,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,34
+UOFU5119,Carpenter shop,28-Sep-22,0:02,9/28/2022 7:51,1,5:12,"Campus: 392 1530 E, Salt Lake City, UT 84112, USA",Campus,0:00,32
+UOFU5119,Carpenter shop,28-Sep-22,0:08,9/28/2022 13:12,2,1:02,"Campus: 288 1455 E, Salt Lake City, UT 84116, USA",Campus,0:00,37
+UOFU5119,Carpenter shop,28-Sep-22,0:06,9/28/2022 14:22,2,1:01,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,34
+UOFU5119,Carpenter shop,28-Sep-22,0:03,9/28/2022 15:26,0,15:35,"Campus: 434 Mario Capecchi Dr, Salt Lake City, UT 84112, USA",Campus,0:00,27
+UOFU5120,Carpenter shop,28-Sep-22,0:01,9/28/2022 6:08,1,1:43,"Campus: 1575 University Blvd, Salt Lake City, UT 84112, USA",Campus,0:00,35
+UOFU5120,Carpenter shop,28-Sep-22,0:07,9/28/2022 7:58,1,0:15,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,35
+UOFU5120,Carpenter shop,28-Sep-22,0:02,9/28/2022 8:17,1,2:19,"Campus: 1575 University Blvd, Salt Lake City, UT 84112, USA",Campus,0:00,37
+UOFU5120,Carpenter shop,28-Sep-22,0:01,9/28/2022 10:38,0,0:11,"Campus: 1575 University Blvd, Salt Lake City, UT 84112, USA",Campus,0:00,7
+UOFU5120,Carpenter shop,28-Sep-22,0:04,9/28/2022 10:54,1,19:05,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,37
+UOFU5121,Construction,28-Sep-22,0:09,9/28/2022 6:11,2,4:53,"Campus: 530 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,33
+UOFU5121,Construction,28-Sep-22,0:07,9/28/2022 11:12,2,0:10,"Campus: E. Campus Chiller, Salt Lake City, UT 84112, USA",Campus,0:00,32
+UOFU5121,Construction,28-Sep-22,0:01,9/28/2022 11:23,0,0:20,"Campus: Emma Eccles Jones Medical Research Building, Salt Lake City, UT 84132, USA",Campus,0:00,16
+UOFU5121,Construction,28-Sep-22,0:02,9/28/2022 11:45,0,1:24,"Campus: 30 2000 E, Salt Lake City, UT 84112, USA",Campus,0:00,19
+UOFU5121,Construction,28-Sep-22,0:07,9/28/2022 13:18,1,0:10,"Campus: 530 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,31
+UOFU5121,Construction,28-Sep-22,0:07,9/28/2022 13:36,2,16:25,"Campus: 30 2000 E, Salt Lake City, UT 84112, USA",Campus,0:00,26
+UOFU5132,Radio pharmacy,28-Sep-22,0:06,9/28/2022 12:18,2,0:04,"Campus: Hospital Generating Plant, Salt Lake City, UT 84132, USA",Campus,0:00,33
+UOFU5132,Radio pharmacy,28-Sep-22,0:05,9/28/2022 12:28,1,0:06,"Campus: 175 N Medical Dr, Salt Lake City, UT 84103, USA",Campus,0:00,21
+UOFU5132,Radio pharmacy,28-Sep-22,0:08,9/28/2022 12:43,2,3:37,"Campus: 729 Arapeen Dr, Salt Lake City, UT 84108, USA",Campus,0:00,30
+UOFU5132,Radio pharmacy,28-Sep-22,0:06,9/28/2022 16:27,2,0:03,"Campus: Hospital Generating Plant, Salt Lake City, UT 84132, USA",Campus,0:00,31
+UOFU5132,Radio pharmacy,28-Sep-22,0:08,9/28/2022 16:39,2,17:24,"Campus: 729 Arapeen Dr, Salt Lake City, UT 84108, USA",Campus,0:00,32
+UOFU5140,Construction,28-Sep-22,0:06,9/28/2022 8:46,2,0:15,"Campus: 215 Central Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:00,35
+UOFU5140,Construction,28-Sep-22,0:05,9/28/2022 9:06,1,3:38,"Campus, Facilities: University South Campus Station, Salt Lake City, UT 84148, USA","Campus, Office Zone",0:00,33
+UOFU5140,Construction,28-Sep-22,0:15,9/28/2022 13:00,3,0:57,"Campus: 1514 Military Way, Salt Lake City, UT 84103, USA",Campus,0:00,45
+UOFU5140,Construction,28-Sep-22,0:07,9/28/2022 14:05,1,0:05,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:05,34
+UOFU5140,Construction,28-Sep-22,0:03,9/28/2022 14:14,1,0:56,"Campus: 1575 E 500 S, Salt Lake City, UT 84112, USA",Campus,0:00,33
+UOFU5140,Construction,28-Sep-22,0:00,9/28/2022 15:11,0,0:15,"Campus: 1575 E 500 S, Salt Lake City, UT 84112, USA",Campus,0:00,7
+UOFU5140,Construction,28-Sep-22,0:02,9/28/2022 15:29,0,0:09,"Campus: 200 1500 E, Salt Lake City, UT 84112, USA",Campus,0:00,23
+UOFU5140,Construction,28-Sep-22,0:04,9/28/2022 15:44,1,16:12,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,31
+UOFU5141,Construction,28-Sep-22,0:01,9/28/2022 10:20,0,0:02,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,25
+UOFU5141,Construction,28-Sep-22,0:05,9/28/2022 10:28,1,0:06,"Campus: 520 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,42
+UOFU5141,Construction,28-Sep-22,0:00,9/28/2022 10:35,0,0:02,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,16
+UOFU5141,Construction,28-Sep-22,0:03,9/28/2022 10:41,0,0:09,"Campus: Orthopaedic Center, Salt Lake City, UT 84108, USA",Campus,0:00,12
+UOFU5141,Construction,28-Sep-22,0:01,9/28/2022 10:51,0,0:17,"Campus: 530 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,12
+UOFU5141,Construction,28-Sep-22,0:06,9/28/2022 11:15,2,0:01,"Campus: 30 2000 E, Salt Lake City, UT 84112, USA",Campus,0:00,34
+UOFU5141,Construction,28-Sep-22,0:01,9/28/2022 11:18,0,0:05,"Campus: 62 S 2030 E, Salt Lake City, UT 84132, USA",Campus,0:05,30
+UOFU5141,Construction,28-Sep-22,0:00,9/28/2022 11:24,0,1:16,"Campus: 62 S 2030 E, Salt Lake City, UT 84132, USA",Campus,0:00,1
+UOFU5141,Construction,28-Sep-22,0:09,9/28/2022 12:51,2,0:00,"Campus: 30 2000 E, Salt Lake City, UT 84112, USA",Campus,0:00,42
+UOFU5141,Construction,28-Sep-22,0:06,9/28/2022 12:58,1,22:54,"Campus, Facilities: University South Campus Station, Salt Lake City, UT 84148, USA","Campus, Office Zone",0:00,38
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:11,9/28/2022 6:13,2,0:04,"Campus, Facilities: 1721 Campus Center Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:04,31
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:09,9/28/2022 6:26,1,0:15,"Campus: 50 Central Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:15,35
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:02,9/28/2022 6:45,0,0:03,"Campus: Merrill Engineering, 50 Central Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:03,12
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:05,9/28/2022 6:54,0,0:02,"Campus: 50 Central Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:02,6
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:37,9/28/2022 7:34,6,0:04,"Campus: 131 Foothill Dr, Salt Lake City, UT 84113, USA",Campus,0:04,43
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:07,9/28/2022 7:46,1,0:02,"Campus: Building 215, Salt Lake City, UT 84102, USA",Campus,0:02,32
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:01,9/28/2022 7:50,0,0:14,"Campus: Building 215, Salt Lake City, UT 84102, USA",Campus,0:00,8
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:10,9/28/2022 8:15,1,0:04,"Campus: Building 215, Salt Lake City, UT 84102, USA",Campus,0:00,22
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:02,9/28/2022 8:23,0,0:08,"Campus: Building 215, Salt Lake City, UT 84102, USA",Campus,0:08,1
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:08,9/28/2022 8:40,2,0:05,"Campus: 50 Central Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:05,37
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:12,9/28/2022 8:58,2,0:04,"Campus: 1375 Presidents' Cir, Salt Lake City, UT 84112, USA",Campus,0:04,35
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:07,9/28/2022 9:11,1,0:12,"Campus: 332 1400 E, Salt Lake City, UT 84112, USA",Campus,0:12,24
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:03,9/28/2022 9:27,1,0:04,"Campus: 400 University St, Salt Lake City, UT 84108, USA",Campus,0:04,24
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:19,9/28/2022 9:51,4,0:02,"Campus: Building 215, Salt Lake City, UT 84102, USA",Campus,0:00,40
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:21,9/28/2022 10:15,4,0:09,"Campus: Building 215, Salt Lake City, UT 84102, USA",Campus,0:01,38
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:08,9/28/2022 10:33,1,0:09,"Campus: 623 Guardsman Way, Salt Lake City, UT 84108, USA",Campus,0:09,24
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:06,9/28/2022 10:49,1,0:06,"food zone: 209 1300 E, Salt Lake City, UT 84102, USA",Customer Zone,0:00,29
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:06,9/28/2022 11:03,1,0:13,"Campus: 125 Fort Douglas Blvd, Salt Lake City, UT 84113, USA",Campus,0:11,32
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:04,9/28/2022 11:21,1,0:04,"Campus: 1465 100 S, Salt Lake City, UT 84112, USA",Campus,0:00,37
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:13,9/28/2022 11:40,3,0:40,"Campus: Building 215, Salt Lake City, UT 84102, USA",Campus,0:00,33
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:05,9/28/2022 12:26,1,0:05,"Campus: 1800 Research Rd, Salt Lake City, UT 84113, USA",Campus,0:05,29
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:07,9/28/2022 12:38,1,0:14,"Campus: 72 Central Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:14,29
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:07,9/28/2022 13:00,1,0:10,"Campus: Annex General Office, 1901 S Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:10,27
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:05,9/28/2022 13:16,1,0:10,"Campus: 257 1400 E, Salt Lake City, UT 84112, USA",Campus,0:10,27
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:07,9/28/2022 13:35,1,0:23,"Campus: Building 215, Salt Lake City, UT 84102, USA",Campus,0:00,25
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:08,9/28/2022 14:07,1,0:03,"Campus: 220 Chase St, Salt Lake City, UT 84113, USA",Campus,0:03,30
+UOFU5182,Commuter Services Maintenance,28-Sep-22,0:05,9/28/2022 14:16,1,15:41,"Campus: Building 215, Salt Lake City, UT 84102, USA",Campus,0:02,34
+UOFU5183,Commuter services enforcement,28-Sep-22,0:11,9/28/2022 8:19,1,0:04,"Campus: 390 1530 E, Salt Lake City, UT 84112, USA",Campus,0:04,31
+UOFU5183,Commuter services enforcement,28-Sep-22,0:01,9/28/2022 8:25,0,0:04,"Campus: 1575 University Blvd, Salt Lake City, UT 84112, USA",Campus,0:04,9
+UOFU5183,Commuter services enforcement,28-Sep-22,0:16,9/28/2022 8:46,1,0:12,"Campus: University, of, Salt Lake City, UT 84112, USA",Campus,0:06,21
+UOFU5183,Commuter services enforcement,28-Sep-22,0:01,9/28/2022 8:59,0,0:02,"Campus: Q562+WW Salt Lake City, UT, USA",Campus,0:02,8
+UOFU5183,Commuter services enforcement,28-Sep-22,0:08,9/28/2022 9:11,0,0:05,"Campus: 200 1500 E, Salt Lake City, UT 84112, USA",Campus,0:05,7
+UOFU5183,Commuter services enforcement,28-Sep-22,0:01,9/28/2022 9:19,0,0:08,"Campus: Office Bldg 44, Salt Lake City, UT 84112, USA",Campus,0:08,4
+UOFU5183,Commuter services enforcement,28-Sep-22,0:03,9/28/2022 9:30,0,0:04,"Campus: 100 1500 E, Salt Lake City, UT 84112, USA",Campus,0:04,4
+UOFU5183,Commuter services enforcement,28-Sep-22,0:00,9/28/2022 9:35,0,0:04,"Campus: 100 1500 E, Salt Lake City, UT 84112, USA",Campus,0:04,1
+UOFU5183,Commuter services enforcement,28-Sep-22,0:00,9/28/2022 9:40,0,0:19,"Campus: 100 1500 E, Salt Lake City, UT 84112, USA",Campus,0:19,5
+UOFU5183,Commuter services enforcement,28-Sep-22,0:43,9/28/2022 10:42,4,0:06,"Campus: Stadium Station, Salt Lake City, UT 84102, USA",Campus,0:06,24
+UOFU5183,Commuter services enforcement,28-Sep-22,0:03,9/28/2022 10:52,0,0:04,"Campus: S Campus Dr, Salt Lake City, UT 84102, USA",Campus,0:04,9
+UOFU5183,Commuter services enforcement,28-Sep-22,0:01,9/28/2022 10:59,0,0:03,"Campus: 22 UT-282, Salt Lake City, UT 84112, USA",Campus,0:03,2
+UOFU5183,Commuter services enforcement,28-Sep-22,0:04,9/28/2022 11:07,0,0:03,"Campus: S Campus Dr, Salt Lake City, UT 84102, USA",Campus,0:03,5
+UOFU5183,Commuter services enforcement,28-Sep-22,0:00,9/28/2022 11:11,0,0:05,"Campus: 101 S Wasatch Dr, Salt Lake City, UT 84112, USA",Campus,0:05,2
+UOFU5183,Commuter services enforcement,28-Sep-22,0:05,9/28/2022 11:22,0,0:04,"Campus: Unnamed Road, Salt Lake City, UT 84112, USA",Campus,0:04,4
+UOFU5183,Commuter services enforcement,28-Sep-22,0:01,9/28/2022 11:29,0,0:05,"Campus: Unnamed Road, Salt Lake City, UT 84112, USA",Campus,0:05,2
+UOFU5183,Commuter services enforcement,28-Sep-22,0:00,9/28/2022 11:35,0,0:09,"Campus: 22 UT-282, Salt Lake City, UT 84112, USA",Campus,0:09,1
+UOFU5183,Commuter services enforcement,28-Sep-22,0:06,9/28/2022 11:51,1,4:56,"Campus: 311 Fort Douglas Blvd, Salt Lake City, UT 84113, USA",Campus,0:02,30
+UOFU5183,Commuter services enforcement,28-Sep-22,0:02,9/28/2022 16:51,0,0:05,"Campus, Commuter services zone: 311 Fort Douglas Blvd, Salt Lake City, UT 84113, USA","Campus, Office Zone",0:00,11
+UOFU5183,Commuter services enforcement,28-Sep-22,0:07,9/28/2022 17:04,1,0:03,"Campus: 20 S 2030 E, Salt Lake City, UT 84132, USA",Campus,0:03,26
+UOFU5183,Commuter services enforcement,28-Sep-22,0:05,9/28/2022 17:13,0,0:04,"Campus: 20 S 2030 E, Salt Lake City, UT 84132, USA",Campus,0:04,0
+UOFU5183,Commuter services enforcement,28-Sep-22,0:01,9/28/2022 17:19,0,0:03,"Campus: 20 S 2030 E, Salt Lake City, UT 84132, USA",Campus,0:03,0
+UOFU5183,Commuter services enforcement,28-Sep-22,0:11,9/28/2022 17:33,0,0:03,"Campus: 30 2000 E, Salt Lake City, UT 84112, USA",Campus,0:03,17
+UOFU5183,Commuter services enforcement,28-Sep-22,0:14,9/28/2022 17:51,1,0:03,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,41
+UOFU5183,Commuter services enforcement,28-Sep-22,0:17,9/28/2022 18:13,1,0:04,"Campus: 85 Fort Douglas Blvd, Salt Lake City, UT 84112, USA",Campus,0:04,31
+UOFU5183,Commuter services enforcement,28-Sep-22,0:04,9/28/2022 18:22,1,0:03,"Campus: 325 Medical Plaza, Salt Lake City, UT 84112, USA",Campus,0:03,23
+UOFU5183,Commuter services enforcement,28-Sep-22,0:13,9/28/2022 18:39,1,0:04,"Campus: 325 Medical Plaza, Salt Lake City, UT 84112, USA",Campus,0:04,0
+UOFU5183,Commuter services enforcement,28-Sep-22,0:02,9/28/2022 18:46,0,0:21,"Campus: 12 Medical Plaza, Salt Lake City, UT 84112, USA",Campus,0:03,22
+UOFU5183,Commuter services enforcement,28-Sep-22,0:18,9/28/2022 19:26,1,0:04,"Campus: 2141 Red Butte Canyon Rd, Salt Lake City, UT 84112, USA",Campus,0:04,24
+UOFU5183,Commuter services enforcement,28-Sep-22,0:21,9/28/2022 19:53,1,10:17,"Campus: 311 Fort Douglas Blvd, Salt Lake City, UT 84113, USA",Campus,0:01,16
+UOFU5184,University Health Plans,28-Sep-22,0:13,9/28/2022 7:41,8,7:33,"10333 Jordan Gateway, South Jordan, UT 84095, USA",,0:00,76
+UOFU5184,University Health Plans,28-Sep-22,0:14,9/28/2022 15:29,7,16:22,"6053 Fashionsquare Dr, Murray, UT 84107, USA",,0:02,76
+UOFU5185,South Jordan Health Clinic,28-Sep-22,0:01,9/28/2022 6:35,0,0:08,"5084 W Daybreak Pkwy, South Jordan, UT 84009, USA",,0:00,19
+UOFU5185,South Jordan Health Clinic,28-Sep-22,0:46,9/28/2022 7:30,37,0:12,"165 N University Ave, Farmington, UT 84025, USA",,0:00,80
+UOFU5185,South Jordan Health Clinic,28-Sep-22,0:33,9/28/2022 8:16,23,0:10,"1202 Stringham Ave, Salt Lake City, UT 84106, USA",,0:00,79
+UOFU5185,South Jordan Health Clinic,28-Sep-22,0:00,9/28/2022 8:28,0,0:28,"1202 Stringham Ave, Salt Lake City, UT 84106, USA",,0:00,0
+UOFU5185,South Jordan Health Clinic,28-Sep-22,0:21,9/28/2022 9:17,5,0:17,"Campus: 48 Mario Capecchi Dr, Salt Lake City, UT 84132, USA",Campus,0:00,41
+UOFU5185,South Jordan Health Clinic,28-Sep-22,0:44,9/28/2022 10:20,30,0:09,"5187 Duckhorn Dr, South Jordan, UT 84095, USA",,0:00,84
+UOFU5185,South Jordan Health Clinic,28-Sep-22,0:01,9/28/2022 10:31,0,116:31:00,"5180 Duckhorn Dr, South Jordan, UT 84095, USA",,0:01,26
+UOFU6005,Health Sciences,28-Sep-22,0:09,9/28/2022 8:34,1,0:49,"Campus: 530 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,31
+UOFU6005,Health Sciences,28-Sep-22,0:08,9/28/2022 9:32,1,0:27,"Campus: 44 Mario Capecchi Dr, Salt Lake City, UT 84132, USA",Campus,0:00,34
+UOFU6005,Health Sciences,28-Sep-22,0:05,9/28/2022 10:06,1,0:46,"Campus: 520 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,34
+UOFU6005,Health Sciences,28-Sep-22,0:06,9/28/2022 10:59,1,26:15:00,"Campus: 30 2000 E, Salt Lake City, UT 84112, USA",Campus,0:00,35
+UOFU6021,UNI,28-Sep-22,0:00,9/28/2022 10:45,0,0:06,"Campus: 515 Colorow Way, Salt Lake City, UT 84108, USA",Campus,0:00,0
+UOFU6021,UNI,28-Sep-22,0:00,9/28/2022 10:53,0,0:00,"515 Colorow Way, Salt Lake City, UT 84108, USA",,0:00,17
+UOFU6021,UNI,28-Sep-22,0:00,9/28/2022 10:53,0,0:00,"Campus: 635 Arapeen Dr, Salt Lake City, UT 84108, USA",Campus,0:00,32
+UOFU6021,UNI,28-Sep-22,0:18,9/28/2022 11:12,11,0:50,"51W W 3900 S, Millcreek, UT 84107, USA",,0:00,70
+UOFU6021,UNI,28-Sep-22,0:03,9/28/2022 12:06,1,0:19,"3450 State St, South Salt Lake, UT 84115, USA",,0:00,47
+UOFU6021,UNI,28-Sep-22,0:07,9/28/2022 12:32,2,0:48,"240-260 E Morris Ave, South Salt Lake, UT 84115, USA",,0:00,41
+UOFU6021,UNI,28-Sep-22,0:17,9/28/2022 13:38,5,0:09,"463 W 600 S, Salt Lake City, UT 84101, USA",,0:00,45
+UOFU6021,UNI,28-Sep-22,0:20,9/28/2022 14:07,6,163:10:00,"Campus: 501 Chipeta Way, Salt Lake City, UT 84108, USA",Campus,0:00,48
+UOFU6030,Facilities engineering,28-Sep-22,0:34,9/28/2022 6:43,39,0:06,"6527 UT-36, Tooele, UT 84074, USA",,0:00,91
+UOFU6030,Facilities engineering,28-Sep-22,0:03,9/28/2022 6:53,0,5:32,"220 Millpond Dr # 100, Stansbury Park, UT 84074, USA",,0:00,25
+UOFU6030,Facilities engineering,28-Sep-22,0:08,9/28/2022 12:33,3,0:04,"8580 Commerce St, Lake Point, UT 84074, USA",,0:04,71
+UOFU6030,Facilities engineering,28-Sep-22,0:37,9/28/2022 13:14,37,0:06,"1092 Park Ln, Farmington, UT 84025, USA",,0:00,89
+UOFU6030,Facilities engineering,28-Sep-22,0:01,9/28/2022 13:23,0,0:22,"165 N University Ave, Farmington, UT 84025, USA",,0:00,24
+UOFU6030,Facilities engineering,28-Sep-22,0:03,9/28/2022 13:49,1,1:16,"225-291 S 200 W, Farmington, UT 84025, USA",,0:00,37
+UOFU6030,Facilities engineering,28-Sep-22,0:07,9/28/2022 15:13,2,0:02,"225-291 S 200 W, Farmington, UT 84025, USA",,0:00,35
+UOFU6030,Facilities engineering,28-Sep-22,0:05,9/28/2022 15:21,1,18:39,"165 N University Ave, Farmington, UT 84025, USA",,0:00,38
+UOFU6031,Facilities engineering,28-Sep-22,0:33,9/28/2022 6:38,20,4:47,"1746 Redstone Ave, Park City, UT 84098, USA",,0:01,95
+UOFU6031,Facilities engineering,28-Sep-22,0:05,9/28/2022 11:31,1,0:06,"6500 UT-224, Park City, UT 84098, USA",,0:00,48
+UOFU6031,Facilities engineering,28-Sep-22,0:04,9/28/2022 11:42,0,2:15,"1746 Redstone Ave, Park City, UT 84098, USA",,0:05,38
+UOFU6031,Facilities engineering,28-Sep-22,0:22,9/28/2022 14:20,20,23:08,"1280 Stringham Ave, Salt Lake City, UT 84106, USA",,0:06,95
+UOFU6039,Pharmacy,28-Sep-22,0:23,9/28/2022 9:57,8,0:11,"1280 Stringham Ave, Salt Lake City, UT 84106, USA",,0:05,38
+UOFU6039,Pharmacy,28-Sep-22,0:17,9/28/2022 10:26,10,0:07,"6056 S Fashionsquare Dr, Murray, UT 84107, USA",,0:00,72
+UOFU6039,Pharmacy,28-Sep-22,0:08,9/28/2022 10:42,2,0:14,"7495 State St, Midvale, UT 84047, USA",,0:00,38
+UOFU6039,Pharmacy,28-Sep-22,0:21,9/28/2022 11:18,11,0:09,"5187 Duckhorn Dr, South Jordan, UT 84095, USA",,0:03,61
+UOFU6039,Pharmacy,28-Sep-22,0:22,9/28/2022 11:50,13,0:05,"3730 4700 S, West Valley City, UT 84120, USA",,0:00,66
+UOFU6039,Pharmacy,28-Sep-22,0:13,9/28/2022 12:09,7,0:09,"6056 S Fashionsquare Dr, Murray, UT 84107, USA",,0:00,68
+UOFU6039,Pharmacy,28-Sep-22,0:43,9/28/2022 13:02,34,0:11,"220 Millpond, Stansbury Park, UT 84074, USA",,0:00,72
+UOFU6039,Pharmacy,28-Sep-22,0:36,9/28/2022 13:50,31,0:03,"5666 Lolene Way, Salt Lake City, UT 84118, USA",,0:00,75
+UOFU6039,Pharmacy,28-Sep-22,0:12,9/28/2022 14:06,6,0:39,"6056 Fashion Blvd, Murray, UT 84107, USA",,0:00,71
+UOFU6039,Pharmacy,28-Sep-22,0:10,9/28/2022 14:56,2,0:09,"7495 State St, Midvale, UT 84047, USA",,0:00,39
+UOFU6039,Pharmacy,28-Sep-22,0:27,9/28/2022 15:33,11,0:03,"5187 Duckhorn Dr, South Jordan, UT 84095, USA",,0:00,71
+UOFU6039,Pharmacy,28-Sep-22,0:28,9/28/2022 16:05,14,0:03,"6056 S Fashionsquare Dr, Murray, UT 84107, USA",,0:03,75
+UOFU6039,Pharmacy,28-Sep-22,0:17,9/28/2022 16:26,8,0:06,"1280 Stringham Ave, Salt Lake City, UT 84106, USA",,0:00,61
+UOFU6039,Pharmacy,28-Sep-22,0:36,9/28/2022 17:09,18,0:00,"275 N Main St, Centerville, UT 84014, USA",,0:00,76
+UOFU6039,Pharmacy,28-Sep-22,0:01,9/28/2022 17:11,0,0:02,"26 S Main St, Centerville, UT 84014, USA",,0:00,35
+UOFU6039,Pharmacy,28-Sep-22,0:12,9/28/2022 17:26,6,0:03,"256 N University Ave, Farmington, UT 84025, USA",,0:00,61
+UOFU6039,Pharmacy,28-Sep-22,0:39,9/28/2022 18:09,25,0:02,"5003 State St, Murray, UT 84107, USA",,0:00,76
+UOFU6039,Pharmacy,28-Sep-22,0:07,9/28/2022 18:19,3,15:18,"6056 Fashion Blvd, Murray, UT 84107, USA",,0:05,38
+UOFU6072,Biomedical engineering,28-Sep-22,0:18,9/28/2022 8:38,4,3:04,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,42
+UOFU6072,Biomedical engineering,28-Sep-22,0:17,9/28/2022 11:59,4,19:32,"1280 Stringham Ave, Salt Lake City, UT 84106, USA",,0:00,48
+UOFU6081,Biomedical engineering,28-Sep-22,0:24,9/28/2022 7:10,23,1:08,"1280 Stringham Ave, Salt Lake City, UT 84106, USA",,0:00,79
+UOFU6081,Biomedical engineering,28-Sep-22,0:14,9/28/2022 8:33,4,3:08,"Campus: 423 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,37
+UOFU6081,Biomedical engineering,28-Sep-22,0:20,9/28/2022 12:02,12,0:16,"51W W 3900 S, Millcreek, UT 84107, USA",,0:00,85
+UOFU6081,Biomedical engineering,28-Sep-22,0:24,9/28/2022 12:43,23,17:46,"University Ave @ 283 N, Farmington, UT 84025, USA",,0:00,85
+UOFU6092,UNI,28-Sep-22,0:30,9/28/2022 9:08,11,0:07,"Campus, Facilities, Fleet Building: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,70
+UOFU6092,UNI,28-Sep-22,0:00,9/28/2022 9:16,0,0:38,"Campus, Facilities, Fleet Building: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,6
+UOFU6092,UNI,28-Sep-22,0:01,9/28/2022 9:57,0,3:14,"Campus, Facilities, Fleet Building: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,11
+UOFU6092,UNI,28-Sep-22,0:00,9/28/2022 13:11,0,0:39,"Campus, Facilities, Fleet Building: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:01,3
+UOFU6092,UNI,28-Sep-22,0:01,9/28/2022 13:52,0,19:53,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,9
+UOFU6107,Guest House,28-Sep-22,0:17,9/28/2022 11:25,4,1:09,"71 S W Temple St, Salt Lake City, UT 84101, USA",,0:00,41
+UOFU6107,Guest House,28-Sep-22,0:22,9/28/2022 12:56,5,93:56:00,"Campus: 110 Fort Douglas Blvd, Salt Lake City, UT 84113, USA",Campus,0:00,43
+UOFU6119,OUTREACH AND NETWORK DEV,28-Sep-22,0:18,9/28/2022 16:59,4,1:38,"1776 S Main St, Salt Lake City, UT 84115, USA",,0:00,32
+UOFU6119,OUTREACH AND NETWORK DEV,28-Sep-22,0:28,9/28/2022 19:05,11,12:05,"2863 Holbrook Rd, Bountiful, UT 84010, USA",,0:00,64
+UOFU6123,Commuter services enforcement,28-Sep-22,0:17,9/28/2022 8:30,2,0:04,"Campus: 1425 Presidents' Cir, Salt Lake City, UT 84112, USA",Campus,0:04,30
+UOFU6123,Commuter services enforcement,28-Sep-22,0:20,9/28/2022 8:55,0,0:03,"Campus: 545599 1455 E, Salt Lake City, UT 84112, USA",Campus,0:03,7
+UOFU6123,Commuter services enforcement,28-Sep-22,0:09,9/28/2022 9:08,0,0:03,"Campus: 545599 1455 E, Salt Lake City, UT 84112, USA",Campus,0:03,0
+UOFU6123,Commuter services enforcement,28-Sep-22,0:11,9/28/2022 9:23,0,0:03,"Campus: Unnamed Road, Salt Lake City, UT 84112, USA",Campus,0:03,9
+UOFU6123,Commuter services enforcement,28-Sep-22,0:00,9/28/2022 9:27,0,0:05,"Campus: Unnamed Road, Salt Lake City, UT 84112, USA",Campus,0:05,2
+UOFU6123,Commuter services enforcement,28-Sep-22,0:00,9/28/2022 9:33,0,0:26,"Campus: Student Services, Salt Lake City, UT 84112, USA",Campus,0:04,1
+UOFU6123,Commuter services enforcement,28-Sep-22,1:20,9/28/2022 11:20,7,4:56,"Campus: 311 Fort Douglas Blvd, Salt Lake City, UT 84113, USA",Campus,0:03,35
+UOFU6123,Commuter services enforcement,28-Sep-22,0:11,9/28/2022 16:28,2,0:05,"Campus: Central Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:05,34
+UOFU6123,Commuter services enforcement,28-Sep-22,0:17,9/28/2022 16:51,0,0:04,"Campus: U Union Building (Bay D), Salt Lake City, UT 84112, USA",Campus,0:04,7
+UOFU6123,Commuter services enforcement,28-Sep-22,0:10,9/28/2022 17:05,1,0:16,"Campus: 200 Central Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:16,17
+UOFU6123,Commuter services enforcement,28-Sep-22,0:06,9/28/2022 17:28,1,0:04,"Campus: Civil and Materials Engineering, 122 Central Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:04,19
+UOFU6123,Commuter services enforcement,28-Sep-22,0:12,9/28/2022 17:44,2,0:06,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,27
+UOFU6123,Commuter services enforcement,28-Sep-22,0:04,9/28/2022 17:56,1,0:03,"Campus: 200 1500 E, Salt Lake City, UT 84112, USA",Campus,0:03,32
+UOFU6123,Commuter services enforcement,28-Sep-22,0:30,9/28/2022 18:30,3,0:21,"Campus: Q595+VM Salt Lake City, UT, USA",Campus,0:21,34
+UOFU6123,Commuter services enforcement,28-Sep-22,0:30,9/28/2022 19:22,2,0:02,"Campus: Eccles Broadcast Center, Salt Lake City, UT 84112, USA",Campus,0:02,31
+UOFU6123,Commuter services enforcement,28-Sep-22,0:25,9/28/2022 19:50,2,11:11,"Campus: 311 Fort Douglas Blvd, Salt Lake City, UT 84113, USA",Campus,0:01,33
+UOFU6124,Commuter services enforcement,28-Sep-22,0:13,9/28/2022 12:36,2,0:18,"Campus: 201 Presidents' Cir, Salt Lake City, UT 84112, USA",Campus,0:18,37
+UOFU6124,Commuter services enforcement,28-Sep-22,0:05,9/28/2022 13:00,1,0:48,"Campus: 36 S Wasatch Dr, Salt Lake City, UT 84112, USA",Campus,0:48,25
+UOFU6124,Commuter services enforcement,28-Sep-22,0:04,9/28/2022 13:53,1,0:15,"Campus: 101 S Wasatch Dr, Salt Lake City, UT 84112, USA",Campus,0:01,17
+UOFU6124,Commuter services enforcement,28-Sep-22,0:47,9/28/2022 14:56,5,0:02,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,34
+UOFU6124,Commuter services enforcement,28-Sep-22,0:06,9/28/2022 15:05,2,0:02,"Campus: 39 S Wolcott St, Salt Lake City, UT 84102, USA",Campus,0:02,30
+UOFU6124,Commuter services enforcement,28-Sep-22,0:07,9/28/2022 15:16,2,1:31,"Campus: Ppo Green House, Salt Lake City, UT 84108, USA",Campus,0:01,39
+UOFU6124,Commuter services enforcement,28-Sep-22,0:13,9/28/2022 17:00,1,0:15,"Campus: Annex General Office, 1901 S Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:15,29
+UOFU6124,Commuter services enforcement,28-Sep-22,0:03,9/28/2022 17:20,0,0:04,"Campus: 125 Fort Douglas Blvd, Salt Lake City, UT 84113, USA",Campus,0:04,10
+UOFU6124,Commuter services enforcement,28-Sep-22,0:21,9/28/2022 17:46,1,0:05,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:01,23
+UOFU6124,Commuter services enforcement,28-Sep-22,0:06,9/28/2022 17:58,1,0:40,"Campus: 400 S 900 E, Salt Lake City, UT 84102, USA",Campus,0:40,19
+UOFU6124,Commuter services enforcement,28-Sep-22,0:01,9/28/2022 18:40,0,0:13,"Campus, Facilities: 1705 Campus Center Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:13,11
+UOFU6124,Commuter services enforcement,28-Sep-22,0:09,9/28/2022 19:03,1,0:15,"Campus: Unnamed Road, Salt Lake City, UT 84112, USA",Campus,0:15,27
+UOFU6124,Commuter services enforcement,28-Sep-22,0:35,9/28/2022 19:54,5,11:05,"Campus: 311 Fort Douglas Blvd, Salt Lake City, UT 84113, USA",Campus,0:00,37
+UOFU6127,Radio pharmacy,28-Sep-22,0:02,9/28/2022 5:54,0,0:02,"Campus: 729 Arapeen Dr, Salt Lake City, UT 84108, USA",Campus,0:00,9
+UOFU6127,Radio pharmacy,28-Sep-22,0:07,9/28/2022 6:04,2,0:01,"Campus: 175 N Medical Dr, Salt Lake City, UT 84103, USA",Campus,0:00,30
+UOFU6127,Radio pharmacy,28-Sep-22,0:49,9/28/2022 6:55,35,0:15,"Harrison Blvd @ 4401 S (Ogden), Ogden, UT 84403, USA",,0:00,76
+UOFU6127,Radio pharmacy,28-Sep-22,0:01,9/28/2022 7:11,0,0:12,"4401 Harrison Blvd, Ogden, UT 84403, USA",,0:00,14
+UOFU6127,Radio pharmacy,28-Sep-22,0:01,9/28/2022 7:25,0,0:14,"4403 Harrison Blvd # 2400, Ogden, UT 84403, USA",,0:00,12
+UOFU6127,Radio pharmacy,28-Sep-22,0:38,9/28/2022 8:18,30,0:05,"825 N 300 W Suite NE121, Salt Lake City, UT 84103, USA",,0:00,75
+UOFU6127,Radio pharmacy,28-Sep-22,0:30,9/28/2022 8:53,7,0:01,"Campus: 175 N Medical Dr, Salt Lake City, UT 84103, USA",Campus,0:00,42
+UOFU6127,Radio pharmacy,28-Sep-22,0:08,9/28/2022 9:03,2,20:53,"Campus: 729 Arapeen Dr, Salt Lake City, UT 84108, USA",Campus,0:01,37
+UOFU6128,Radio pharmacy,28-Sep-22,0:06,9/28/2022 6:23,2,0:08,"Campus: Hospital Generating Plant, Salt Lake City, UT 84132, USA",Campus,0:00,39
+UOFU6128,Radio pharmacy,28-Sep-22,0:05,9/28/2022 6:36,1,0:10,"Campus: 175 N Medical Dr, Salt Lake City, UT 84103, USA",Campus,0:00,21
+UOFU6128,Radio pharmacy,28-Sep-22,0:15,9/28/2022 7:02,5,0:07,"2294 1300 E, Salt Lake City, UT 84106, USA",,0:00,47
+UOFU6128,Radio pharmacy,28-Sep-22,0:15,9/28/2022 7:26,4,0:07,"Campus: 16 Kisters St, Salt Lake City, UT 84108, USA",Campus,0:00,34
+UOFU6128,Radio pharmacy,28-Sep-22,0:10,9/28/2022 7:44,2,0:02,"Campus: 175 N Medical Dr, Salt Lake City, UT 84132, USA",Campus,0:00,37
+UOFU6128,Radio pharmacy,28-Sep-22,0:12,9/28/2022 7:59,2,0:17,"Campus: 729 Arapeen Dr, Salt Lake City, UT 84108, USA",Campus,0:00,31
+UOFU6128,Radio pharmacy,28-Sep-22,0:07,9/28/2022 8:24,2,0:09,"Campus: 176 UT-282, Salt Lake City, UT 84132, USA",Campus,0:00,31
+UOFU6128,Radio pharmacy,28-Sep-22,0:10,9/28/2022 8:45,2,21:15,"Campus: 729 Arapeen Dr, Salt Lake City, UT 84108, USA",Campus,0:00,33
+UOFU6152,Facilities engineering,28-Sep-22,0:23,9/28/2022 9:42,3,1:54,"Campus: 685 Madsen, 556 Mario Capecchi Dr, Salt Lake City, UT 84148, USA",Campus,0:00,32
+UOFU6152,Facilities engineering,28-Sep-22,0:09,9/28/2022 11:46,1,136:00:00,"Campus: 10 1900 E, Salt Lake City, UT 84132, USA",Campus,0:03,33
+UOFU6153,Facilities engineering,28-Sep-22,0:23,9/28/2022 9:39,13,0:14,"4677 Cherry St, Murray, UT 84123, USA",,0:00,73
+UOFU6153,Facilities engineering,28-Sep-22,0:26,9/28/2022 10:20,13,20:04,"Campus: 10 1900 E, Salt Lake City, UT 84132, USA",Campus,0:01,80
+UOFU6154,Facilities engineering,28-Sep-22,0:03,9/28/2022 6:58,0,0:29,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,17
+UOFU6154,Facilities engineering,28-Sep-22,0:41,9/28/2022 8:09,32,4:45,"University Ave @ 163 N, Farmington, UT 84025, USA",,0:00,76
+UOFU6154,Facilities engineering,28-Sep-22,0:37,9/28/2022 13:32,31,0:03,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,76
+UOFU6154,Facilities engineering,28-Sep-22,0:01,9/28/2022 13:37,0,113:00:00,"Campus: 10 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,19
+UOFU6158,Orthopedic ctr,28-Sep-22,0:02,9/28/2022 6:24,1,0:08,"Campus: 390 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:08,38
+UOFU6158,Orthopedic ctr,28-Sep-22,1:18,9/28/2022 7:51,13,0:03,"Campus: 530 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:03,35
+UOFU6158,Orthopedic ctr,28-Sep-22,0:24,9/28/2022 8:19,4,0:04,"Campus: 390 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:04,34
+UOFU6158,Orthopedic ctr,28-Sep-22,0:03,9/28/2022 8:26,1,0:03,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:03,32
+UOFU6158,Orthopedic ctr,28-Sep-22,0:31,9/28/2022 9:01,5,0:03,"Campus: 390 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:03,37
+UOFU6158,Orthopedic ctr,28-Sep-22,0:07,9/28/2022 9:12,1,0:08,"Campus: 390 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:08,32
+UOFU6158,Orthopedic ctr,28-Sep-22,0:05,9/28/2022 9:25,1,0:12,"Campus: 390 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:12,35
+UOFU6158,Orthopedic ctr,28-Sep-22,0:07,9/28/2022 9:45,1,0:11,"Campus: 390 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:11,38
+UOFU6158,Orthopedic ctr,28-Sep-22,0:02,9/28/2022 9:59,0,2:46,"Campus: Orthopaedic Center, 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,32
+UOFU6158,Orthopedic ctr,28-Sep-22,0:07,9/28/2022 12:53,1,0:00,"Campus: Orthopaedic Center, 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,34
+UOFU6158,Orthopedic ctr,28-Sep-22,0:02,9/28/2022 12:56,0,0:39,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:39,23
+UOFU6158,Orthopedic ctr,28-Sep-22,0:03,9/28/2022 13:39,1,0:03,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,37
+UOFU6158,Orthopedic ctr,28-Sep-22,0:33,9/28/2022 14:16,5,0:10,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:10,42
+UOFU6158,Orthopedic ctr,28-Sep-22,0:04,9/28/2022 14:30,1,0:44,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:44,35
+UOFU6158,Orthopedic ctr,28-Sep-22,0:09,9/28/2022 15:24,2,0:03,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:03,42
+UOFU6158,Orthopedic ctr,28-Sep-22,0:06,9/28/2022 15:34,1,0:10,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:10,35
+UOFU6158,Orthopedic ctr,28-Sep-22,0:31,9/28/2022 16:16,5,0:07,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:07,39
+UOFU6158,Orthopedic ctr,28-Sep-22,0:21,9/28/2022 16:45,3,0:11,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:11,41
+UOFU6158,Orthopedic ctr,28-Sep-22,0:42,9/28/2022 17:39,8,0:03,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:03,43
+UOFU6158,Orthopedic ctr,28-Sep-22,0:05,9/28/2022 17:48,1,0:08,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,39
+UOFU6158,Orthopedic ctr,28-Sep-22,0:04,9/28/2022 18:01,1,0:07,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,41
+UOFU6158,Orthopedic ctr,28-Sep-22,0:05,9/28/2022 18:13,1,0:04,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,42
+UOFU6158,Orthopedic ctr,28-Sep-22,0:04,9/28/2022 18:23,1,0:06,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,39
+UOFU6158,Orthopedic ctr,28-Sep-22,0:10,9/28/2022 18:40,2,0:59,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,40
+UOFU6158,Orthopedic ctr,28-Sep-22,0:06,9/28/2022 19:46,1,0:32,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,37
+UOFU6158,Orthopedic ctr,28-Sep-22,0:06,9/28/2022 20:24,1,9:32,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,35
+UOFU6171,Carpenter shop,28-Sep-22,0:19,9/28/2022 6:19,13,0:08,"J4CX+X2 Cottonwood Heights, UT, USA",,0:00,76
+UOFU6171,Carpenter shop,28-Sep-22,0:00,9/28/2022 6:28,0,0:03,"1340 E Park Centre Dr, Cottonwood Heights, UT 84121, USA",,0:01,9
+UOFU6171,Carpenter shop,28-Sep-22,0:19,9/28/2022 6:50,13,0:21,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,72
+UOFU6171,Carpenter shop,28-Sep-22,0:04,9/28/2022 7:16,1,0:08,"Campus: 1975 De Trobriand St, Salt Lake City, UT 84113, USA",Campus,0:00,32
+UOFU6171,Carpenter shop,28-Sep-22,0:03,9/28/2022 7:28,1,0:47,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,32
+UOFU6171,Carpenter shop,28-Sep-22,0:06,9/28/2022 8:21,1,0:41,"Campus: 1975 De Trobriand St, Salt Lake City, UT 84113, USA",Campus,0:00,19
+UOFU6171,Carpenter shop,28-Sep-22,0:04,9/28/2022 9:08,1,0:10,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,33
+UOFU6171,Carpenter shop,28-Sep-22,0:07,9/28/2022 9:25,2,0:07,"942a E 500 S, Salt Lake City, UT 84102, USA",,0:00,32
+UOFU6171,Carpenter shop,28-Sep-22,0:24,9/28/2022 9:58,14,0:17,"1354 E Park Centre Dr, Cottonwood Heights, UT 84121, USA",,0:00,72
+UOFU6171,Carpenter shop,28-Sep-22,0:21,9/28/2022 10:37,13,0:32,"Campus: 619, Salt Lake City, UT 84113, USA",Campus,0:00,78
+UOFU6171,Carpenter shop,28-Sep-22,0:00,9/28/2022 11:10,0,2:00,"Campus: 150 Fort Douglas Blvd, Salt Lake City, UT 84113, USA",Campus,0:08,0
+UOFU6171,Carpenter shop,28-Sep-22,0:13,9/28/2022 13:24,3,17:00,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,37
+UOFU6172,Carpenter shop,28-Sep-22,0:18,9/28/2022 6:25,5,2:58,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,31
+UOFU6172,Carpenter shop,28-Sep-22,0:05,9/28/2022 9:29,1,0:17,"Campus: 22 UT-282, Salt Lake City, UT 84112, USA",Campus,0:00,33
+UOFU6172,Carpenter shop,28-Sep-22,0:04,9/28/2022 9:51,1,1:46,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,32
+UOFU6172,Carpenter shop,28-Sep-22,0:07,9/28/2022 11:45,1,0:26,"Campus: Union - AV Shuttle, Salt Lake City, UT 84112, USA",Campus,0:00,32
+UOFU6172,Carpenter shop,28-Sep-22,0:02,9/28/2022 12:15,0,0:09,"Campus: 200 Central Campus Dr #60, Salt Lake City, UT 84112, USA",Campus,0:00,19
+UOFU6172,Carpenter shop,28-Sep-22,0:14,9/28/2022 12:39,3,17:26,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,32
+UOFU6176,Construction,28-Sep-22,0:04,9/28/2022 10:59,1,0:07,"Campus: 585 Arapeen Dr, Salt Lake City, UT 84113, USA",Campus,0:00,35
+UOFU6176,Construction,28-Sep-22,0:08,9/28/2022 11:15,2,0:02,"food zone: 209 S 1300 E, Salt Lake City, UT 84102, USA",Customer Zone,0:00,39
+UOFU6176,Construction,28-Sep-22,0:07,9/28/2022 11:25,1,1:20,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,34
+UOFU6176,Construction,28-Sep-22,0:07,9/28/2022 12:52,1,0:47,"Campus: Radiobiology Lab, Salt Lake City, UT 84132, USA",Campus,0:00,40
+UOFU6176,Construction,28-Sep-22,0:05,9/28/2022 13:45,1,0:23,"Campus, Facilities: University South Campus Station, Salt Lake City, UT 84148, USA","Campus, Office Zone",0:00,38
+UOFU6176,Construction,28-Sep-22,0:05,9/28/2022 14:15,1,0:06,"Campus: 300 Red Butte Canyon Rd, Salt Lake City, UT 84108, USA",Campus,0:00,27
+UOFU6176,Construction,28-Sep-22,0:04,9/28/2022 14:25,1,18:08,"Campus, Facilities: University South Campus Station, Salt Lake City, UT 84148, USA","Campus, Office Zone",0:00,32
+UOFU6177,Venues,28-Sep-22,0:03,9/28/2022 7:00,1,3:45,"Campus: 349 Transform, Salt Lake City, UT 84102, USA",Campus,0:00,35
+UOFU6177,Venues,28-Sep-22,0:05,9/28/2022 10:51,1,1:14,"Campus, Facilities: 1745 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,29
+UOFU6177,Venues,28-Sep-22,0:05,9/28/2022 12:12,1,0:18,"Campus: Bonneville Shoreline Trail, Salt Lake City, UT 84108, USA",Campus,0:00,30
+UOFU6177,Venues,28-Sep-22,0:08,9/28/2022 12:39,2,2:19,"Campus: 592 Guardsman Way, Salt Lake City, UT 84108, USA",Campus,0:00,33
+UOFU6177,Venues,28-Sep-22,0:06,9/28/2022 15:05,1,15:50,"Campus, Facilities: 1745 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,37
+UOFU6224,Air Med,28-Sep-22,0:14,9/28/2022 7:49,10,0:22,"401 N Center St, Rock Springs, WY 82901, USA",,0:00,85
+UOFU6224,Air Med,28-Sep-22,0:02,9/28/2022 8:14,0,0:47,"401 N Center St, Rock Springs, WY 82901, USA",,0:02,6
+UOFU6224,Air Med,28-Sep-22,0:01,9/28/2022 9:03,0,0:31,"401 N Center St, Rock Springs, WY 82901, USA",,0:00,7
+UOFU6224,Air Med,28-Sep-22,0:00,9/28/2022 9:35,0,0:01,"401 N Center St, Rock Springs, WY 82901, USA",,0:00,7
+UOFU6224,Air Med,28-Sep-22,0:02,9/28/2022 9:39,1,0:36,"1180 College Dr, Rock Springs, WY 82901, USA",,0:00,45
+UOFU6224,Air Med,28-Sep-22,0:05,9/28/2022 10:21,2,0:05,"2581 Foothill Blvd, Rock Springs, WY 82901, USA",,0:00,48
+UOFU6224,Air Med,28-Sep-22,0:17,9/28/2022 10:44,14,5:09,"468 WY-370, Rock Springs, WY 82901, USA",,0:00,79
+UOFU6224,Air Med,28-Sep-22,0:19,9/28/2022 16:13,14,0:09,"1435 Dewar Dr, Rock Springs, WY 82901, USA",,0:00,72
+UOFU6224,Air Med,28-Sep-22,0:17,9/28/2022 16:40,13,16:06,"468 WY-370, Rock Springs, WY 82901, USA",,0:00,76
+UOFU6227,Huntsman at Home,28-Sep-22,0:15,9/28/2022 10:03,10,0:20,"220 E 1100 N, North Salt Lake, UT 84054, USA",,0:00,76
+UOFU6227,Huntsman at Home,28-Sep-22,0:21,9/28/2022 10:45,8,0:44,"1720 1300 N, Salt Lake City, UT 84116, USA",,0:10,72
+UOFU6227,Huntsman at Home,28-Sep-22,0:01,9/28/2022 11:30,0,0:37,"1870 Village Park Ave, Salt Lake City, UT 84116, USA",,0:00,24
+UOFU6227,Huntsman at Home,28-Sep-22,0:07,9/28/2022 12:15,2,1:40,"851 Maple Tree Ct, Salt Lake City, UT 84116, USA",,0:00,37
+UOFU6227,Huntsman at Home,28-Sep-22,0:12,9/28/2022 14:07,8,0:07,"412 N 500 W, Bountiful, UT 84010, USA",,0:00,73
+UOFU6227,Huntsman at Home,28-Sep-22,0:18,9/28/2022 14:33,17,0:35,"2773 N 1575 E, Layton, UT 84040, USA",,0:00,76
+UOFU6227,Huntsman at Home,28-Sep-22,0:01,9/28/2022 15:11,0,0:26,"1376 UT-193, Layton, UT 84040, USA",,0:00,24
+UOFU6227,Huntsman at Home,28-Sep-22,0:09,9/28/2022 15:46,3,0:49,"802 Ash Dr, Layton, UT 84040, USA",,0:06,40
+UOFU6227,Huntsman at Home,28-Sep-22,0:12,9/28/2022 16:47,4,16:58,"1612 Willow Dr, Kaysville, UT 84037, USA",,0:00,48
+UOFU6228,Huntsman at Home,28-Sep-22,0:12,9/28/2022 10:02,5,0:50,"333 E Annalyn Dr, Sandy, UT 84070, USA",,0:03,50
+UOFU6228,Huntsman at Home,28-Sep-22,0:24,9/28/2022 11:17,8,0:18,"1179 Lodgepole Dr, Sandy, UT 84094, USA",,0:11,50
+UOFU6228,Huntsman at Home,28-Sep-22,0:07,9/28/2022 11:42,1,1:09,"7759 Sandy Heights Dr, Midvale, UT 84047, USA",,0:02,39
+UOFU6228,Huntsman at Home,28-Sep-22,0:12,9/28/2022 13:05,4,1:30,"5407 S 1410 E, Millcreek, UT 84117, USA",,0:00,52
+UOFU6228,Huntsman at Home,28-Sep-22,0:09,9/28/2022 14:45,4,0:05,"1179 Lodgepole Dr, Sandy, UT 84094, USA",,0:00,45
+UOFU6228,Huntsman at Home,28-Sep-22,0:16,9/28/2022 15:07,6,0:52,"12532 Blacksmith Ln, Draper, UT 84020, USA",,0:00,49
+UOFU6228,Huntsman at Home,28-Sep-22,0:18,9/28/2022 16:19,7,1:56,"15007 Eagle Crest Dr, Draper, UT 84020, USA",,0:14,58
+UOFU6228,Huntsman at Home,28-Sep-22,0:29,9/28/2022 18:44,14,0:20,"333 E Annalyn Dr, Sandy, UT 84070, USA",,0:02,83
+UOFU6228,Huntsman at Home,28-Sep-22,0:02,9/28/2022 19:07,1,0:03,"9380 S 700 E, Sandy, UT 84070, USA",,0:00,39
+UOFU6228,Huntsman at Home,28-Sep-22,0:12,9/28/2022 19:22,5,42:54:00,"6056 S Fashionsquare Dr, Murray, UT 84107, USA",,0:00,50
+UOFU6233,DISTRO INVENTORY,28-Sep-22,0:06,9/28/2022 7:58,1,0:05,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,31
+UOFU6233,DISTRO INVENTORY,28-Sep-22,0:01,9/28/2022 8:05,0,0:11,"Campus, Facilities, Fleet Building: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:11,11
+UOFU6233,DISTRO INVENTORY,28-Sep-22,0:01,9/28/2022 8:18,0,22:23,"Campus, Facilities, Fleet Building: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,2
+UOFU6234,Huntsman,28-Sep-22,0:48,9/28/2022 8:50,44,0:12,"210 Millpond, Stansbury Park, UT 84074, USA",,0:00,84
+UOFU6234,Huntsman,28-Sep-22,0:19,9/28/2022 9:22,14,0:08,"8963 2700 S, Magna, UT 84044, USA",,0:00,68
+UOFU6234,Huntsman,28-Sep-22,0:17,9/28/2022 9:49,8,0:04,"4615 W 3500 S, West Valley City, UT 84120, USA",,0:01,64
+UOFU6234,Huntsman,28-Sep-22,0:23,9/28/2022 10:16,12,0:25,"2313 E Parleys Way, Salt Lake City, UT 84109, USA",,0:00,68
+UOFU6234,Huntsman,28-Sep-22,0:12,9/28/2022 10:55,5,1:36,"1615 Jefferson St, Salt Lake City, UT 84115, USA",,0:00,65
+UOFU6234,Huntsman,28-Sep-22,0:31,9/28/2022 13:03,30,0:06,"6527 UT-36, Tooele, UT 84074, USA",,0:00,76
+UOFU6234,Huntsman,28-Sep-22,0:02,9/28/2022 13:12,0,0:54,"220 Millpond, Stansbury Park, UT 84074, USA",,0:01,17
+UOFU6234,Huntsman,28-Sep-22,0:40,9/28/2022 14:47,40,0:06,"270 Central Ave, Farmington, UT 84025, USA",,0:00,84
+UOFU6234,Huntsman,28-Sep-22,0:03,9/28/2022 14:57,1,0:39,"500 Broadway, Farmington, UT 84025, USA",,0:00,32
+UOFU6234,Huntsman,28-Sep-22,0:32,9/28/2022 16:09,21,0:23,"Campus: Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:00,83
+UOFU6234,Huntsman,28-Sep-22,0:59,9/28/2022 17:32,40,0:10,"570 S Main St, Kamas, UT 84036, USA",,0:00,78
+UOFU6234,Huntsman,28-Sep-22,2:01,9/28/2022 19:43,102,1:01,"75 South Main St, Roosevelt, UT 84066, USA",,0:00,71
+UOFU6234,Huntsman,28-Sep-22,0:03,9/28/2022 20:48,1,0:09,"750 E 200 N, Roosevelt, UT 84066, USA",,0:00,35
+UOFU6234,Huntsman,28-Sep-22,0:03,9/28/2022 21:01,1,9:34,"2477 US-40, Ballard, UT 84066, USA",,0:00,53
+UOFU6252,Commuter Services Maintenance,28-Sep-22,0:07,9/28/2022 7:06,1,0:03,"food zone: 209 S 1300 E, Salt Lake City, UT 84102, USA",Customer Zone,0:00,35
+UOFU6252,Commuter Services Maintenance,28-Sep-22,0:08,9/28/2022 7:19,2,1:38,"Campus: Building 215, Salt Lake City, UT 84102, USA",Campus,0:00,33
+UOFU6252,Commuter Services Maintenance,28-Sep-22,0:09,9/28/2022 9:08,3,0:17,"Campus, Commuter services zone: 311 Fort Douglas Blvd, Salt Lake City, UT 84113, USA","Campus, Office Zone",0:00,41
+UOFU6252,Commuter Services Maintenance,28-Sep-22,0:05,9/28/2022 9:30,1,1:49,"Campus: Building 215, Salt Lake City, UT 84102, USA",Campus,0:00,34
+UOFU6252,Commuter Services Maintenance,28-Sep-22,0:07,9/28/2022 11:27,2,1:01,"Campus: 480 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,43
+UOFU6252,Commuter Services Maintenance,28-Sep-22,0:07,9/28/2022 12:35,2,18:20,"Campus: Building 215, Salt Lake City, UT 84102, USA",Campus,0:00,42
+UOFU6303,CPD Pool,28-Sep-22,0:02,9/28/2022 9:15,1,0:15,"Campus: Einar Nielsen Fieldhouse, 375 1400 E, Salt Lake City, UT 84112, USA",Campus,0:00,32
+UOFU6303,CPD Pool,28-Sep-22,0:06,9/28/2022 9:37,1,0:05,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,34
+UOFU6303,CPD Pool,28-Sep-22,0:02,9/28/2022 9:45,1,0:04,"Campus: 200 1500 E, Salt Lake City, UT 84112, USA",Campus,0:00,32
+UOFU6303,CPD Pool,28-Sep-22,0:01,9/28/2022 9:51,0,0:09,"Campus: Einar Nielsen Fieldhouse, Salt Lake City, UT 84112, USA",Campus,0:00,14
+UOFU6303,CPD Pool,28-Sep-22,0:05,9/28/2022 10:07,1,0:14,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,31
+UOFU6303,CPD Pool,28-Sep-22,0:09,9/28/2022 10:31,3,0:04,"1226 Windsor St, Salt Lake City, UT 84105, USA",,0:00,41
+UOFU6303,CPD Pool,28-Sep-22,0:18,9/28/2022 10:53,6,0:06,"Unnamed Road, Millcreek, UT 84106, USA",,0:00,41
+UOFU6303,CPD Pool,28-Sep-22,0:15,9/28/2022 11:16,6,0:08,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,46
+UOFU6303,CPD Pool,28-Sep-22,0:06,9/28/2022 11:32,1,2:16,"Campus: 100 1500 E, Salt Lake City, UT 84112, USA",Campus,0:00,33
+UOFU6303,CPD Pool,28-Sep-22,0:04,9/28/2022 13:53,1,20:05,"Campus, Facilities: 1745 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,32
+UOFU6304,CPD Pool,28-Sep-22,0:05,9/28/2022 9:22,2,1:24,"Campus: 1945 E Sunnyside Ave, Salt Lake City, UT 84108, USA",Campus,0:00,31
+UOFU6304,CPD Pool,28-Sep-22,0:07,9/28/2022 10:54,2,48:45:00,"Campus, Facilities: 1745 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,29
+UOFU6307,Hospital Security,28-Sep-22,0:09,9/28/2022 0:49,2,1:34,"Campus: 65 N Medical Dr, Salt Lake City, UT 84132, USA",Campus,0:00,33
+UOFU6307,Hospital Security,28-Sep-22,0:07,9/28/2022 2:32,2,0:06,"Campus: 555 Foothill Dr, Salt Lake City, UT 84112, USA",Campus,0:00,43
+UOFU6307,Hospital Security,28-Sep-22,0:06,9/28/2022 2:44,2,2:38,"Campus: 65 N Medical Dr, Salt Lake City, UT 84132, USA",Campus,0:01,39
+UOFU6307,Hospital Security,28-Sep-22,0:06,9/28/2022 5:29,1,16:47,"Campus: 65 N Medical Dr, Salt Lake City, UT 84132, USA",Campus,0:00,29
+UOFU6307,Hospital Security,28-Sep-22,0:02,9/28/2022 22:20,0,0:14,"Campus: 46 Medical Dr N, Salt Lake City, UT 84113, USA",Campus,0:00,4
+UOFU6307,Hospital Security,28-Sep-22,0:37,9/28/2022 23:11,4,2:29,"Campus: 65 N Medical Dr, Salt Lake City, UT 84132, USA",Campus,0:00,30
+UOFU6308,Rehabilitation,28-Sep-22,0:16,9/28/2022 9:28,4,0:53,"876e 800 S, Salt Lake City, UT 84102, USA",,0:00,43
+UOFU6308,Rehabilitation,28-Sep-22,0:12,9/28/2022 10:34,4,47:18:00,"Campus: Hospital Generating Plant, Salt Lake City, UT 84132, USA",Campus,0:03,48
+UOFU6324,Core,28-Sep-22,0:06,9/28/2022 7:41,1,0:10,"Campus: 295 S Wasatch Dr, Salt Lake City, UT 84113, USA",Campus,0:10,25
+UOFU6324,Core,28-Sep-22,0:05,9/28/2022 7:57,1,0:30,"Campus: 72 Central Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:03,40
+UOFU6324,Core,28-Sep-22,0:15,9/28/2022 8:44,2,0:14,"Campus: Radiobiology Lab, Salt Lake City, UT 84132, USA",Campus,0:01,42
+UOFU6324,Core,28-Sep-22,0:04,9/28/2022 9:03,1,0:03,"Campus: 295 S Wasatch Dr, Salt Lake City, UT 84113, USA",Campus,0:01,25
+UOFU6324,Core,28-Sep-22,0:03,9/28/2022 9:10,1,0:09,"Campus, Facilities: 1745 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,40
+UOFU6324,Core,28-Sep-22,0:05,9/28/2022 9:25,0,1:03,"Campus: 1645 Campus Center Dr, Salt Lake City, UT 84112, USA",Campus,0:00,21
+UOFU6324,Core,28-Sep-22,0:05,9/28/2022 10:34,0,1:44,"Campus, Facilities: 1745 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,10
+UOFU6324,Core,28-Sep-22,0:10,9/28/2022 12:28,1,0:07,"Campus: Pioneer Memorial Theatre, 300 1400 E, Salt Lake City, UT 84112, USA",Campus,0:00,31
+UOFU6324,Core,28-Sep-22,0:08,9/28/2022 12:44,1,0:39,"Campus: Business Classroom, Salt Lake City, UT 84112, USA",Campus,0:02,40
+UOFU6324,Core,28-Sep-22,0:14,9/28/2022 13:37,2,0:05,"Campus: 101 Central Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:00,41
+UOFU6324,Core,28-Sep-22,0:06,9/28/2022 13:49,1,16:11,"Campus, Facilities: 1745 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,21
+UOFU6325,Core,28-Sep-22,0:09,9/28/2022 6:46,2,0:13,"Campus: 300 1400 E, Salt Lake City, UT 84112, USA",Campus,0:00,32
+UOFU6325,Core,28-Sep-22,0:02,9/28/2022 7:03,1,0:33,"Campus: 1379-1347 Presidents' Cir, Salt Lake City, UT 84112, USA",Campus,0:07,27
+UOFU6325,Core,28-Sep-22,0:02,9/28/2022 7:40,0,0:37,"Campus: 273 1300 E, Salt Lake City, UT 84102, USA",Campus,0:28,23
+UOFU6325,Core,28-Sep-22,0:01,9/28/2022 8:19,0,0:03,"food zone: 209 1300 E, Salt Lake City, UT 84102, USA",Customer Zone,0:00,19
+UOFU6325,Core,28-Sep-22,0:55,9/28/2022 9:17,10,0:03,"Campus: 50 Central Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:03,33
+UOFU6325,Core,28-Sep-22,0:02,9/28/2022 9:23,0,0:24,"Campus: 101 Central Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:00,24
+UOFU6325,Core,28-Sep-22,0:32,9/28/2022 10:20,4,2:34,"Campus, Facilities: 1745 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:10,27
+UOFU6325,Core,28-Sep-22,0:05,9/28/2022 13:01,1,0:35,"Campus: 351 1400 E, Salt Lake City, UT 84112, USA",Campus,0:08,31
+UOFU6325,Core,28-Sep-22,0:06,9/28/2022 13:42,1,0:26,"Campus: 15 1400 E, Salt Lake City, UT 84112, USA",Campus,0:26,19
+UOFU6325,Core,28-Sep-22,0:14,9/28/2022 14:22,3,0:08,"Campus: 520 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:08,30
+UOFU6325,Core,28-Sep-22,0:05,9/28/2022 14:36,1,15:32,"Campus, Facilities: 1745 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:10,35
+UOFU6336,Commuter services enforcement,28-Sep-22,0:10,9/28/2022 8:20,1,0:09,"Campus: Emma Eccles Jones Medical Research Building, Salt Lake City, UT 84132, USA",Campus,0:09,25
+UOFU6336,Commuter services enforcement,28-Sep-22,0:06,9/28/2022 8:37,1,0:04,"Campus: 2185 Red Butte Canyon Rd, Salt Lake City, UT 84112, USA",Campus,0:04,19
+UOFU6336,Commuter services enforcement,28-Sep-22,0:37,9/28/2022 9:18,3,0:03,"Campus: 25 2000 E, Salt Lake City, UT 84132, USA",Campus,0:03,27
+UOFU6336,Commuter services enforcement,28-Sep-22,0:14,9/28/2022 9:37,2,0:03,"Campus: 12 Medical Plaza, Salt Lake City, UT 84112, USA",Campus,0:03,23
+UOFU6336,Commuter services enforcement,28-Sep-22,0:06,9/28/2022 9:47,0,0:07,"Campus: 59 Red Butte Canyon Rd, Salt Lake City, UT 84120, USA",Campus,0:07,15
+UOFU6336,Commuter services enforcement,28-Sep-22,0:41,9/28/2022 10:37,3,0:05,"Campus: Annex General Office, 1901 S Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:05,24
+UOFU6336,Commuter services enforcement,28-Sep-22,0:05,9/28/2022 10:48,1,0:13,"Red Butte Canyon Rd, Salt Lake City, UT 84108, USA",,0:13,25
+UOFU6336,Commuter services enforcement,28-Sep-22,0:02,9/28/2022 11:03,0,0:05,"Campus: 2185 Red Butte Canyon Rd, Salt Lake City, UT 84112, USA",Campus,0:05,19
+UOFU6336,Commuter services enforcement,28-Sep-22,0:06,9/28/2022 11:15,1,0:04,"Campus: 20 S 2030 E, Salt Lake City, UT 84132, USA",Campus,0:04,24
+UOFU6336,Commuter services enforcement,28-Sep-22,0:05,9/28/2022 11:25,1,0:52,"Campus: 311 Fort Douglas Blvd, Salt Lake City, UT 84113, USA",Campus,0:02,25
+UOFU6336,Commuter services enforcement,28-Sep-22,0:16,9/28/2022 12:34,1,0:02,"Campus: Annex General Office, 1901 S Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:02,27
+UOFU6336,Commuter services enforcement,28-Sep-22,0:04,9/28/2022 12:42,0,0:03,"Campus: Annex General Office, 1901 S Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:03,7
+UOFU6336,Commuter services enforcement,28-Sep-22,0:00,9/28/2022 12:45,0,0:03,"Campus: Annex General Office, 1901 S Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:03,7
+UOFU6336,Commuter services enforcement,28-Sep-22,0:06,9/28/2022 12:55,0,0:04,"Campus, Facilities: V.Randall Turpin Univ Serv Bldg, 1795 S Campus Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:04,17
+UOFU6336,Commuter services enforcement,28-Sep-22,0:00,9/28/2022 13:00,0,0:27,"Campus, Facilities: 1721 Campus Center Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:27,14
+UOFU6336,Commuter services enforcement,28-Sep-22,0:08,9/28/2022 13:36,0,0:05,"Campus, Facilities: 1721 Campus Center Dr, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:05,11
+UOFU6336,Commuter services enforcement,28-Sep-22,0:14,9/28/2022 13:56,0,0:04,"Campus, Facilities: 1830 1800 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:04,11
+UOFU6336,Commuter services enforcement,28-Sep-22,0:06,9/28/2022 14:07,0,0:04,"Campus: 400 S 900 E, Salt Lake City, UT 84102, USA",Campus,0:04,11
+UOFU6336,Commuter services enforcement,28-Sep-22,0:02,9/28/2022 14:13,0,0:06,"Campus: 400 S 900 E, Salt Lake City, UT 84102, USA",Campus,0:06,12
+UOFU6336,Commuter services enforcement,28-Sep-22,0:00,9/28/2022 14:20,0,0:03,"Campus: 400 S 900 E, Salt Lake City, UT 84102, USA",Campus,0:03,6
+UOFU6336,Commuter services enforcement,28-Sep-22,0:05,9/28/2022 14:30,0,0:04,"Campus: 171, Salt Lake City, UT 84112, USA",Campus,0:04,6
+UOFU6336,Commuter services enforcement,28-Sep-22,0:01,9/28/2022 14:36,0,0:05,"Campus: 171, Salt Lake City, UT 84112, USA",Campus,0:05,7
+UOFU6336,Commuter services enforcement,28-Sep-22,0:17,9/28/2022 14:58,1,0:03,"Campus: 235-255 S 1300 E, Salt Lake City, UT 84102, USA",Campus,0:03,27
+UOFU6336,Commuter services enforcement,28-Sep-22,0:01,9/28/2022 15:03,0,0:01,"222 1300 E, Salt Lake City, UT 84102, USA",,0:00,22
+UOFU6336,Commuter services enforcement,28-Sep-22,0:05,9/28/2022 15:10,1,0:11,"Campus: 120 UT-282, Salt Lake City, UT 84112, USA",Campus,0:00,31
+UOFU6336,Commuter services enforcement,28-Sep-22,0:20,9/28/2022 15:42,2,0:03,"Campus, Facilities: 1830 1800 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:03,38
+UOFU6336,Commuter services enforcement,28-Sep-22,0:09,9/28/2022 15:55,1,15:06,"Campus: Ppo Green House, Salt Lake City, UT 84108, USA",Campus,0:00,30
+UOFU6348,Engineering District,28-Sep-22,0:04,9/28/2022 7:27,1,0:01,"Campus, Facilities, Fleet Building: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,32
+UOFU6348,Engineering District,28-Sep-22,0:08,9/28/2022 7:36,1,0:02,"Campus: 101-199 S 1452 E, Salt Lake City, UT 84112, USA",Campus,0:00,23
+UOFU6348,Engineering District,28-Sep-22,0:04,9/28/2022 7:43,1,3:04,"Campus: 50 Central Campus Dr, Salt Lake City, UT 84112, USA",Campus,0:00,33
+UOFU6348,Engineering District,28-Sep-22,0:04,9/28/2022 10:51,0,1:03,"Campus: Unnamed Road, Salt Lake City, UT 84112, USA",Campus,0:00,18
+UOFU6348,Engineering District,28-Sep-22,0:04,9/28/2022 11:59,0,0:25,"Campus: Hedco, Salt Lake City, UT 84112, USA",Campus,0:00,4
+UOFU6348,Engineering District,28-Sep-22,0:12,9/28/2022 12:37,2,0:05,"Campus: Unnamed Road, Salt Lake City, UT 84108, USA",Campus,0:00,35
+UOFU6348,Engineering District,28-Sep-22,0:07,9/28/2022 12:50,2,19:34,"Campus: Unnamed Road, Salt Lake City, UT 84112, USA",Campus,0:00,32
+UOFU6378,Laundry,28-Sep-22,0:04,9/28/2022 8:46,1,0:08,"Campus: 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,27
+UOFU6378,Laundry,28-Sep-22,0:06,9/28/2022 9:01,1,0:22,"Campus: 375 Chipeta Way, Salt Lake City, UT 84108, USA",Campus,0:00,25
+UOFU6378,Laundry,28-Sep-22,0:02,9/28/2022 9:26,1,0:04,"Campus: 501 Chipeta Way, Salt Lake City, UT 84108, USA",Campus,0:00,25
+UOFU6378,Laundry,28-Sep-22,0:02,9/28/2022 9:33,0,0:18,"Campus: 615 Arapeen Dr, Salt Lake City, UT 84108, USA",Campus,0:00,23
+UOFU6378,Laundry,28-Sep-22,0:02,9/28/2022 9:54,0,0:05,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,29
+UOFU6378,Laundry,28-Sep-22,0:26,9/28/2022 10:26,21,0:21,"1743 Redstone Ave, Park City, UT 84098, USA",,0:00,70
+UOFU6378,Laundry,28-Sep-22,0:02,9/28/2022 10:50,0,0:14,"6450 N Landmark Dr, Park City, UT 84098, USA",,0:00,31
+UOFU6378,Laundry,28-Sep-22,0:31,9/28/2022 11:36,21,20:34,"Campus: 30 S 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,70
+UOFU6400,Pharmacy,28-Sep-22,0:22,9/28/2022 9:22,8,0:27,"6056 S Fashionsquare Dr, Murray, UT 84107, USA",,0:00,40
+UOFU6400,Pharmacy,28-Sep-22,0:14,9/28/2022 10:04,11,0:08,"1525 W 2100 S Expy, Salt Lake City, UT 84119, USA",,0:00,71
+UOFU6400,Pharmacy,28-Sep-22,0:21,9/28/2022 10:34,12,0:09,"Campus: Hospital Helipad 2, 71-99 S 2030 E, Salt Lake City, UT 84132, USA",Campus,0:00,69
+UOFU6400,Pharmacy,28-Sep-22,0:01,9/28/2022 10:46,0,0:09,"Campus: 1950 Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:00,14
+UOFU6400,Pharmacy,28-Sep-22,0:09,9/28/2022 11:04,1,0:06,"Campus: 685 Madsen, 556 Mario Capecchi Dr, Salt Lake City, UT 84148, USA",Campus,0:00,38
+UOFU6400,Pharmacy,28-Sep-22,0:04,9/28/2022 11:15,1,0:00,"2079 Yale Ave S, Salt Lake City, UT 84108, USA",,0:00,41
+UOFU6400,Pharmacy,28-Sep-22,0:17,9/28/2022 11:33,6,0:08,"3131 S 200 E, South Salt Lake, UT 84115, USA",,0:00,41
+UOFU6400,Pharmacy,28-Sep-22,0:07,9/28/2022 11:49,2,0:03,"4028 S 565 E, Millcreek, UT 84107, USA",,0:00,34
+UOFU6400,Pharmacy,28-Sep-22,0:22,9/28/2022 12:14,13,0:02,"Atlantic Aviation SLC, 369 N 2370 W, Salt Lake City, UT 84116, USA",,0:00,71
+UOFU6400,Pharmacy,28-Sep-22,0:14,9/28/2022 12:31,10,0:05,"4510 Commerce Dr, Murray, UT 84107, USA",,0:00,71
+UOFU6400,Pharmacy,28-Sep-22,0:09,9/28/2022 12:47,3,0:04,"181 Medical Tower Dr, Murray, UT 84107, USA",,0:00,40
+UOFU6400,Pharmacy,28-Sep-22,0:03,9/28/2022 12:54,1,1:17,"6056 S Fashionsquare Dr, Murray, UT 84107, USA",,0:00,26
+UOFU6400,Pharmacy,28-Sep-22,0:10,9/28/2022 14:23,7,0:04,"3730 S 3740 W, West Valley City, UT 84120, USA",,0:00,72
+UOFU6400,Pharmacy,28-Sep-22,0:13,9/28/2022 14:41,7,0:03,"1525 W 2100 S Expy, Salt Lake City, UT 84119, USA",,0:00,71
+UOFU6400,Pharmacy,28-Sep-22,0:13,9/28/2022 14:58,10,0:10,"6056 S Fashionsquare Dr, Murray, UT 84107, USA",,0:00,71
+UOFU6400,Pharmacy,28-Sep-22,0:27,9/28/2022 15:36,16,0:12,"Campus: 95 S 2030 E, Salt Lake City, UT 84132, USA",Campus,0:00,66
+UOFU6400,Pharmacy,28-Sep-22,0:03,9/28/2022 15:52,0,0:07,"Campus: 1950 Cir of Hope Dr, Salt Lake City, UT 84103, USA",Campus,0:00,15
+UOFU6400,Pharmacy,28-Sep-22,0:07,9/28/2022 16:07,1,0:02,"Campus: 555 Foothill Dr, Salt Lake City, UT 84112, USA",Campus,0:00,34
+UOFU6400,Pharmacy,28-Sep-22,0:30,9/28/2022 16:41,14,17:09,"6056 S Fashionsquare Dr, Murray, UT 84107, USA",,0:06,73
+UOFU6424,Commuter Services,28-Sep-22,0:05,9/28/2022 9:28,2,1:23,"Campus: 1945 E Sunnyside Ave, Salt Lake City, UT 84108, USA",Campus,0:00,37
+UOFU6424,Commuter Services,28-Sep-22,0:08,9/28/2022 11:00,2,1:32,"Campus, Commuter 2: 185 Connor Rd, Salt Lake City, UT 84120, USA","Campus, Office Zone",0:00,40
+UOFU6424,Commuter Services,28-Sep-22,0:21,9/28/2022 12:54,1,0:08,"Campus: 50 Medical Drive, Salt Lake City, UT 84112, Salt Lake City, UT 84132, USA",Campus,0:00,21
+UOFU6424,Commuter Services,28-Sep-22,0:04,9/28/2022 13:07,0,0:48,"Campus: 50 Medical Drive, Salt Lake City, UT 84112, Salt Lake City, UT 84132, USA",Campus,0:00,0
+UOFU6424,Commuter Services,28-Sep-22,0:12,9/28/2022 14:08,2,23:24,"Campus, Commuter 2: 185 Connor Rd, Salt Lake City, UT 84120, USA","Campus, Office Zone",0:00,35
+UOFU6425,Hospital Courier,28-Sep-22,0:02,9/28/2022 8:02,0,0:09,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,0
+UOFU6425,Hospital Courier,28-Sep-22,0:01,9/28/2022 8:13,0,0:07,"Campus: 65 Mario Capecchi Dr, Salt Lake City, UT 84132, USA",Campus,0:00,12
+UOFU6425,Hospital Courier,28-Sep-22,0:21,9/28/2022 8:42,15,0:05,"Midvalley Derm, Moran & health Plans: 6053 Fashion Square Dr, Murray, UT 84107, USA",Customer Zone,0:00,72
+UOFU6425,Hospital Courier,28-Sep-22,0:00,9/28/2022 8:48,0,0:10,"Midvalley Derm, Moran & health Plans: 6056 Fashion Blvd, Murray, UT 84107, USA",Customer Zone,0:00,9
+UOFU6425,Hospital Courier,28-Sep-22,0:01,9/28/2022 9:00,0,0:08,"Midvalley Derm, Moran & health Plans: 6056 S Fashionsquare Dr, Murray, UT 84107, USA",Customer Zone,0:00,6
+UOFU6425,Hospital Courier,28-Sep-22,0:00,9/28/2022 9:09,0,0:15,"Midvalley Derm, Moran & health Plans: 243 6100 S, Murray, UT 84107, USA",Customer Zone,0:00,12
+UOFU6425,Hospital Courier,28-Sep-22,0:07,9/28/2022 9:31,2,0:04,"Greenwood Health Center: Lang Patrick B, 7495 State St, Midvale, UT 84047, USA",Customer Zone,0:00,41
+UOFU6425,Hospital Courier,28-Sep-22,0:08,9/28/2022 9:44,4,0:16,"Intermountain Medical Center: 5131 Cottonwood St, Murray, UT 84107, USA",Customer Zone,0:00,41
+UOFU6425,Hospital Courier,28-Sep-22,0:39,9/28/2022 10:41,33,0:11,"Parkway Health Center: 145 UT-265, Orem, UT 84058, USA",Customer Zone,0:00,73
+UOFU6425,Hospital Courier,28-Sep-22,0:35,9/28/2022 11:28,28,0:08,"Riverton Eye Center: 3793 W 12600 S, Riverton, UT 84065, USA",Customer Zone,0:00,75
+UOFU6425,Hospital Courier,28-Sep-22,0:05,9/28/2022 11:42,1,0:03,"4604 W 12600 S, Herriman, UT 84096, USA",,0:00,35
+UOFU6425,Hospital Courier,28-Sep-22,0:05,9/28/2022 11:51,2,0:21,"South Jordan: 5126 W Daybreak Pkwy, South Jordan, UT 84009, USA",clinics,0:00,42
+UOFU6425,Hospital Courier,28-Sep-22,0:02,9/28/2022 12:14,0,0:04,"South Jordan: 5224 W Daybreak Pkwy, South Jordan, UT 84095, USA",clinics,0:00,11
+UOFU6425,Hospital Courier,28-Sep-22,0:29,9/28/2022 12:49,14,0:12,"Midvalley Derm, Moran & health Plans: 195 E 6100 S, Murray, UT 84107, USA",Customer Zone,0:00,64
+UOFU6425,Hospital Courier,28-Sep-22,0:00,9/28/2022 13:02,0,0:05,"Midvalley Derm, Moran & health Plans: 6056 S Fashionsquare Dr, Murray, UT 84107, USA",Customer Zone,0:00,9
+UOFU6425,Hospital Courier,28-Sep-22,0:24,9/28/2022 13:33,15,0:12,"Campus: 65 Mario Capecchi Dr, Salt Lake City, UT 84132, USA",Campus,0:00,73
+UOFU6425,Hospital Courier,28-Sep-22,0:01,9/28/2022 13:47,0,0:42,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,17
+UOFU6425,Hospital Courier,28-Sep-22,0:07,9/28/2022 14:36,1,0:03,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:00,27
+UOFU6425,Hospital Courier,28-Sep-22,0:05,9/28/2022 14:45,1,17:11,"Campus: School of Medicine, 30 N 1900 E, Salt Lake City, UT 84132, USA",Campus,0:00,34
+UOFU6446 Gaylen,UEN,28-Sep-22,0:13,9/28/2022 15:08,7,0:40,"Reeves 166, 451 E 400 N, Price, UT 84501, USA",,0:13,70
+UOFU6446 Gaylen,UEN,28-Sep-22,0:05,9/28/2022 15:54,2,0:00,"124 N Carbonville Rd, Price, UT 84501, USA",,0:00,39
+UOFU6446 Gaylen,UEN,28-Sep-22,0:01,9/28/2022 15:57,0,0:14,"124 N Carbonville Rd, Price, UT 84501, USA",,0:01,4
+UOFU6446 Gaylen,UEN,28-Sep-22,0:05,9/28/2022 16:17,2,1:22,"1375 S Carbon Ave, Price, UT 84501, USA",,0:00,70
+UOFU6446 Gaylen,UEN,28-Sep-22,0:14,9/28/2022 17:53,7,139:40:00,"1888 W 3500 N, Helper, UT 84526, USA",,0:11,57
+UOFU6449,Commuter services enforcement,28-Sep-22,0:01,9/28/2022 7:08,0,0:04,"Campus: 311 Fort Douglas Blvd, Salt Lake City, UT 84113, USA",Campus,0:04,0
+UOFU6449,Commuter services enforcement,28-Sep-22,0:04,9/28/2022 7:17,1,0:19,"Campus: 470 Mario Capecchi Dr, Salt Lake City, UT 84112, USA",Campus,0:19,33
+UOFU6449,Commuter services enforcement,28-Sep-22,0:01,9/28/2022 7:38,0,0:14,"Campus: 527 Foothill Dr, Salt Lake City, UT 84112, USA",Campus,0:14,11
+UOFU6449,Commuter services enforcement,28-Sep-22,0:06,9/28/2022 8:00,1,0:10,"Campus: 390 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:10,26
+UOFU6449,Commuter services enforcement,28-Sep-22,0:25,9/28/2022 8:36,1,0:03,"Campus: 295 Chipeta Way, Salt Lake City, UT 84108, USA",Campus,0:03,35
+UOFU6449,Commuter services enforcement,28-Sep-22,0:04,9/28/2022 8:44,0,0:02,"Campus, Commuter services zone: 311 Fort Douglas Blvd, Salt Lake City, UT 84113, USA","Campus, Office Zone",0:00,22
+UOFU6449,Commuter services enforcement,28-Sep-22,0:04,9/28/2022 8:51,1,0:06,"Campus: 530 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:06,30
+UOFU6449,Commuter services enforcement,28-Sep-22,0:01,9/28/2022 9:00,0,0:04,"Campus: 530 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:04,0
+UOFU6449,Commuter services enforcement,28-Sep-22,0:06,9/28/2022 9:11,0,0:48,"Campus: 590 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:10,5
+UOFU6449,Commuter services enforcement,28-Sep-22,0:04,9/28/2022 10:04,0,0:40,"Campus: 530 Wakara Way, Salt Lake City, UT 84108, USA",Campus,0:40,9
+UOFU6449,Commuter services enforcement,28-Sep-22,0:07,9/28/2022 10:53,1,0:03,"Campus: 1141 University Village, Salt Lake City, UT 84108, USA",Campus,0:03,29
+UOFU6449,Commuter services enforcement,28-Sep-22,0:07,9/28/2022 11:04,1,0:19,"Campus: 1449 University Village, Salt Lake City, UT 84108, USA",Campus,0:19,12
+UOFU6449,Commuter services enforcement,28-Sep-22,0:05,9/28/2022 11:29,1,0:49,"Campus: 199 Pollock Rd, Salt Lake City, UT 84108, USA",Campus,0:00,32
+UOFU6449,Commuter services enforcement,28-Sep-22,0:22,9/28/2022 12:41,3,0:36,"Campus: 938 University Village, Salt Lake City, UT 84108, USA",Campus,0:36,35
+UOFU6449,Commuter services enforcement,28-Sep-22,0:06,9/28/2022 13:24,2,0:16,"Campus: Orthopaedic Center, Salt Lake City, UT 84108, USA",Campus,0:16,34
+UOFU6449,Commuter services enforcement,28-Sep-22,0:01,9/28/2022 13:42,0,1:30,"Campus: Komas Dr @ 542 S, Salt Lake City, UT 84108, USA",Campus,1:30,14
+UOFU6449,Commuter services enforcement,28-Sep-22,0:04,9/28/2022 15:17,1,0:02,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,35
+UOFU6449,Commuter services enforcement,28-Sep-22,0:04,9/28/2022 15:24,1,2:19,"Campus: 311 Fort Douglas Blvd, Salt Lake City, UT 84113, USA",Campus,0:00,33
+UOFU6449,Commuter services enforcement,28-Sep-22,0:04,9/28/2022 17:48,1,0:06,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:06,33
+UOFU6449,Commuter services enforcement,28-Sep-22,0:04,9/28/2022 17:58,1,2:53,"Campus, Commuter services zone: 311 Fort Douglas Blvd, Salt Lake City, UT 84113, USA","Campus, Office Zone",0:00,31
+UOFU6449,Commuter services enforcement,28-Sep-22,0:06,9/28/2022 20:58,1,0:18,"Campus: 400 S 900 E, Salt Lake City, UT 84102, USA",Campus,0:18,30
+UOFU6449,Commuter services enforcement,28-Sep-22,0:05,9/28/2022 21:21,1,0:11,"Campus: 200 1500 E, Salt Lake City, UT 84112, USA",Campus,0:11,29
+UOFU6449,Commuter services enforcement,28-Sep-22,0:02,9/28/2022 21:36,0,0:10,"Campus: 100 1500 E, Salt Lake City, UT 84112, USA",Campus,0:10,4
+UOFU6449,Commuter services enforcement,28-Sep-22,0:02,9/28/2022 21:48,0,0:08,"Campus: 500 Foothill Dr, Salt Lake City, UT 84148, USA",Campus,0:08,26
+UOFU6449,Commuter services enforcement,28-Sep-22,0:09,9/28/2022 22:06,1,8:37,"Campus: Ppo Green House, Salt Lake City, UT 84108, USA",Campus,0:00,24
+UOFU6450,Commuter services enforcement,28-Sep-22,0:09,9/28/2022 7:27,1,0:07,"Campus: Helipad 1, 71-99 S 2030 E, Salt Lake City, UT 84132, USA",Campus,0:07,32
+UOFU6450,Commuter services enforcement,28-Sep-22,0:08,9/28/2022 7:42,1,0:07,"Campus: 105 N Medical Dr, Salt Lake City, UT 84113, USA",Campus,0:00,34
+UOFU6450,Commuter services enforcement,28-Sep-22,0:07,9/28/2022 7:57,0,0:27,"Campus: 50 Medical Dr N, Salt Lake City, UT 84132, USA",Campus,0:00,10
+UOFU6450,Commuter services enforcement,28-Sep-22,0:00,9/28/2022 8:25,0,1:29,"Campus: 50 Medical Dr N, Salt Lake City, UT 84132, USA",Campus,1:29,0
+UOFU6450,Commuter services enforcement,28-Sep-22,0:20,9/28/2022 10:15,0,0:51,"Campus: Helipad 3, 99 S 2030 E, Salt Lake City, UT 84132, USA",Campus,0:51,16
+UOFU6450,Commuter services enforcement,28-Sep-22,0:06,9/28/2022 11:14,1,0:53,"Campus, Commuter services zone: 311 Fort Douglas Blvd, Salt Lake City, UT 84113, USA","Campus, Office Zone",0:00,26
+UOFU6450,Commuter services enforcement,28-Sep-22,0:08,9/28/2022 12:16,1,0:19,"Campus: 99 S 2030 E, Salt Lake City, UT 84132, USA",Campus,0:19,25
+UOFU6450,Commuter services enforcement,28-Sep-22,0:02,9/28/2022 12:37,0,0:04,"Campus: Helipad 3, 99 S 2030 E, Salt Lake City, UT 84132, USA",Campus,0:04,12
+UOFU6450,Commuter services enforcement,28-Sep-22,0:06,9/28/2022 12:49,0,0:37,"Campus: 150 UT-282, Salt Lake City, UT 84132, USA",Campus,0:37,0
+UOFU6450,Commuter services enforcement,28-Sep-22,0:08,9/28/2022 13:35,0,0:24,"Campus: 99 S 2030 E, Salt Lake City, UT 84132, USA",Campus,0:24,12
+UOFU6450,Commuter services enforcement,28-Sep-22,0:08,9/28/2022 14:08,1,16:48,"Campus: Ppo Green House, Salt Lake City, UT 84108, USA",Campus,0:00,25
+UOFU6451,Commuter services enforcement,28-Sep-22,0:27,9/28/2022 8:11,1,0:04,"Campus: 175 N Medical Dr, Salt Lake City, UT 84103, USA",Campus,0:04,25
+UOFU6451,Commuter services enforcement,28-Sep-22,0:03,9/28/2022 8:19,0,0:19,"Campus: 175 N Medical Dr, Salt Lake City, UT 84103, USA",Campus,0:19,0
+UOFU6451,Commuter services enforcement,28-Sep-22,0:00,9/28/2022 8:39,0,0:09,"Campus: 175 N Medical Dr, Salt Lake City, UT 84103, USA",Campus,0:09,0
+UOFU6451,Commuter services enforcement,28-Sep-22,0:01,9/28/2022 8:50,0,0:04,"Campus: 175 N Medical Dr, Salt Lake City, UT 84103, USA",Campus,0:00,0
+UOFU6451,Commuter services enforcement,28-Sep-22,0:05,9/28/2022 8:59,0,0:58,"Campus: 175 N Medical Dr, Salt Lake City, UT 84103, USA",Campus,0:00,0
+UOFU6451,Commuter services enforcement,28-Sep-22,0:01,9/28/2022 9:58,0,0:04,"Campus: 175 N Medical Dr, Salt Lake City, UT 84103, USA",Campus,0:04,0
+UOFU6451,Commuter services enforcement,28-Sep-22,0:17,9/28/2022 10:20,0,0:16,"Campus: 175 N Medical Dr, Salt Lake City, UT 84103, USA",Campus,0:00,0
+UOFU6451,Commuter services enforcement,28-Sep-22,0:09,9/28/2022 10:47,1,3:34,"Campus: 311 Fort Douglas Blvd, Salt Lake City, UT 84113, USA",Campus,0:02,18
+UOFU6451,Commuter services enforcement,28-Sep-22,0:19,9/28/2022 14:40,1,0:06,"Campus: 175 N Medical Dr, Salt Lake City, UT 84132, USA",Campus,0:06,21
+UOFU6451,Commuter services enforcement,28-Sep-22,0:00,9/28/2022 14:47,0,0:05,"Campus: 175 N Medical Dr, Salt Lake City, UT 84132, USA",Campus,0:05,0
+UOFU6451,Commuter services enforcement,28-Sep-22,0:09,9/28/2022 15:03,0,0:16,"Campus: 175 N Medical Dr, Salt Lake City, UT 84132, USA",Campus,0:00,0
+UOFU6451,Commuter services enforcement,28-Sep-22,0:07,9/28/2022 15:27,1,0:02,"Campus, Facilities: Motor Pool, 309 S 1778 E, Salt Lake City, UT 84112, USA","Campus, Office Zone",0:00,30
+UOFU6451,Commuter services enforcement,28-Sep-22,0:03,9/28/2022 15:33,1,0:03,"Campus, Commuter services zone: 311 Fort Douglas Blvd, Salt Lake City, UT 84113, USA","Campus, Office Zone",0:00,33
+UOFU6451,Commuter services enforcement,28-Sep-22,0:00,9/28/2022 15:36,0,15:03,"Campus, Commuter services zone: 311 Fort Douglas Blvd, Salt Lake City, UT 84113, USA","Campus, Office Zone",0:03,2
+UOFU6453,HCMI Community Crisis and support services,28-Sep-22,0:09,9/28/2022 12:26,4,1:08,"Salt Lake County: 848 Poinsettia Dr, Salt Lake City, UT 84116, USA",Customer Zone,0:00,49
+UOFU6453,HCMI Community Crisis and support services,28-Sep-22,0:11,9/28/2022 13:46,4,1:22,"Salt Lake County: 535 E 100 S, Salt Lake City, UT 84102, USA",Customer Zone,0:00,45
+UOFU6453,HCMI Community Crisis and support services,28-Sep-22,0:36,9/28/2022 15:45,22,0:05,"Salt Lake County: 8166 UT-111, West Jordan, UT 84081, USA",Customer Zone,0:05,78
+UOFU6453,HCMI Community Crisis and support services,28-Sep-22,0:05,9/28/2022 15:56,1,0:29,"Salt Lake County: 7453 Valley Maple Dr, West Jordan, UT 84081, USA",Customer Zone,0:29,47
+UOFU6453,HCMI Community Crisis and support services,28-Sep-22,0:02,9/28/2022 16:29,0,0:37,"Salt Lake County: 7453 Valley Maple Dr, West Jordan, UT 84081, USA",Customer Zone,0:37,24
+UOFU6453,HCMI Community Crisis and support services,28-Sep-22,0:01,9/28/2022 17:08,0,0:21,"Salt Lake County: 7453 Valley Maple Dr, West Jordan, UT 84081, USA",Customer Zone,0:21,7
+UOFU6453,HCMI Community Crisis and support services,28-Sep-22,0:01,9/28/2022 17:31,0,0:07,"Salt Lake County: 7463 Valley Maple Dr, West Jordan, UT 84081, USA",Customer Zone,0:00,14
+UOFU6453,HCMI Community Crisis and support services,28-Sep-22,0:16,9/28/2022 17:54,6,0:15,"Salt Lake County: 3580 9000 S, West Jordan, UT 84088, USA",Customer Zone,0:00,63
+UOFU6453,HCMI Community Crisis and support services,28-Sep-22,0:33,9/28/2022 18:43,18,90:41:00,"Salt Lake County: 535 E 100 S, Salt Lake City, UT 84102, USA",Customer Zone,0:01,80
+UOFU6454,"HCMI Community Crisis and support services, UNI",28-Sep-22,0:01,9/28/2022 8:22,0,0:59,"Salt Lake County: 525 E 100 S UNIT 500, Salt Lake City, UT 84102, USA",Customer Zone,0:00,0
+UOFU6454,"HCMI Community Crisis and support services, UNI",28-Sep-22,0:07,9/28/2022 9:30,2,0:16,"Salt Lake County: 681 State St, Salt Lake City, UT 84111, USA",Customer Zone,0:00,34
+UOFU6454,"HCMI Community Crisis and support services, UNI",28-Sep-22,0:08,9/28/2022 9:55,2,0:02,"Salt Lake County: 242 Paramount Ave, South Salt Lake, UT 84115, USA",Customer Zone,0:00,45
+UOFU6454,"HCMI Community Crisis and support services, UNI",28-Sep-22,0:13,9/28/2022 10:11,3,0:50,"Salt Lake County: 165 S 300 E, Salt Lake City, UT 84111, USA",Customer Zone,0:00,33
+UOFU6454,"HCMI Community Crisis and support services, UNI",28-Sep-22,0:08,9/28/2022 11:10,2,0:33,"Salt Lake County: 404 400 W, Salt Lake City, UT 84101, USA",Customer Zone,0:00,40
+UOFU6454,"HCMI Community Crisis and support services, UNI",28-Sep-22,0:11,9/28/2022 11:56,2,3:29,"Salt Lake County: 525 E 100 S UNIT 500, Salt Lake City, UT 84102, USA",Customer Zone,0:00,31
+UOFU6454,"HCMI Community Crisis and support services, UNI",28-Sep-22,0:29,9/28/2022 15:55,12,1:11,"Salt Lake County: 8241 Akers Way, Sandy, UT 84094, USA",Customer Zone,0:01,57
+UOFU6454,"HCMI Community Crisis and support services, UNI",28-Sep-22,0:05,9/28/2022 17:11,2,0:03,"Salt Lake County: 7360 S Union Park Ave, Midvale, UT 84047, USA",Customer Zone,0:00,40
+UOFU6454,"HCMI Community Crisis and support services, UNI",28-Sep-22,0:40,9/28/2022 17:55,12,14:45,"Salt Lake County: 535 E 100 S, Salt Lake City, UT 84102, USA",Customer Zone,0:00,60
+UOFU6455,"HCMI Community Crisis and support services, UNI",28-Sep-22,0:34,9/28/2022 11:28,21,0:36,"Salt Lake County: 12133 S 1975 W, Riverton, UT 84065, USA",Customer Zone,0:00,75
+UOFU6455,"HCMI Community Crisis and support services, UNI",28-Sep-22,0:23,9/28/2022 12:28,14,0:24,"Salt Lake County: 28E E Fireclay Ave, Murray, UT 84107, USA",Customer Zone,0:00,79
+UOFU6455,"HCMI Community Crisis and support services, UNI",28-Sep-22,0:16,9/28/2022 13:09,6,0:20,"Salt Lake County: 210 E 400 S, Salt Lake City, UT 84111, USA",Customer Zone,0:00,39
+UOFU6455,"HCMI Community Crisis and support services, UNI",28-Sep-22,0:05,9/28/2022 13:35,1,2:22,"Salt Lake County: 547 E 100 S, Salt Lake City, UT 84102, USA",Customer Zone,0:00,34
+UOFU6455,"HCMI Community Crisis and support services, UNI",28-Sep-22,0:00,9/28/2022 15:58,0,0:01,"Salt Lake County: 547 E 100 S, Salt Lake City, UT 84102, USA",Customer Zone,0:00,0
+UOFU6455,"HCMI Community Crisis and support services, UNI",28-Sep-22,0:24,9/28/2022 16:24,10,1:03,"Salt Lake County: 4213 S 2260 W, Salt Lake City, UT 84129, USA",Customer Zone,0:00,76
+UOFU6455,"HCMI Community Crisis and support services, UNI",28-Sep-22,0:11,9/28/2022 17:39,4,0:04,"Salt Lake County: 3430 S State St, Salt Lake City, UT 84115, USA",Customer Zone,0:00,48
+UOFU6455,"HCMI Community Crisis and support services, UNI",28-Sep-22,0:00,9/28/2022 17:44,0,0:03,"Salt Lake County: 3450 US-89, South Salt Lake, UT 84115, USA",Customer Zone,0:03,17
+UOFU6455,"HCMI Community Crisis and support services, UNI",28-Sep-22,0:27,9/28/2022 18:15,11,0:35,"Salt Lake County: 9888 S 2145 E, Sandy, UT 84092, USA",Customer Zone,0:00,55
+UOFU6455,"HCMI Community Crisis and support services, UNI",28-Sep-22,0:32,9/28/2022 19:23,20,18:08,"Salt Lake County: 127 500 E, Salt Lake City, UT 84102, USA",Customer Zone,0:00,73
+UOFU6456,HCMI Community Crisis and support services,28-Sep-22,0:32,9/28/2022 13:54,20,1:02,"Salt Lake County: 1169 W 11930 S, Riverton, UT 84065, USA",Customer Zone,0:00,73
+UOFU6456,HCMI Community Crisis and support services,28-Sep-22,0:29,9/28/2022 15:26,20,1:19,"Salt Lake County: 525 E 100 S, Salt Lake City, UT 84102, USA",Customer Zone,0:00,78
+UOFU6456,HCMI Community Crisis and support services,28-Sep-22,0:51,9/28/2022 17:38,13,0:51,"Salt Lake County: 8625 S 1205 E, Sandy, UT 84094, USA",Customer Zone,0:03,49
+UOFU6456,HCMI Community Crisis and support services,28-Sep-22,0:27,9/28/2022 18:56,18,1:31,"Salt Lake County: 2635 Stringham Ave S, Salt Lake City, UT 84109, USA",Customer Zone,0:00,76
+UOFU6456,HCMI Community Crisis and support services,28-Sep-22,0:23,9/28/2022 20:51,6,13:41,"Salt Lake County: 547 E 100 S, Salt Lake City, UT 84102, USA",Customer Zone,0:00,48
