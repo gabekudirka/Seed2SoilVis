@@ -1,4 +1,6 @@
 <template>
+    <div id='tooltip'>
+    </div>
     <svg :viewBox="viewBox">
         <g v-bind:id="chartName" transform="translate(35, 5)"> </g>
     </svg>
@@ -149,7 +151,7 @@ export default {
                 return dataPoint; 
             });
 
-            const data = uniqueVehicles.flatMap(vehicle => dateData.map(d => ({ date: d.date, vehicle, duration: d[vehicle] })));
+            // const data = uniqueVehicles.flatMap(vehicle => dateData.map(d => ({ date: d.date, vehicle, duration: d[vehicle] })));
             const stackGen = d3.stack()
                 .keys(uniqueVehicles)
                 .order(d3.stackOrderNone)
@@ -158,14 +160,13 @@ export default {
             const stack = stackGen(dateData);
             console.log(uniqueVehicles);
             console.log(dateData);
-            console.log(data);
             console.log(stack);
             const xScale = d3.scaleBand()
                 .domain(dates)
                 .range([this.width, this.margin.left])
                 .padding(0.3);
 
-            const max = data.length > 0 ? d3.max(dateData, d => d.sum) : 500;
+            const max = dateData.length > 0 ? d3.max(dateData, d => d.sum) : 500;
             const yScale = d3.scaleLinear()
                 .domain([0, max])
                 .range([this.height + this.margin.top, 0]);
@@ -179,7 +180,36 @@ export default {
                         .scale(yScale)
                         .ticks(8); 
 
-            const g = d3.selectAll(`#${this.chartName}`);
+            const tooltip = d3.select('#tooltip')
+                .style('opacity', 0)
+                .attr('class', 'tooltip')
+                .style('background-color', 'white')
+                .style('border', 'solid')
+                .style('border-width', '1px')
+                .style('border-radius', '5px')
+                .style('padding', '10px');
+
+            const mouseover = function (event, d) {
+                console.log(event);
+                
+                const vehicle = d3.select(this.parentNode).datum().key;
+                const vehicleDuration = d.data[vehicle];
+                console.log(vehicle);
+                tooltip
+                    .html('vehicle: ' + vehicle + '<br>Duration: ' + vehicleDuration)
+                    .style('opacity', 1);
+            };
+            const mousemove = function (event, d) {
+                tooltip
+                    .style('left', event.layerX + 15 + 'px')
+                    .style('top', event.layerY + 'px');
+            };
+            const mouseleave = function (event, d) {
+                tooltip
+                    .style('opacity', 0);
+            };
+
+            const g = d3.select(`#${this.chartName}`);
             g
                 .selectAll('g')
                 .data(stack)
@@ -191,8 +221,11 @@ export default {
                 .attr('x', d => xScale(d.data.date))
                 .attr('y', ([y1, y2]) => Math.min(yScale(y1), yScale(y2)))
                 .attr('height', ([y1, y2]) => Math.abs(yScale(y1) - yScale(y2)))
-                .attr('width', xScale.bandwidth() - 5);
-            
+                .attr('width', xScale.bandwidth() - 5)
+                .on('mouseover', mouseover)
+                .on('mousemove', mousemove)
+                .on('mouseleave', mouseleave);
+                        
             g.append('g')
                 .classed(this.innerClass, true)
                 .call(xAxis)

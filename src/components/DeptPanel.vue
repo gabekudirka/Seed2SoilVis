@@ -13,7 +13,7 @@
                 <div id="miles-chart-container" class="chart">
                     <p class="chart-title"> <b> Department Vehicle Usage </b> </p>
                     <PanelChart
-                        :chartData="trips"
+                        :chartData="timeSelectedTrips"
                         :chartName="'deptDrivingDuration'"
                         :containerWidth="chartSize.width"
                         :containerHeight="chartSize.height"
@@ -84,8 +84,11 @@ export default {
         toDate: function () {
             return this.$store.state.toDate;
         },
-        trips: function () {
+        stateSelectedTrips: function () {
             return this.$store.state.selectedTrips;
+        },
+        timeSelectedTrips: function () {
+            return this.stateSelectedTrips.filter(trip => new Date(trip.date) >= this.fromDate && new Date(trip.date) <= this.toDate);
         },
     },
     // watch: {

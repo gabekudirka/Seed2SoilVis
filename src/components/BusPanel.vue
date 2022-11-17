@@ -18,7 +18,7 @@
                 <div id="miles-chart-container" class="chart">
                     <p class="chart-title"> <b> Vehicle Usage </b> </p>
                     <PanelChart
-                        :chartData="stateSelectedTrips"
+                        :chartData="timeSelectedTrips"
                         :chartName="'vehicleDrivingDuration'"
                         :containerWidth="chartSize.width"
                         :containerHeight="chartSize.height"
@@ -90,12 +90,15 @@ export default {
         showVehiclesState: function () {
             return this.$store.state.showVehicles;
         },
+        timeSelectedTrips: function () {
+            return this.stateSelectedTrips.filter(trip => new Date(trip.date) >= this.fromDate && new Date(trip.date) <= this.toDate);
+        },
     },
-    // watch: {
-    //     vehicleId: function () {
-    //         this.trips = this.allTrips.filter((trip) => trip.vehicle === this.vehicleId);
-    //     },
-    // },
+    watch: {
+        // vehicleId: function () {
+        //     this.trips = this.allTrips.filter((trip) => trip.vehicle === this.vehicleId);
+        // },
+    },
     methods: {
         showDept(deptName) {
             this.$store.dispatch('changeDept', deptName);
