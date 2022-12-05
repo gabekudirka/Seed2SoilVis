@@ -63,6 +63,7 @@ export default {
     },
   },
   watch: {
+    // Update the map whenever the dates or selected vehicle/department changes
     fromDate: function () {
       this.markerCluster.clearLayers();
       this.drawStops();
@@ -104,6 +105,7 @@ export default {
 
       const economicOverlay = this.drawTazOverlay();
 
+      // Add the heatmap overlays
       const idleHeatmapConfig = {
         radius: 0.005,
         maxOpacity: 5,
@@ -322,9 +324,11 @@ export default {
       };
       return legend;
     },
+    // Draws and clusters all the stop markers on the map
     drawStops() {
       const ref = this;      
       let timeSelectedTrips = [];
+      // Make sure we are only drawing stops in the specified period of time
       if (this.selectedTrips.length > 0) {
         timeSelectedTrips = this.selectedTrips.filter(el => new Date(el.date) >= ref.fromDate && new Date(el.date) <= ref.toDate);
       } 

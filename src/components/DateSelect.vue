@@ -43,6 +43,7 @@ export default {
         };
     },
     watch: {
+        // Whenever we change the dates using the date select, update the from and to date state variables
         fromDate() {
             this.$store.dispatch('changeFromDate', this.fromDate);
         },

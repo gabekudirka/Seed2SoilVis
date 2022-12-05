@@ -78,6 +78,7 @@ export default {
         }
     },
     watch: {
+        // When the chart data changes, update the chart
         chartData: function () {
             this.colorScale = d3.scaleOrdinal()
                 .domain(this.selectedVehicles)
@@ -91,12 +92,11 @@ export default {
         },
     },
     methods: {
+        // This method uses d3 to create a stacked bar chart for the entire department data
         renderDeptChart() {
             const ref = this; 
-            if (this.chartData.length === 0) {
-                return;
-            }
-
+            
+            // This is initial data processing for the visualization
             const dates = this.getDatesInRange(this.fromDate, this.toDate);
             const testDate = new Date(this.fromDate.getTime());
             console.log(testDate);
@@ -119,6 +119,7 @@ export default {
                 return dataPoint; 
             });
 
+            // Creates a stack generator for the data
             const stackGen = d3.stack()
                 .keys(this.selectedVehicles)
                 .order(d3.stackOrderNone)
@@ -144,6 +145,7 @@ export default {
                         .scale(yScale)
                         .ticks(8); 
 
+            // Creates the tooltip for the barchart
             const tooltip = d3.select('#tooltip')
                 .style('opacity', 0)
                 .attr('class', 'tooltip')
@@ -170,6 +172,7 @@ export default {
                     .style('opacity', 0);
             };
 
+            // Creates the stacked barchart using the processed data
             const g = d3.select(`#${this.chartName}`);
             g
                 .selectAll('g')

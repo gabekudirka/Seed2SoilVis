@@ -39,6 +39,7 @@ export default {
         }
     },
     methods: {
+        // Changes which list you are looking at (vehicles or departments) upon clicking the toggle
        toggle() {
             this.$store.dispatch('changeListView', !this.showVehicleList);
         },

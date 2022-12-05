@@ -59,6 +59,7 @@ export default {
         },
         fleet: function () {
             const fleet = this.allVehicles;
+            // Calculate the total idle duration and usage duration for each vehicle in a given period of time
             fleet.forEach(vehicle => {
                 const selectedTrips = vehicle.trips.filter(trip => new Date(trip.start_time) >= this.fromDate && new Date(trip.end_time) <= this.toDate);
                 const totalDuration = selectedTrips.reduce((accumulator, object) => {
@@ -74,9 +75,8 @@ export default {
             return fleet;
         },
     },
-    watch: {
-    },
     methods: {
+        // When the user selects a vehicle, change the view and update the correspondings state variables
         selectItem: function (vehicleId) {
             const selectedTrips = this.trips.filter(trip => trip.vehicle === vehicleId);
             this.$store.dispatch('changeSelectedTrips', selectedTrips);

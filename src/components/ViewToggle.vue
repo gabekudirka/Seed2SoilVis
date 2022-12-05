@@ -39,6 +39,7 @@ export default {
         }
     },
     methods: {
+        // change the map view when the toggle is clicked
        toggle() {
             this.$store.dispatch('changeMainView', !this.showMapView);
         },

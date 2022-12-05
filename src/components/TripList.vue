@@ -62,6 +62,7 @@ export default {
         }
     },
     methods: {
+        // Make sure all trips are selected when the check all check box is checked
         checkAll: function () {
             document.getElementsByName('tripCheck').forEach(checkbox => {
                 checkbox.checked = this.allOn;
@@ -73,6 +74,7 @@ export default {
                 this.$store.dispatch('changeSelectedTrips', []);
             }
         },
+        // Helper function for displaying durations on the list
         convertDuration(duration) {
             const hours = Math.floor(parseInt(duration, 10) / 60);
             let minutes = parseInt(duration, 10) % 60;
@@ -82,6 +84,7 @@ export default {
             const durationStr = hours.toString() + ':' + minutes;
             return durationStr;
         },
+        // Determine if we are checking or unchecking a box and remove/add the trip
         checkOne: function (tripId) {
             const checkedTrips = this.stateSelectedTrips.filter(trip => trip.id !== tripId);
             const trip = this.vehicleTrips.find(el => el.id === tripId);

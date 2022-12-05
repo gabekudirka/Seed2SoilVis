@@ -44,14 +44,6 @@ export default {
             return this.$store.state.showVehicleList;
         }
     },
-    methods: {
-        showModal() {
-            this.modalVisible = true;
-        },
-        closeModal() {
-            this.modalVisible = false;
-        },
-    },
 };
 
 </script>

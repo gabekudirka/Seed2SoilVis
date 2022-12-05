@@ -88,11 +88,13 @@ export default {
         };
     },
     watch: {
+        // If a different dept is selected recheck the all on checkbox
         stateSelectedDept: function () {
             this.allOn = true;
         }   
     },
     methods: {
+        // When the user selects a vehicle, change the view and update the correspondings state variables
         selectItem: function (event, vehicleId) {
             if (event.target.getAttribute('type') === 'checkbox') {
                 return;
@@ -103,6 +105,7 @@ export default {
             this.$store.dispatch('changePanelView', true);
             this.$store.dispatch('changeListView', true);
         },
+        // When the all on checkbox is checked reselect all the vehicles and update corresponding state variables
         checkAll: function () {
             document.getElementsByName('vehicleCheck').forEach(checkbox => {
                 checkbox.checked = this.allOn;
@@ -116,6 +119,7 @@ export default {
                 this.$store.dispatch('changeSelectedTrips', []);
             }
         },
+        // Determine if a vehicle is checked or unchecked and add/remove it from the corresponding state variables
         checkOne: function (vehicleId) {
             const checkedVehicles = this.stateSelectedDeptVehicles.filter(vehicle => vehicle !== vehicleId);
             if (this.stateSelectedDeptVehicles.length === checkedVehicles.length) {
@@ -151,6 +155,7 @@ export default {
             this.sortBy = method;
             this.fleet = bl;
         },
+        // Helper method for displaying duration
         convertDuration(duration) {
             const hours = Math.floor(parseInt(duration, 10) / 60);
             let minutes = parseInt(duration, 10) % 60;

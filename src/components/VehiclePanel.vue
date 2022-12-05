@@ -115,6 +115,7 @@ export default {
         // },
     },
     methods: {
+        // When you select the vehicles department name, switch to the department view and change corresponding state variables
         showDept(deptName) {
             this.$store.dispatch('changeDept', deptName);
             const deptVehicles = this.fleet.filter(vehicle => vehicle.department === deptName).map(vehicle => vehicle.id);
@@ -124,6 +125,7 @@ export default {
             this.$store.dispatch('changePanelView', false);
             this.$store.dispatch('changeListView', false);
         },
+        // Switch the chart when the user selects a different one from the dropdown
         switchChart(event) {
             if (event.target.value === 'vehicle-usage') {
                 this.chartDataType = 'total_duration';

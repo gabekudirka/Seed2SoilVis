@@ -116,6 +116,7 @@ export default {
     //     },
     // },
     methods: {
+        // This method changes which chart is shown based on what the user has selected from the dropdown
         switchChart(event) {
             if (event.target.value === 'dept-usage') {
                 this.chartDataType = 'total_duration';

@@ -37,13 +37,6 @@ export default {
             departments: this.deptsObj.departments,
         };
     },
-    computed: {
-
-    },
-
-    methods: {
-        
-    }
 };
 </script>
 

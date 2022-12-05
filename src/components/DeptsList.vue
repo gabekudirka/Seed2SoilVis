@@ -57,6 +57,7 @@ export default {
         },
     },
     methods: {
+        // This is triggered upon selecting a department from the list, updates the state variables associated and changes the panel view
         selectItem: function (deptName) {
             this.$store.dispatch('changeDept', deptName);
             const deptVehicles = this.fleet.filter(vehicle => vehicle.department === deptName).map(vehicle => vehicle.id);

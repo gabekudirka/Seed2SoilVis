@@ -53,9 +53,6 @@ export default {
         toDate: function () {
           return this.$store.state.toDate;
         },
-        viewBox: function () {
-            return `0 0 ${this.containerWidth} ${this.containerHeight}`;
-        },
         selectedVehicles: function () {
           return this.$store.state.selectedDeptVehicles;
         },
@@ -74,6 +71,7 @@ export default {
         }
     },
     watch: {
+        // When the chart data changes, update the chart
         chartData: function () {
             this.clearChart();
             return this.renderVehicleChart();    
