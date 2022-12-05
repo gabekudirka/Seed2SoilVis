@@ -49,19 +49,25 @@ export default {
         selectedDept: function () {
             return this.$store.state.selectedDept;
         },
+        fromDate: function () {
+            return this.$store.state.fromDate;
+        },
+        toDate: function () {
+            return this.$store.state.toDate;
+        },
     },
     methods: {
         selectItem: function (deptName) {
             this.$store.dispatch('changeDept', deptName);
             const deptVehicles = this.fleet.filter(vehicle => vehicle.department === deptName).map(vehicle => vehicle.id);
-            const selectedTrips = this.allTrips.filter(trip => deptVehicles.includes(trip.vehicle));
+            const selectedTrips = this.allTrips.filter(trip => new Date(trip.date) >= this.fromDate && new Date(trip.date) <= this.toDate && deptVehicles.includes(trip.vehicle));
+            this.$store.dispatch('changeDeptVehicles', deptVehicles);
             this.$store.dispatch('changeSelectedTrips', selectedTrips);
             this.$store.dispatch('changePanelView', false);
         },
         sortDepts: function (method) {
             let bl = this.departments;
             if (method === this.sortBy) {
-                // just reverse bus list TODO doesnt work
                 bl.reverse();
             } else if (method === 'name') {
                 bl = this.departments.sort((a, b) => (a.name > b.name) ? -1 : 1);

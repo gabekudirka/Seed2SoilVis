@@ -1,7 +1,7 @@
 <template>
     <div id="vis">
         <div class="date-select-wrapper"> 
-            <label for="start-date" class="input-label label">Show Trips From:</label>
+            <label for="start-date" class="input-label label">From Date:</label>
             <Datepicker
                 id="start-date" 
                 class="date-picker input-label"
@@ -12,7 +12,7 @@
                 :typeable="true"/>
         </div>
         <div class="date-select-wrapper"> 
-            <label for="end-date" class="input-label label">Show Trips To:</label>
+            <label for="end-date" class="input-label label">To Date:</label>
             <Datepicker
                 id="end-date" 
                 class="date-picker input-label"
@@ -42,22 +42,6 @@ export default {
             maxDate: this.$store.state.maxDate,
         };
     },
-    // setup() {
-    //   const fromDate = this.$store.state.fromDate;
-    //   const toDate = this.$store.state.toDate;
-    //   const minDate = this.$store.state.minDate;
-    //   const maxDate = this.$store.state.maxDate;
- 
-    //   return {
-    //      fromDate,
-    //      toDate,
-    //      minDate,
-    //      maxDate,
-    //   };
-    // },
-    computed: {
-
-    },
     watch: {
         fromDate() {
             this.$store.dispatch('changeFromDate', this.fromDate);
@@ -66,19 +50,21 @@ export default {
             this.$store.dispatch('changeToDate', this.toDate);
         },
     },
-    methods: {
-    },
-    mounted() {
-
-    }
 };
 </script>
 
 <style>
     #vis{
-        padding-top: 0px;
+        /* padding-top: 0px;
         display: flex;
-        margin-left: 19%
+        margin-left: 19%; */
+        position: absolute;
+        z-index: 11;
+        left: 40%;
+        top: 0%;
+        background-color: white;
+        border-radius: 5px;
+        height: 65px;
     }
     .input-label {
         display: block;
@@ -91,10 +77,10 @@ export default {
         margin-right: 10px;
     }
     .date-picker {
-        width: 120px;
+        width: 140px;
     }
     .label {
         font-weight: bold;
-        font-size: 12px;
+        font-size: 14px;
     }
 </style>

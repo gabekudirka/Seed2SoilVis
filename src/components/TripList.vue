@@ -3,18 +3,18 @@
   <div id="trips-list-wrapper">
     <ul id="trips-list">
         <li class="trips-header">
-            <div > 
-                <input id="trips-allon-checkbox" type="checkbox" v-model="allOn" @change="checkAll()" style="margin:0 0.6em"/>
-            </div>
-            <div class="row-section-sm" @click="sortTrips('date')">Date</div> 
-            <div class="row-section-md" @click="sortTrips('total_duration')">Total Duration</div>
+            <input id="trips-allon-checkbox" type="checkbox" v-model="allOn" @change="checkAll()" style="margin:0 0.6em"/>
+            <div class="trip-section-sm" @click="sortTrips('date')">Date</div> 
+            <div class="trip-section-md" @click="sortTrips('total_duration')">Trip Duration</div>
+            <div class="trip-section-md" @click="sortTrips('idle_duration')">Idle Duration</div>
         </li>
         <li class='tripListItem' v-for="item in vehicleTrips" 
             :key="item.id"
         > 
-            <input class="row-section-checkbox" type="checkbox" name="tripCheck" checked="true" @change="checkOne(item.id)"/>
-            <div class="row-section-sm">{{ (new Date(item.date)).getMonth() }}/{{ (new Date(item.date)).getDate() }}/{{ (new Date(item.date)).getFullYear() }}</div>
-            <div class="row-section-md">{{ Math.floor(parseInt(item.total_duration) / 60) }}:{{ parseInt(item.total_duration) % 60 }}</div>
+            <input class="trip-section-checkbox" type="checkbox" name="tripCheck" checked="true" @change="checkOne(item.id)"/>
+            <div class="trip-section-sm">{{ (new Date(item.date)).getMonth() }}/{{ (new Date(item.date)).getDate() }}/{{ (new Date(item.date)).getFullYear() }}</div>
+            <div class="trip-section-md">{{ convertDuration(item.total_duration) }} </div>
+            <div class="trip-section-md">{{ convertDuration(item.idle_duration) }}</div>
         </li>
     </ul>
   </div>
@@ -73,6 +73,15 @@ export default {
                 this.$store.dispatch('changeSelectedTrips', []);
             }
         },
+        convertDuration(duration) {
+            const hours = Math.floor(parseInt(duration, 10) / 60);
+            let minutes = parseInt(duration, 10) % 60;
+            if (minutes < 10) {
+                minutes = '0' + minutes.toString();
+            }
+            const durationStr = hours.toString() + ':' + minutes;
+            return durationStr;
+        },
         checkOne: function (tripId) {
             const checkedTrips = this.stateSelectedTrips.filter(trip => trip.id !== tripId);
             const trip = this.vehicleTrips.find(el => el.id === tripId);
@@ -92,17 +101,19 @@ export default {
             this.allOn = allChecked;
         },
         sortTrips: function (method) {
-            let bl = this.fleet;
+            let bl = this.vehicleTrips;
             if (method === this.sortBy) {
                 // just reverse bus list TODO doesnt work
                 bl.reverse();
             } else if (method === 'date') {
-                bl = this.fleet.sort((a, b) => (Date(a.date) > Date(b.date)) ? -1 : 1);
+                bl = this.vehicleTrips.sort((a, b) => (Date(a.date) > Date(b.date)) ? -1 : 1);
             } else if (method === 'total_duration') {
-                bl = this.fleet.sort((a, b) => (a.total_duration > b.total_duration) ? 1 : -1);
+                bl = this.vehicleTrips.sort((a, b) => (a.total_duration > b.total_duration) ? 1 : -1);
+            } else if (method === 'idle_duration') {
+                bl = this.vehicleTrips.sort((a, b) => (a.idle_duration > b.idle_duration) ? 1 : -1);
             }
             this.sortBy = method;
-            this.fleet = bl;
+            this.vehicleTrips = bl;
         },
     
     }
@@ -113,15 +124,15 @@ export default {
 <style>
 #trips-list-wrapper {
     margin: 10px;
-    margin-left: 18%;
-    width: 300px;
-    height: 80%;
-    border: solid black 0.5px;
-    border-radius: 2px;
+    /* margin-left: 0%; */
+    border: solid #c2c2c2 0.5px;
+    border-radius: 4px;
     overflow-y: auto;
+    height: 340px;
+    width: 340px;
 }
-.trips-list {
-    border: 1px;
+#trips-list {
+    border-radius: 5px;
 }
 .trips-header{
     font-size: smaller;
@@ -129,7 +140,8 @@ export default {
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
-    background-color: #bfbfbf;
+    color: white;
+    background-color: lightseagreen;
     /* border-top: 2px solid #cdeceb; */
     /* padding: 0.6em; */
     /* padding: 0 0.6em; */
@@ -140,9 +152,6 @@ export default {
     height: 30px;
     display: flex;
     align-items: center;
-}
-.trips-header > div:hover {
-    background-color: #cdeceb;
 }
 .selected {
     color: white;
@@ -162,16 +171,16 @@ ul#trips-list > li:nth-of-type(even) {
 .hidden{
     visibility: hidden;
 }
-.row-section-checkbox{
-    width: 5%;
+.trip-section-checkbox{
+    width: 7%;
     align-content: left;
 }
-.row-section-sm{
-    width: 45%;
+.trip-section-sm{
+    width: 25%;
     text-align: center;
 }
-.row-section-md{
-    width: 55%;
+.trip-section-md{
+    width: 34%;
     text-align: center;
 }
 

@@ -1,22 +1,24 @@
 /* eslint-disable no-confusing-arrow */
 <template>
-  <div id="trips-list-wrapper">
-    <ul id="trips-list">
-        <li class="trips-header">
-            <div > 
-                <input id="trips-allon-checkbox" type="checkbox" v-model="allOn" @change="checkAll()" style="margin:0 0.6em"/>
-            </div>
-            <div class="row-section-sm" @click="sortTrips('id')">Vehicle Id</div> 
-            <div class="row-section-md" @click="sortTrips('year')">Year</div>
-        </li>
-        <li class='tripListItem' v-for="item in vehicles" 
+  <div id="vehicles-list-wrapper">
+    <ul id="vehicles-list">
+        <li class="vehicles-header">
+            <input id="vehicles-allon-checkbox" type="checkbox" v-model="allOn" @change="checkAll()" style="margin:0 0.6em"/>
+            <div class="vehicle-section-md" @click="sortTrips('id')">Vehicle Id</div> 
+            <div class="vehicle-section-sm" @click="sortTrips('total_duration')"># Trips</div>
+            <div class="vehicle-section-md" @click="sortTrips('total_duration')">Total Usage</div>
+            <div class="vehicle-section-md" @click="sortTrips('idle_duration')">Total Idling</div>
+        </li>   
+        <li class='subListItem' v-for="item in vehicles" 
             :class="[item.id == selectedVehicle ? 'selected' : '', 'listItem']"
-            :key="item.id"
-            @click="selectItem(item.id)"
+            :key="item.id" 
+            @click="selectItem($event, item.id)"
         > 
-            <input class="row-section-checkbox" type="checkbox" name="tripCheck" checked="true" @change="checkOne(item.id)"/>
-            <div class="row-section-sm">{{ item.id }}</div>
-            <div class="row-section-md">{{ item.year }}</div>
+            <input class="vehicle-section-checkbox" type="checkbox" name="vehicleCheck" checked="true" @change="checkOne(item.id)"/>
+            <div class="vehicle-section-md">{{ item.id }}</div>
+            <div class="vehicle-section-sm">{{ item.num_trips }}</div>
+            <div class="vehicle-section-md">{{ convertDuration(item.total_duration) }}</div>
+            <div class="vehicle-section-md">{{ convertDuration(item.idle_duration) }}</div>
         </li>
     </ul>
   </div>
@@ -46,23 +48,34 @@ export default {
         stateSelectedDept: function () {
             return this.$store.state.selectedDept;
         },
-        vehicles: function () {
-            return this.fleetObj.vehicles.filter(vehicle => vehicle.department === this.stateSelectedDept);
+        vehicleIds: function () {
+            return this.fleetObj.vehicles.filter(vehicle => vehicle.department === this.stateSelectedDept).map(el => el.id);
+        },
+        stateSelectedDeptVehicles: function () {
+            return this.$store.state.selectedDeptVehicles;
         },
         trips: function () {
-            return this.tripsObj.trips;
+            return this.tripsObj.trips.filter(trip => new Date(trip.date) >= this.fromDate && new Date(trip.date) <= this.toDate && this.stateSelectedDeptVehicles.includes(trip.vehicle));
         },
-        showVehiclesState: function () {
-            return this.$store.state.showVehicles;
-        },
-        vehicleTrips: function () {
-            return this.tripsObj.trips.filter(trip => trip.vehicle === this.stateSelectedVehicle && new Date(trip.date) >= this.fromDate && new Date(trip.date) <= this.toDate);
+        vehicles: function () {
+            const rawVehicles = this.fleetObj.vehicles.filter(vehicle => vehicle.department === this.stateSelectedDept);
+            rawVehicles.forEach(vehicle => {
+                const selectedTrips = vehicle.trips.filter(trip => new Date(trip.start_time) >= this.fromDate && new Date(trip.end_time) <= this.toDate);
+                console.log(selectedTrips);
+                const totalDuration = selectedTrips.reduce((accumulator, object) => {
+                    return accumulator + object.total_duration;
+                }, 0);
+                const idleDuration = selectedTrips.reduce((accumulator, object) => {
+                    return accumulator + object.idle_duration;
+                }, 0);
+                vehicle.total_duration = totalDuration;
+                vehicle.idle_duration = idleDuration;
+                vehicle.num_trips = selectedTrips.length;
+            });
+            return rawVehicles;
         },
         stateSelectedTrips: function () {
             return this.$store.state.selectedTrips;
-        },
-        stateSelectedVehicle: function () {
-            return this.$store.state.selectedVehicle;
         },
     },
     data() {
@@ -77,38 +90,48 @@ export default {
     watch: {
         stateSelectedDept: function () {
             this.allOn = true;
-        }
+        }   
     },
     methods: {
-        selectItem: function (vehicleId) {
+        selectItem: function (event, vehicleId) {
+            if (event.target.getAttribute('type') === 'checkbox') {
+                return;
+            }
             const selectedTrips = this.trips.filter(trip => trip.vehicle === vehicleId);
             this.$store.dispatch('changeSelectedTrips', selectedTrips);
             this.$store.dispatch('changeVehicle', vehicleId);
-            this.$store.dispatch('changePanelView', !this.showVehiclesState);
+            this.$store.dispatch('changePanelView', true);
+            this.$store.dispatch('changeListView', true);
         },
         checkAll: function () {
-            document.getElementsByName('tripCheck').forEach(checkbox => {
+            document.getElementsByName('vehicleCheck').forEach(checkbox => {
                 checkbox.checked = this.allOn;
             });
 
             if (this.allOn) {
-                this.$store.dispatch('changeSelectedTrips', this.vehicleTrips);
+                this.$store.dispatch('changeDeptVehicles', this.vehicleIds);
+                this.$store.dispatch('changeSelectedTrips', this.trips);
             } else {
+                this.$store.dispatch('changeDeptVehicles', []);
                 this.$store.dispatch('changeSelectedTrips', []);
             }
         },
-        checkOne: function (tripId) {
-            const checkedTrips = this.stateSelectedTrips.filter(trip => trip.id !== tripId);
-            const trip = this.vehicleTrips.find(el => el.id === tripId);
-            if (this.stateSelectedTrips.length === checkedTrips.length) {
-                const newTrips = [...this.stateSelectedTrips, trip];
+        checkOne: function (vehicleId) {
+            const checkedVehicles = this.stateSelectedDeptVehicles.filter(vehicle => vehicle !== vehicleId);
+            if (this.stateSelectedDeptVehicles.length === checkedVehicles.length) {
+                const newVehicles = [...this.stateSelectedDeptVehicles, vehicleId];
+                this.$store.dispatch('changeDeptVehicles', newVehicles);
+                const vehicleTrips = this.trips.filter(trip => trip.vehicle === vehicleId);
+                const newTrips = [...this.stateSelectedTrips, ...vehicleTrips];
                 this.$store.dispatch('changeSelectedTrips', newTrips);
             } else {
-                this.$store.dispatch('changeSelectedTrips', checkedTrips);
+                this.$store.dispatch('changeDeptVehicles', checkedVehicles);    
+                const newTrips = this.stateSelectedTrips.filter(trip => trip.vehicle !== vehicleId);
+                this.$store.dispatch('changeSelectedTrips', newTrips);
                 this.allOn = false;
             }
             let allChecked = true;
-            document.getElementsByName('tripCheck').forEach(checkbox => {
+            document.getElementsByName('vehicleCheck').forEach(checkbox => {
                 if (!checkbox.checked) {
                     allChecked = false;
                 }
@@ -128,54 +151,61 @@ export default {
             this.sortBy = method;
             this.fleet = bl;
         },
-    
+        convertDuration(duration) {
+            const hours = Math.floor(parseInt(duration, 10) / 60);
+            let minutes = parseInt(duration, 10) % 60;
+            if (minutes < 10) {
+                minutes = '0' + minutes.toString();
+            }
+            const durationStr = hours.toString() + ':' + minutes;
+            return durationStr;
+        },
     }
 };
 
 </script>
 
 <style>
-#trips-list-wrapper {
+#vehicles-list-wrapper {
     margin: 10px;
-    margin-left: 18%;
-    width: 300px;
-    height: 280px;
-    border: solid black 0.5px;
-    border-radius: 2px;
+    margin-left: 15%;
+    border: solid #c2c2c2 0.5px;
+    border-radius: 4px;
     overflow-y: auto;
+    height: 340px;
+    width: 340px;
 }
-.trips-list {
+.vehicles-list {
     border: 1px;
 }
-.trips-header{
+.vehicles-header{
     font-size: smaller;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
-    background-color: #bfbfbf;
+    color: white;
+    background-color: lightseagreen;
     /* border-top: 2px solid #cdeceb; */
     /* padding: 0.6em; */
     /* padding: 0 0.6em; */
 }
-.trips-header > div {
+.vehicles-header > div {
     padding: 0 0.6em;
     height: 100%;
     height: 30px;
     display: flex;
     align-items: center;
-}
-.trips-header > div:hover {
-    background-color: #cdeceb;
+    text-align: center;
 }
 .selected {
     color: white;
     background: lightseagreen !important;
 }
-ul#trips-list > li:nth-of-type(even) {
+ul#vehicles-list > li:nth-of-type(even) {
     background-color: white;
 }
-.tripListItem{
+.subListItem{
     padding: 0.6em;
     text-align:center;
     display: flex;
@@ -186,16 +216,16 @@ ul#trips-list > li:nth-of-type(even) {
 .hidden{
     visibility: hidden;
 }
-.row-section-checkbox{
+.vehicle-section-checkbox{
     width: 5%;
     align-content: left;
 }
-.row-section-sm{
-    width: 45%;
+.vehicle-section-sm{
+    width: 20%;
     text-align: center;
 }
-.row-section-md{
-    width: 55%;
+.vehicle-section-md{
+    width: 26%;
     text-align: center;
 }
 

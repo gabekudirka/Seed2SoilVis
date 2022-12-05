@@ -3,23 +3,22 @@
     <ListContainer class="left-sidebar sidebars" :fleetObj="fleetObj" :tripsObj="tripsObj" :deptsObj="deptsObj"/>
     <div class="main-panel">
       <div class="top-main">
-        <MapPanel class="MAP panel" :planObj="planBusObj"> </MapPanel>
+        <MapPanel class="MAP panel" :fleetObj="fleetObj" :tripsObj="tripsObj" :deptsObj="deptsObj"> </MapPanel>
         <!-- <PlanDetails class="right-sidebar panel"/> -->
       </div>
-      <BusPanel v-if="showVehicles" :fleetObj="fleetObj" :tripsObj="tripsObj" :deptsObj="deptsObj" class="bottom-main panel"/>
+      <VehiclePanel v-if="showVehicles" :fleetObj="fleetObj" :tripsObj="tripsObj" :deptsObj="deptsObj" class="bottom-main panel"/>
       <DeptPanel v-if="!showVehicles" :fleetObj="fleetObj" :tripsObj="tripsObj" :deptsObj="deptsObj" class="bottom-main panel"/>
     </div>
   </div>
 </template>
 
 <script>
-import BusPanel from './components/BusPanel.vue';
+import VehiclePanel from './components/VehiclePanel.vue';
 import DeptPanel from './components/DeptPanel.vue';
 import MapPanel from './components/MapPanel.vue';
-import PlanDetails from './components/PlanDetails.vue';
 import ListContainer from './components/ListContainer.vue';
 import vehicles from './data/vehicle_details/fleet_details.json';
-import tripData from './data/trip_data/trips_9-27_9-29.json';
+import tripData from './data/trip_data/trips_sept-oct.json';
 import departments from './data/vehicle_details/depts_9-27_9-29.json';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -27,10 +26,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default {
   name: 'App',
   components: {
-    BusPanel,
+    VehiclePanel,
     DeptPanel,
     MapPanel,
-    // PlanDetails,
     ListContainer
   },
   data() {
@@ -103,6 +101,7 @@ body{
   display:flex;
   flex-direction:column;
   margin-left: 20vw;
+  overflow-y: auto;
 }
 .top-main{
   flex:4;
@@ -112,20 +111,45 @@ body{
 .bottom-main{
   flex:1;
   max-height: 38vh;
-  overflow-y: auto;
+  overflow-y: hidden;
   overflow-x: hidden;
   z-index: 0;
-}
-.right-sidebar{
-  flex:1;
-  max-width: 15vw; 
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 .MAP{
   flex:3;
 }
-.bottom-border{
-  border-bottom: 1px solid grey;
+ul {
+    padding: 0;
+    list-style-type: none;
+    margin-bottom:0 !important;
+}
+.smaller{
+    font-size:smaller;
+}
+p{
+    margin-bottom:0.25em !important;
+}
+.label{
+    text-align: left;
+    padding-top:0.5em;
+}
+select {
+    border-radius: 8px;
+    border: none;
+    padding: 7px;
+    background-color: #efefef;
+    overflow: hidden;
+    white-space: pre;
+    text-overflow: ellipsis;
+    max-width: 20vw;
+}   
+select:focus-visible {
+    outline: none
+}
+option {
+    font-size:12pt;
+}
+.container {
+    display:block;
 }
 </style>

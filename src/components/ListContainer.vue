@@ -1,12 +1,6 @@
 <template>
   <div>
-    <i 
-        class="fas fa-question-circle helpBtn"  
-        @click="showModal"
-        title="Help"
-    ></i>
-    <HelpModal v-show="modalVisible" @close="closeModal"/>
-    <ToggleSwitch :initShowVehicleList="showVehicleList" /> 
+    <ListToggle :initShowVehicleList="showVehicleList" /> 
     <div class="lists">
         <VehiclesList v-if="showVehicleList" :fleetObj="fleetObj" :tripsObj="tripsObj"/>
         <DeptsList v-if="!showVehicleList" :deptsObj="deptsObj" :fleetObj="fleetObj" :tripsObj="tripsObj"/>
@@ -15,18 +9,16 @@
 </template>
 
 <script>
-import ToggleSwitch from './ToggleSwitch.vue';
+import ListToggle from './ListToggle.vue';
 import DeptsList from './DeptsList.vue';
 import VehiclesList from './VehiclesList.vue';
-import HelpModal from './HelpModal.vue';
 
 export default {
     name: 'ListContainer',
     components: {
-        ToggleSwitch,
+        ListToggle,
         DeptsList,
-        VehiclesList,
-        HelpModal
+        VehiclesList
     },
     props: {
         fleetObj: {

@@ -2,26 +2,33 @@
 <template>
     <div class="left-align" style="padding:1em">    
         <div class="row1">
-            <div class="left-align flex1 col-3">
+            <div class="left-align flex1">
+                <h3>Department:</h3>
                 <h4>
                     {{ department.name }} 
                 </h4>
                 <p> <b> Number of Vehicles: </b> {{ department.num_vehicles }} </p>
-
             </div>
-            <div class="flex1">
+            <div class="flex3">
                 <div id="miles-chart-container" class="chart">
-                    <p class="chart-title"> <b> Department Vehicle Usage </b> </p>
-                    <PanelChart
+                <select class="bootstrap-select chart-select" @change="switchChart($event)">
+                    <option value="dept-usage" selected="selected">Total Usage Duration</option>
+                    <option value="dept-idle">Idle Time Duration</option>
+                    <option value="dept-driving">Driving Duration</option>
+                    <option value="dept-distance">Distance Traveled</option>
+                </select>
+                    <DeptPanelChart
                         :chartData="timeSelectedTrips"
-                        :chartName="'deptDrivingDuration'"
+                        :chartType="chartType"
+                        :chartDataType="chartDataType"
                         :containerWidth="chartSize.width"
                         :containerHeight="chartSize.height"
                     />
                 </div>
             </div>
-            <div class="flex1">
-                <DateSelect />
+            <div class="flex2">
+                <!-- <DateSelect /> -->
+                <p class='list-title'> Vehicles in Department </p>
                 <VehicleSubList :fleetObj="fleetObj" :tripsObj="tripsObj"/>
             </div>
         </div>
@@ -29,16 +36,13 @@
 </template>
 
 <script>
-import PanelChart from './PanelChart.vue';
-import stopsList from '../data/allStops.json';
-import DateSelect from './DateSelect.vue';
+import DeptPanelChart from './DeptPanelChart.vue';
 import VehicleSubList from './VehicleSubList.vue';
 
 export default {
-    name: 'BusPanel',
+    name: 'DeptPanel',
     components: {
-        PanelChart,
-        DateSelect,
+        DeptPanelChart,
         VehicleSubList,
     },
     props: {
@@ -58,11 +62,13 @@ export default {
     data() {
         return {
             chartSize: {
-                height: 250,
-                width: 400
+                height: 350,
+                width: 610
             },
             fleet: this.fleetObj.vehicles,
             departments: this.deptsObj.departments,
+            chartType: 'day',
+            chartDataType: 'total_duration'
         };
     },
     computed: {
@@ -90,6 +96,19 @@ export default {
         timeSelectedTrips: function () {
             return this.stateSelectedTrips.filter(trip => new Date(trip.date) >= this.fromDate && new Date(trip.date) <= this.toDate);
         },
+        chartTitle: function () {
+            if (this.chartDataType === 'total_duration') {
+                return 'Total Usage Duration of Department Vehicles';
+            } else if (this.chartDataType === 'idle_duration') {
+                return 'Idle Duration of Department Vehicles';
+            } else if (this.chartDataType === 'distance') {
+                return 'Distance Traveled by Department Vehicles';
+            } else if (this.chartDataType === 'driving_duration') {
+                return 'Driving Duration of Department Vehicles';
+            } else {
+                return 'Total Usage Duration of Department Vehicles';
+            }
+        }
     },
     // watch: {
     //     vehicleId: function () {
@@ -97,7 +116,17 @@ export default {
     //     },
     // },
     methods: {
-
+        switchChart(event) {
+            if (event.target.value === 'dept-usage') {
+                this.chartDataType = 'total_duration';
+            } else if (event.target.value === 'dept-idle') {
+                this.chartDataType = 'idle_duration';
+            } else if (event.target.value === 'dept-distance') {
+                this.chartDataType = 'distance';
+            } else if (event.target.value === 'dept-driving') {
+                this.chartDataType = 'driving_duration';
+            }
+        }
     }
 };
 </script>
@@ -114,6 +143,9 @@ export default {
 }
 .flex1{
     flex:1;
+}
+.flex3{
+    flex:3;
 }
 .chart-title{
     text-align: center;
