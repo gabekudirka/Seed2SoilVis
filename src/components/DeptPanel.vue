@@ -8,12 +8,18 @@
                     {{ department.name }} 
                 </h4>
                 <p> <b> Number of Vehicles: </b> {{ department.num_vehicles }} </p>
+                <br>
+                <p> <b> Total Idling Cost: </b> ${{ totalIdlingCost.toFixed(2) }} </p>
+                <p> <b> Avg. Utilization Rate: </b> {{ (department.avg_utilization_rate * 100).toFixed(1) }}% </p>
+                <p> <b> Avg. Days Driven Utilization: </b> {{ (department.avg_days_utilization * 100).toFixed(1) }}% </p>
+                <p> <b> Avg. Duration Utilization: </b> {{ (department.avg_duration_utilization * 100).toFixed(1) }}% </p>
+                <p> <b> Avg. Distance Utilization: </b> {{ (department.avg_distance_utilization * 100).toFixed(1) }}% </p>
             </div>
-            <div class="flex3">
+            <div class="flex2">
                 <div id="miles-chart-container" class="chart">
                 <select class="bootstrap-select chart-select" @change="switchChart($event)">
                     <option value="dept-usage" selected="selected">Total Usage Duration</option>
-                    <option value="dept-idle">Idle Time Duration</option>
+                    <option value="dept-idle">Idling Cost</option>
                     <option value="dept-driving">Driving Duration</option>
                     <option value="dept-distance">Distance Traveled</option>
                 </select>
@@ -28,7 +34,9 @@
             </div>
             <div class="flex2">
                 <!-- <DateSelect /> -->
-                <p class='list-title'> Vehicles in Department </p>
+                <div id='vehicles-list-title'>
+                    <p class='list-title vehicles-title'> Vehicles in Department </p>
+                </div>
                 <VehicleSubList :fleetObj="fleetObj" :tripsObj="tripsObj"/>
             </div>
         </div>
@@ -94,7 +102,24 @@ export default {
             return this.$store.state.selectedTrips;
         },
         timeSelectedTrips: function () {
-            return this.stateSelectedTrips.filter(trip => new Date(trip.date) >= this.fromDate && new Date(trip.date) <= this.toDate);
+            const tripsData = this.stateSelectedTrips.filter(trip => new Date(trip.date) >= this.fromDate && new Date(trip.date) <= this.toDate);
+            const costData = [];
+            if (tripsData) {
+                tripsData.forEach(trip => {
+                    const costTrip = { ...trip };
+                    const cost = Number(((trip.idle_duration / 60) * 0.2).toFixed(2));
+                    costTrip.idle_duration = cost;
+                    costData.push(costTrip);
+                });
+            }
+            
+            return costData;
+        },
+        totalIdlingCost: function () {
+            const totalCost = this.timeSelectedTrips.reduce((a, b) => {
+                return a + b.idle_duration;
+            }, 0);
+            return totalCost;
         },
         chartTitle: function () {
             if (this.chartDataType === 'total_duration') {
@@ -148,9 +173,8 @@ export default {
 .flex3{
     flex:3;
 }
-.chart-title{
-    text-align: center;
-    font-size: 18px;
+#vehicles-list-title{
+   padding-left: 33%
 }
 p{
     margin: 0.2em !important;

@@ -10,17 +10,23 @@
                 <p> <b> Department: </b> <button class='dept-btn' @click="showDept(vehicle.department)">{{ vehicle.department }}</button></p>
                 <p> <b> Make/Model: </b> {{ vehicle.make }} {{ vehicle.model }} </p>
                 <p> <b> Class: </b> {{ vehicle.vehicle_class }} </p>
-                <p> <b> Year: </b> {{ vehicle.year }} </p>
-                <p> <b> Trips Taken: </b> {{ vehicle.num_trips }} </p>
+                <br>
+                <p> <b> Idling Cost: </b> ${{ totalIdlingCost.toFixed(2) }} </p>
+                <p> <b> Utilization Rate: </b> {{ (vehicle.utilization_rate * 100).toFixed(1) }}% </p>
+                <p> <b> Days Driven' Utilization: </b> {{ (vehicle.days_utilization * 100).toFixed(1) }}% </p>
+                <p> <b> Duration Utilization: </b> {{ (vehicle.duration_utilization * 100).toFixed(1) }}% </p>
+                <p> <b> Distance Utilization: </b> {{ (vehicle.distance_utilization * 100).toFixed(1) }}% </p>
             </div>
             <div class="flex2">
                 <div id="miles-chart-container" class="chart">
-                <select class="bootstrap-select chart-select" @change="switchChart($event)">
-                    <option value="vehicle-usage" selected="selected">Total Usage Duration</option>
-                    <option value="vehicle-idle">Idle Time Duration</option>
-                    <option value="vehicle-driving">Driving Duration</option>
-                    <option value="vehicle-distance">Distance Traveled</option>
-                </select>
+                    <div id='vehicle-chart-tooltip-container'>
+                        <select class="bootstrap-select chart-select" @change="switchChart($event)">
+                            <option value="vehicle-usage" selected="selected">Total Usage Duration</option>
+                            <option value="vehicle-idle">Idling Cost</option>
+                            <option value="vehicle-driving">Driving Duration</option>
+                            <option value="vehicle-distance">Distance Traveled</option>
+                        </select>
+                    </div>
                     <VehiclePanelChart
                         :chartData="timeSelectedTrips"
                         :chartDataType="chartDataType"
@@ -93,7 +99,24 @@ export default {
             return this.$store.state.selectedTrips;
         },
         timeSelectedTrips: function () {
-            return this.stateSelectedTrips.filter(trip => new Date(trip.date) >= this.fromDate && new Date(trip.date) <= this.toDate);
+            const tripsData = this.stateSelectedTrips.filter(trip => new Date(trip.date) >= this.fromDate && new Date(trip.date) <= this.toDate);
+            const costData = [];
+            if (tripsData) {
+                tripsData.forEach(trip => {
+                    const costTrip = { ...trip };
+                    const cost = Number(((trip.idle_duration / 60) * 0.2).toFixed(2));
+                    costTrip.idle_duration = cost;
+                    costData.push(costTrip);
+                });
+            }
+            
+            return costData;
+        },
+        totalIdlingCost: function () {
+            const totalCost = this.timeSelectedTrips.reduce((a, b) => {
+                return a + b.idle_duration;
+            }, 0);
+            return totalCost;
         },
         chartTitle: function () {
             if (this.chartDataType === 'total_duration') {
@@ -183,5 +206,8 @@ p{
     font-weight: bold;
     font-size: 16px;
     text-align: center;
+}
+#vehicle-chart-tooltip-container {
+    padding-left: 30px;
 }
 </style>

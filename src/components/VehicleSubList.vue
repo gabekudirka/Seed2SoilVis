@@ -6,10 +6,10 @@
             <input id="vehicles-allon-checkbox" type="checkbox" v-model="allOn" @change="checkAll()" style="margin:0 0.6em"/>
             <div class="vehicle-section-md" @click="sortTrips('id')">Vehicle Id</div> 
             <div class="vehicle-section-sm" @click="sortTrips('total_duration')"># Trips</div>
-            <div class="vehicle-section-md" @click="sortTrips('total_duration')">Total Usage</div>
-            <div class="vehicle-section-md" @click="sortTrips('idle_duration')">Total Idling</div>
+            <div class="vehicle-section-sm" @click="sortTrips('idle_duration')">Idle Cost</div>
+            <div class="vehicle-section-md" @click="sortTrips('total_duration')">Utilization</div>
         </li>   
-        <li class='subListItem' v-for="item in vehicles" 
+        <li class='subListItem' v-for="item in vehicles"
             :class="[item.id == selectedVehicle ? 'selected' : '', 'listItem']"
             :key="item.id" 
             @click="selectItem($event, item.id)"
@@ -17,8 +17,8 @@
             <input class="vehicle-section-checkbox" type="checkbox" name="vehicleCheck" checked="true" @change="checkOne(item.id)"/>
             <div class="vehicle-section-md">{{ item.id }}</div>
             <div class="vehicle-section-sm">{{ item.num_trips }}</div>
-            <div class="vehicle-section-md">{{ convertDuration(item.total_duration) }}</div>
-            <div class="vehicle-section-md">{{ convertDuration(item.idle_duration) }}</div>
+            <div class="vehicle-section-md">${{ ((item.idle_duration / 60) * 0.2).toFixed(2) }}</div>
+            <div class="vehicle-section-md">{{ (item.utilization_rate * 100).toFixed(1) }}%</div>
         </li>
     </ul>
   </div>
@@ -61,7 +61,6 @@ export default {
             const rawVehicles = this.fleetObj.vehicles.filter(vehicle => vehicle.department === this.stateSelectedDept);
             rawVehicles.forEach(vehicle => {
                 const selectedTrips = vehicle.trips.filter(trip => new Date(trip.start_time) >= this.fromDate && new Date(trip.end_time) <= this.toDate);
-                console.log(selectedTrips);
                 const totalDuration = selectedTrips.reduce((accumulator, object) => {
                     return accumulator + object.total_duration;
                 }, 0);
@@ -173,7 +172,7 @@ export default {
 <style>
 #vehicles-list-wrapper {
     margin: 10px;
-    margin-left: 15%;
+    margin-left: 37%;
     border: solid #c2c2c2 0.5px;
     border-radius: 4px;
     overflow-y: auto;

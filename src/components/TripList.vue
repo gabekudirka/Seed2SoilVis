@@ -6,7 +6,7 @@
             <input id="trips-allon-checkbox" type="checkbox" v-model="allOn" @change="checkAll()" style="margin:0 0.6em"/>
             <div class="trip-section-sm" @click="sortTrips('date')">Date</div> 
             <div class="trip-section-md" @click="sortTrips('total_duration')">Trip Duration</div>
-            <div class="trip-section-md" @click="sortTrips('idle_duration')">Idle Duration</div>
+            <div class="trip-section-md" @click="sortTrips('idle_duration')">Idle Cost</div>
         </li>
         <li class='tripListItem' v-for="item in vehicleTrips" 
             :key="item.id"
@@ -14,7 +14,7 @@
             <input class="trip-section-checkbox" type="checkbox" name="tripCheck" checked="true" @change="checkOne(item.id)"/>
             <div class="trip-section-sm">{{ (new Date(item.date)).getMonth() }}/{{ (new Date(item.date)).getDate() }}/{{ (new Date(item.date)).getFullYear() }}</div>
             <div class="trip-section-md">{{ convertDuration(item.total_duration) }} </div>
-            <div class="trip-section-md">{{ convertDuration(item.idle_duration) }}</div>
+            <div class="trip-section-md">${{ ((item.idle_duration / 60) * 0.2).toFixed(2) }}</div>
         </li>
     </ul>
   </div>

@@ -38,6 +38,18 @@ export default {
       deptsObj: departments,
     };
   },
+  //  methods: {
+  //   calculateTotalUsageMetrics() {
+  //     this.vehicles.vehicles.foreach(vehicle => {
+  //       const vehicleTrips = this.tripData.trips.filter(trip => new Date(trip.date) >= this.fromDate && new Date(trip.date) <= this.toDate && deptVehicles.includes(trip.vehicle));
+
+  //     })
+  //   },
+
+  //   calculateUtilization() {
+
+  //   }
+  // },
   computed: {
     plan: function () {
       return this.$store.state.plan;

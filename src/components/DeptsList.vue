@@ -4,8 +4,9 @@
     <ul id="deptsList">
         <li class="header">
             <!-- <input type="checkbox" v-model="allOn" @change="checkAll()" style="margin:0 0.6em"/> -->
-            <div class="row-section-sm" @click="sortDepts('name')">Department</div> 
-            <div class="row-section-md" @click="sortDepts('num_vehicles')">Num Vehicles</div>
+            <div class="row-section-md" @click="sortDepts('name')">Department</div> 
+            <div class="row-section-sm" @click="sortDepts('num_vehicles')">Num Vehicles</div>
+            <div class="row-section-sm" @click="sortDepts('avg_utilization_rate')">Avg. Utilization</div>
         </li>
         <li v-for="item in departments" 
             :key="item.name"
@@ -13,8 +14,10 @@
             @click="selectItem(item.name)"
         > 
             <!-- <input class="row-section-checkbox" type="checkbox" name="check" checked="true" @change="checkOne(item.id)"/> -->
-            <div class="row-section-sm">{{ item.name }}</div>
-            <div class="row-section-md">{{ item.num_vehicles }}</div>
+            <div class="row-section-md">{{ item.name }}</div>
+            <div class="row-section-sm">{{ item.num_vehicles }}</div>
+            <div class="row-section-sm">{{ (item.avg_utilization_rate * 100).toFixed(1) }}%</div>
+
         </li>
     </ul>
   </div>
@@ -74,6 +77,8 @@ export default {
                 bl = this.departments.sort((a, b) => (a.name > b.name) ? -1 : 1);
             } else if (method === 'num_vehicles') {
                 bl = this.departments.sort((a, b) => (a.num_vehicles > b.num_vehicles) ? 1 : -1);
+            } else if (method === 'avg_utilization_rate') {
+                bl = this.departments.sort((a, b) => (a.avg_utilization_rate > b.avg_utilization_rate) ? 1 : -1);
             }
             this.sortBy = method;
             this.departments = bl;

@@ -67,7 +67,7 @@ export default {
             if (this.chartDataType === 'total_duration') {
                 return 'Total Usage Duration (minutes)';
             } else if (this.chartDataType === 'idle_duration') {
-                return 'Idle Duration (minutes)';
+                return 'Idle Cost ($)';
             } else if (this.chartDataType === 'distance') {
                 return 'Distance Traveled (miles)';
             } else if (this.chartDataType === 'driving_duration') {
@@ -75,7 +75,7 @@ export default {
             } else {
                 return 'Total Usage Duration (minutes)';
             }
-        }
+        },
     },
     watch: {
         // When the chart data changes, update the chart
@@ -99,7 +99,6 @@ export default {
             // This is initial data processing for the visualization
             const dates = this.getDatesInRange(this.fromDate, this.toDate);
             const testDate = new Date(this.fromDate.getTime());
-            console.log(testDate);
             const dateData = dates.map(el => {
                 const dataPoint = { date: el };
                 ref.selectedVehicles.forEach(vehicle => {
@@ -159,8 +158,8 @@ export default {
                 const vehicle = d3.select(this.parentNode).datum().key;
                 const vehicleDuration = d.data[vehicle];
                 tooltip
-                    .html('vehicle: ' + vehicle + '<br>Duration: ' + vehicleDuration)
-                    .style('opacity', 1);
+                        .html('Vehicle: ' + vehicle + '<br>Vehicle total: ' + vehicleDuration)
+                        .style('opacity', 1);      
             };
             const mousemove = function (event, d) {
                 tooltip

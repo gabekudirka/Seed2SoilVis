@@ -7,7 +7,14 @@
             "model": "",
             "year": "",
             "vehicle_class": "",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "FO15921",
@@ -427,7 +434,14 @@
                     "end_time": "Oct 31, 2022 1:52:54 PM",
                     "num_stops": 7
                 }
-            ]
+            ],
+            "total_trips": 41,
+            "total_driving_duration": 2584,
+            "total_distance": 873.0,
+            "days_utilization": 0.695,
+            "distance_utilization": 0.18,
+            "duration_utilization": 0.157,
+            "utilization_rate": 0.344
         },
         {
             "id": "FO17415",
@@ -717,7 +731,14 @@
                     "end_time": "Oct 28, 2022 4:19:36 PM",
                     "num_stops": 3
                 }
-            ]
+            ],
+            "total_trips": 28,
+            "total_driving_duration": 1440,
+            "total_distance": 586.0,
+            "days_utilization": 0.475,
+            "distance_utilization": 0.121,
+            "duration_utilization": 0.087,
+            "utilization_rate": 0.228
         },
         {
             "id": "G98d210b379c",
@@ -726,7 +747,14 @@
             "model": "",
             "year": "",
             "vehicle_class": "",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "G9D6EXUDFM00",
@@ -735,7 +763,14 @@
             "model": "",
             "year": "",
             "vehicle_class": "",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "G99DFX0TXMJA",
@@ -744,7 +779,14 @@
             "model": "",
             "year": "",
             "vehicle_class": "",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "UFOU6379",
@@ -1174,7 +1216,14 @@
                     "end_time": "Oct 31, 2022 2:47:56 PM",
                     "num_stops": 13
                 }
-            ]
+            ],
+            "total_trips": 42,
+            "total_driving_duration": 7732,
+            "total_distance": 4858.0,
+            "days_utilization": 0.712,
+            "distance_utilization": 1.0,
+            "duration_utilization": 0.469,
+            "utilization_rate": 0.727
         },
         {
             "id": "UOFU1513",
@@ -1304,7 +1353,14 @@
                     "end_time": "Oct 28, 2022 12:25:45 PM",
                     "num_stops": 4
                 }
-            ]
+            ],
+            "total_trips": 12,
+            "total_driving_duration": 202,
+            "total_distance": 114.0,
+            "days_utilization": 0.203,
+            "distance_utilization": 0.023,
+            "duration_utilization": 0.012,
+            "utilization_rate": 0.079
         },
         {
             "id": "UOFU1677",
@@ -1313,7 +1369,14 @@
             "model": "",
             "year": "",
             "vehicle_class": "",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "UOFU1796",
@@ -1373,7 +1436,14 @@
                     "end_time": "Oct 19, 2022 12:58:07 PM",
                     "num_stops": 2
                 }
-            ]
+            ],
+            "total_trips": 5,
+            "total_driving_duration": 30,
+            "total_distance": 8.0,
+            "days_utilization": 0.085,
+            "distance_utilization": 0.002,
+            "duration_utilization": 0.002,
+            "utilization_rate": 0.03
         },
         {
             "id": "UOFU1869",
@@ -1435,15 +1505,22 @@
                 },
                 {
                     "idle_duration": 0,
-                    "total_duration": 200,
+                    "total_duration": 0,
                     "driving_duration": 142,
-                    "stopped_duration": 68,
+                    "stopped_duration": 0,
                     "distance": 134.0,
                     "start_time": "Sep 23, 2022 9:42:41 AM",
                     "end_time": "Sep 02, 2022 12:59:36 PM",
                     "num_stops": 8
                 }
-            ]
+            ],
+            "total_trips": 6,
+            "total_driving_duration": 263,
+            "total_distance": 169.0,
+            "days_utilization": 0.102,
+            "distance_utilization": 0.035,
+            "duration_utilization": 0.016,
+            "utilization_rate": 0.051
         },
         {
             "id": "UOFU1930",
@@ -1483,7 +1560,14 @@
                     "end_time": "Oct 27, 2022 10:25:28 AM",
                     "num_stops": 2
                 }
-            ]
+            ],
+            "total_trips": 3,
+            "total_driving_duration": 225,
+            "total_distance": 239.0,
+            "days_utilization": 0.051,
+            "distance_utilization": 0.049,
+            "duration_utilization": 0.014,
+            "utilization_rate": 0.038
         },
         {
             "id": "UOFU1948",
@@ -1783,7 +1867,14 @@
                     "end_time": "Oct 31, 2022 10:23:24 AM",
                     "num_stops": 3
                 }
-            ]
+            ],
+            "total_trips": 29,
+            "total_driving_duration": 1114,
+            "total_distance": 758.0,
+            "days_utilization": 0.492,
+            "distance_utilization": 0.156,
+            "duration_utilization": 0.068,
+            "utilization_rate": 0.239
         },
         {
             "id": "UOFU4210",
@@ -1953,7 +2044,14 @@
                     "end_time": "Oct 28, 2022 12:03:20 PM",
                     "num_stops": 0
                 }
-            ]
+            ],
+            "total_trips": 16,
+            "total_driving_duration": 530,
+            "total_distance": 351.0,
+            "days_utilization": 0.271,
+            "distance_utilization": 0.072,
+            "duration_utilization": 0.032,
+            "utilization_rate": 0.125
         },
         {
             "id": "UOFU4212",
@@ -2143,7 +2241,14 @@
                     "end_time": "Oct 24, 2022 10:34:13 AM",
                     "num_stops": 1
                 }
-            ]
+            ],
+            "total_trips": 18,
+            "total_driving_duration": 277,
+            "total_distance": 44.0,
+            "days_utilization": 0.305,
+            "distance_utilization": 0.009,
+            "duration_utilization": 0.017,
+            "utilization_rate": 0.11
         },
         {
             "id": "UOFU4326",
@@ -2213,7 +2318,14 @@
                     "end_time": "Oct 28, 2022 12:03:06 PM",
                     "num_stops": 2
                 }
-            ]
+            ],
+            "total_trips": 6,
+            "total_driving_duration": 67,
+            "total_distance": 16.0,
+            "days_utilization": 0.102,
+            "distance_utilization": 0.003,
+            "duration_utilization": 0.004,
+            "utilization_rate": 0.036
         },
         {
             "id": "UOFU4420",
@@ -2222,7 +2334,14 @@
             "model": "Tundra",
             "year": 2012.0,
             "vehicle_class": "No Class",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "UOFU4431",
@@ -2582,7 +2701,14 @@
                     "end_time": "Oct 31, 2022 9:53:39 AM",
                     "num_stops": 3
                 }
-            ]
+            ],
+            "total_trips": 35,
+            "total_driving_duration": 748,
+            "total_distance": 206.0,
+            "days_utilization": 0.593,
+            "distance_utilization": 0.042,
+            "duration_utilization": 0.045,
+            "utilization_rate": 0.227
         },
         {
             "id": "UOFU4461",
@@ -2692,7 +2818,14 @@
                     "end_time": "Oct 21, 2022 11:06:10 PM",
                     "num_stops": 2
                 }
-            ]
+            ],
+            "total_trips": 10,
+            "total_driving_duration": 208,
+            "total_distance": 57.0,
+            "days_utilization": 0.169,
+            "distance_utilization": 0.012,
+            "duration_utilization": 0.013,
+            "utilization_rate": 0.065
         },
         {
             "id": "UOFU4469",
@@ -3002,7 +3135,14 @@
                     "end_time": "Oct 31, 2022 8:00:23 AM",
                     "num_stops": 1
                 }
-            ]
+            ],
+            "total_trips": 30,
+            "total_driving_duration": 1024,
+            "total_distance": 563.0,
+            "days_utilization": 0.508,
+            "distance_utilization": 0.116,
+            "duration_utilization": 0.062,
+            "utilization_rate": 0.229
         },
         {
             "id": "UOFU4501",
@@ -3072,7 +3212,14 @@
                     "end_time": "Oct 21, 2022 7:48:52 AM",
                     "num_stops": 1
                 }
-            ]
+            ],
+            "total_trips": 6,
+            "total_driving_duration": 68,
+            "total_distance": 13.0,
+            "days_utilization": 0.102,
+            "distance_utilization": 0.003,
+            "duration_utilization": 0.004,
+            "utilization_rate": 0.036
         },
         {
             "id": "UOFU4528",
@@ -3272,7 +3419,14 @@
                     "end_time": "Oct 28, 2022 7:45:09 AM",
                     "num_stops": 1
                 }
-            ]
+            ],
+            "total_trips": 19,
+            "total_driving_duration": 466,
+            "total_distance": 166.0,
+            "days_utilization": 0.322,
+            "distance_utilization": 0.034,
+            "duration_utilization": 0.028,
+            "utilization_rate": 0.128
         },
         {
             "id": "UOFU4556",
@@ -3281,7 +3435,14 @@
             "model": "Tundra",
             "year": 2013.0,
             "vehicle_class": "No Class",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "UOFU4557",
@@ -3290,7 +3451,14 @@
             "model": "Tundra",
             "year": 2013.0,
             "vehicle_class": "No Class",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "UOFU4572",
@@ -3640,7 +3808,14 @@
                     "end_time": "Oct 31, 2022 12:36:10 PM",
                     "num_stops": 3
                 }
-            ]
+            ],
+            "total_trips": 34,
+            "total_driving_duration": 2885,
+            "total_distance": 860.0,
+            "days_utilization": 0.576,
+            "distance_utilization": 0.177,
+            "duration_utilization": 0.175,
+            "utilization_rate": 0.309
         },
         {
             "id": "UOFU4580",
@@ -3930,7 +4105,14 @@
                     "end_time": "Oct 31, 2022 9:17:04 PM",
                     "num_stops": 4
                 }
-            ]
+            ],
+            "total_trips": 28,
+            "total_driving_duration": 1439,
+            "total_distance": 909.0,
+            "days_utilization": 0.475,
+            "distance_utilization": 0.187,
+            "duration_utilization": 0.087,
+            "utilization_rate": 0.25
         },
         {
             "id": "UOFU4581",
@@ -4000,7 +4182,14 @@
                     "end_time": "Oct 30, 2022 9:14:17 PM",
                     "num_stops": 2
                 }
-            ]
+            ],
+            "total_trips": 6,
+            "total_driving_duration": 118,
+            "total_distance": 36.0,
+            "days_utilization": 0.102,
+            "distance_utilization": 0.007,
+            "duration_utilization": 0.007,
+            "utilization_rate": 0.039
         },
         {
             "id": "UOFU4595",
@@ -4330,7 +4519,14 @@
                     "end_time": "Oct 31, 2022 10:25:19 AM",
                     "num_stops": 3
                 }
-            ]
+            ],
+            "total_trips": 32,
+            "total_driving_duration": 1175,
+            "total_distance": 625.0,
+            "days_utilization": 0.542,
+            "distance_utilization": 0.129,
+            "duration_utilization": 0.071,
+            "utilization_rate": 0.247
         },
         {
             "id": "UOFU4639",
@@ -4560,7 +4756,14 @@
                     "end_time": "Oct 31, 2022 11:10:46 AM",
                     "num_stops": 1
                 }
-            ]
+            ],
+            "total_trips": 22,
+            "total_driving_duration": 1122,
+            "total_distance": 461.0,
+            "days_utilization": 0.373,
+            "distance_utilization": 0.095,
+            "duration_utilization": 0.068,
+            "utilization_rate": 0.179
         },
         {
             "id": "UOFU4640",
@@ -4760,7 +4963,14 @@
                     "end_time": "Oct 28, 2022 10:54:03 PM",
                     "num_stops": 4
                 }
-            ]
+            ],
+            "total_trips": 19,
+            "total_driving_duration": 765,
+            "total_distance": 363.0,
+            "days_utilization": 0.322,
+            "distance_utilization": 0.075,
+            "duration_utilization": 0.046,
+            "utilization_rate": 0.148
         },
         {
             "id": "UOFU4642",
@@ -5120,7 +5330,14 @@
                     "end_time": "Sep 01, 2022 2:26:43 PM",
                     "num_stops": 6
                 }
-            ]
+            ],
+            "total_trips": 35,
+            "total_driving_duration": 1511,
+            "total_distance": 261.0,
+            "days_utilization": 0.593,
+            "distance_utilization": 0.054,
+            "duration_utilization": 0.092,
+            "utilization_rate": 0.246
         },
         {
             "id": "UOFU4664",
@@ -5530,7 +5747,14 @@
                     "end_time": "Oct 31, 2022 1:19:57 PM",
                     "num_stops": 4
                 }
-            ]
+            ],
+            "total_trips": 40,
+            "total_driving_duration": 973,
+            "total_distance": 197.0,
+            "days_utilization": 0.678,
+            "distance_utilization": 0.041,
+            "duration_utilization": 0.059,
+            "utilization_rate": 0.259
         },
         {
             "id": "UOFU4682",
@@ -5622,15 +5846,22 @@
                 },
                 {
                     "idle_duration": 0,
-                    "total_duration": 170,
+                    "total_duration": 0,
                     "driving_duration": 150,
-                    "stopped_duration": 20,
+                    "stopped_duration": 0,
                     "distance": 88.0,
                     "start_time": "Sep 14, 2022 5:50:51 AM",
                     "end_time": "Sep 09, 2022 12:40:49 PM",
                     "num_stops": 8
                 }
-            ]
+            ],
+            "total_trips": 9,
+            "total_driving_duration": 970,
+            "total_distance": 482.0,
+            "days_utilization": 0.153,
+            "distance_utilization": 0.099,
+            "duration_utilization": 0.059,
+            "utilization_rate": 0.104
         },
         {
             "id": "UOFU4689",
@@ -5680,7 +5911,14 @@
                     "end_time": "Oct 28, 2022 1:09:35 PM",
                     "num_stops": 4
                 }
-            ]
+            ],
+            "total_trips": 4,
+            "total_driving_duration": 228,
+            "total_distance": 109.0,
+            "days_utilization": 0.068,
+            "distance_utilization": 0.022,
+            "duration_utilization": 0.014,
+            "utilization_rate": 0.035
         },
         {
             "id": "UOFU4690",
@@ -5850,7 +6088,14 @@
                     "end_time": "Oct 31, 2022 10:54:26 AM",
                     "num_stops": 3
                 }
-            ]
+            ],
+            "total_trips": 16,
+            "total_driving_duration": 464,
+            "total_distance": 164.0,
+            "days_utilization": 0.271,
+            "distance_utilization": 0.034,
+            "duration_utilization": 0.028,
+            "utilization_rate": 0.111
         },
         {
             "id": "UOFU4707",
@@ -6010,7 +6255,14 @@
                     "end_time": "Oct 28, 2022 1:32:25 PM",
                     "num_stops": 2
                 }
-            ]
+            ],
+            "total_trips": 15,
+            "total_driving_duration": 3007,
+            "total_distance": 2300.0,
+            "days_utilization": 0.254,
+            "distance_utilization": 0.473,
+            "duration_utilization": 0.183,
+            "utilization_rate": 0.303
         },
         {
             "id": "UOFU4710",
@@ -6102,15 +6354,22 @@
                 },
                 {
                     "idle_duration": 0,
-                    "total_duration": 200,
+                    "total_duration": 0,
                     "driving_duration": 158,
-                    "stopped_duration": 42,
+                    "stopped_duration": 0,
                     "distance": 190.0,
                     "start_time": "Oct 18, 2022 12:19:48 AM",
                     "end_time": "Sep 01, 2022 11:57:17 AM",
                     "num_stops": 4
                 }
-            ]
+            ],
+            "total_trips": 9,
+            "total_driving_duration": 750,
+            "total_distance": 594.0,
+            "days_utilization": 0.153,
+            "distance_utilization": 0.122,
+            "duration_utilization": 0.046,
+            "utilization_rate": 0.107
         },
         {
             "id": "UOFU4711",
@@ -6350,7 +6609,14 @@
                     "end_time": "Oct 28, 2022 4:19:13 PM",
                     "num_stops": 10
                 }
-            ]
+            ],
+            "total_trips": 23,
+            "total_driving_duration": 2807,
+            "total_distance": 2257.0,
+            "days_utilization": 0.39,
+            "distance_utilization": 0.465,
+            "duration_utilization": 0.17,
+            "utilization_rate": 0.342
         },
         {
             "id": "UOFU4712",
@@ -6440,7 +6706,14 @@
                     "end_time": "Oct 25, 2022 11:59:11 AM",
                     "num_stops": 3
                 }
-            ]
+            ],
+            "total_trips": 8,
+            "total_driving_duration": 1492,
+            "total_distance": 1334.0,
+            "days_utilization": 0.136,
+            "distance_utilization": 0.275,
+            "duration_utilization": 0.091,
+            "utilization_rate": 0.167
         },
         {
             "id": "UOFU4714",
@@ -6840,7 +7113,14 @@
                     "end_time": "Oct 31, 2022 10:50:32 AM",
                     "num_stops": 1
                 }
-            ]
+            ],
+            "total_trips": 39,
+            "total_driving_duration": 3557,
+            "total_distance": 2363.0,
+            "days_utilization": 0.661,
+            "distance_utilization": 0.486,
+            "duration_utilization": 0.216,
+            "utilization_rate": 0.454
         },
         {
             "id": "UOFU4733",
@@ -6960,7 +7240,14 @@
                     "end_time": "Oct 31, 2022 6:46:38 PM",
                     "num_stops": 16
                 }
-            ]
+            ],
+            "total_trips": 11,
+            "total_driving_duration": 16474,
+            "total_distance": 2672.0,
+            "days_utilization": 0.186,
+            "distance_utilization": 0.55,
+            "duration_utilization": 1.0,
+            "utilization_rate": 0.579
         },
         {
             "id": "UOFU4736",
@@ -6969,7 +7256,14 @@
             "model": "Tundra",
             "year": 2015.0,
             "vehicle_class": "No Class",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "UOFU4747",
@@ -6978,7 +7272,14 @@
             "model": "F-450",
             "year": 2015.0,
             "vehicle_class": "Class 3 (10001 - 14000 lb",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "UOFU4758",
@@ -7398,7 +7699,14 @@
                     "end_time": "Oct 31, 2022 1:10:10 PM",
                     "num_stops": 27
                 }
-            ]
+            ],
+            "total_trips": 41,
+            "total_driving_duration": 4687,
+            "total_distance": 851.0,
+            "days_utilization": 0.695,
+            "distance_utilization": 0.175,
+            "duration_utilization": 0.285,
+            "utilization_rate": 0.385
         },
         {
             "id": "UOFU4784",
@@ -7407,7 +7715,14 @@
             "model": "NV1500 / NV2500 / NV3500",
             "year": 2015.0,
             "vehicle_class": "Class H (9001 - 10000 lbs",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "UOFU4810",
@@ -7517,7 +7832,14 @@
                     "end_time": "Oct 31, 2022 10:15:52 AM",
                     "num_stops": 1
                 }
-            ]
+            ],
+            "total_trips": 10,
+            "total_driving_duration": 150,
+            "total_distance": 52.0,
+            "days_utilization": 0.169,
+            "distance_utilization": 0.011,
+            "duration_utilization": 0.009,
+            "utilization_rate": 0.063
         },
         {
             "id": "UOFU4811",
@@ -7667,7 +7989,14 @@
                     "end_time": "Oct 28, 2022 1:24:59 PM",
                     "num_stops": 5
                 }
-            ]
+            ],
+            "total_trips": 14,
+            "total_driving_duration": 238,
+            "total_distance": 81.0,
+            "days_utilization": 0.237,
+            "distance_utilization": 0.017,
+            "duration_utilization": 0.014,
+            "utilization_rate": 0.089
         },
         {
             "id": "UOFU4812",
@@ -7967,7 +8296,14 @@
                     "end_time": "Oct 31, 2022 9:35:37 AM",
                     "num_stops": 2
                 }
-            ]
+            ],
+            "total_trips": 29,
+            "total_driving_duration": 206,
+            "total_distance": 50.0,
+            "days_utilization": 0.492,
+            "distance_utilization": 0.01,
+            "duration_utilization": 0.013,
+            "utilization_rate": 0.172
         },
         {
             "id": "UOFU4882",
@@ -8237,7 +8573,14 @@
                     "end_time": "Oct 28, 2022 6:09:09 PM",
                     "num_stops": 17
                 }
-            ]
+            ],
+            "total_trips": 26,
+            "total_driving_duration": 2498,
+            "total_distance": 237.0,
+            "days_utilization": 0.441,
+            "distance_utilization": 0.049,
+            "duration_utilization": 0.152,
+            "utilization_rate": 0.214
         },
         {
             "id": "UOFU4900",
@@ -8357,7 +8700,14 @@
                     "end_time": "Oct 26, 2022 10:36:08 AM",
                     "num_stops": 3
                 }
-            ]
+            ],
+            "total_trips": 11,
+            "total_driving_duration": 419,
+            "total_distance": 201.0,
+            "days_utilization": 0.186,
+            "distance_utilization": 0.041,
+            "duration_utilization": 0.025,
+            "utilization_rate": 0.084
         },
         {
             "id": "UOFU4917",
@@ -8677,7 +9027,14 @@
                     "end_time": "Oct 31, 2022 10:26:52 PM",
                     "num_stops": 3
                 }
-            ]
+            ],
+            "total_trips": 31,
+            "total_driving_duration": 1177,
+            "total_distance": 189.0,
+            "days_utilization": 0.525,
+            "distance_utilization": 0.039,
+            "duration_utilization": 0.071,
+            "utilization_rate": 0.212
         },
         {
             "id": "UOFU4918",
@@ -8877,7 +9234,14 @@
                     "end_time": "Oct 31, 2022 9:54:02 AM",
                     "num_stops": 1
                 }
-            ]
+            ],
+            "total_trips": 19,
+            "total_driving_duration": 309,
+            "total_distance": 59.0,
+            "days_utilization": 0.322,
+            "distance_utilization": 0.012,
+            "duration_utilization": 0.019,
+            "utilization_rate": 0.118
         },
         {
             "id": "UOFU4922",
@@ -9297,7 +9661,14 @@
                     "end_time": "Oct 31, 2022 3:47:56 PM",
                     "num_stops": 28
                 }
-            ]
+            ],
+            "total_trips": 41,
+            "total_driving_duration": 4843,
+            "total_distance": 490.0,
+            "days_utilization": 0.695,
+            "distance_utilization": 0.101,
+            "duration_utilization": 0.294,
+            "utilization_rate": 0.363
         },
         {
             "id": "UOFU4953",
@@ -9597,7 +9968,14 @@
                     "end_time": "Oct 27, 2022 1:13:28 PM",
                     "num_stops": 18
                 }
-            ]
+            ],
+            "total_trips": 29,
+            "total_driving_duration": 2057,
+            "total_distance": 474.0,
+            "days_utilization": 0.492,
+            "distance_utilization": 0.098,
+            "duration_utilization": 0.125,
+            "utilization_rate": 0.238
         },
         {
             "id": "UOFU4954",
@@ -9687,7 +10065,14 @@
                     "end_time": "Oct 26, 2022 9:33:13 AM",
                     "num_stops": 4
                 }
-            ]
+            ],
+            "total_trips": 8,
+            "total_driving_duration": 57,
+            "total_distance": 10.0,
+            "days_utilization": 0.136,
+            "distance_utilization": 0.002,
+            "duration_utilization": 0.003,
+            "utilization_rate": 0.047
         },
         {
             "id": "UOFU4955",
@@ -9797,7 +10182,14 @@
                     "end_time": "Oct 26, 2022 2:40:20 PM",
                     "num_stops": 1
                 }
-            ]
+            ],
+            "total_trips": 10,
+            "total_driving_duration": 48,
+            "total_distance": 9.0,
+            "days_utilization": 0.169,
+            "distance_utilization": 0.002,
+            "duration_utilization": 0.003,
+            "utilization_rate": 0.058
         },
         {
             "id": "UOFU4956",
@@ -10227,7 +10619,14 @@
                     "end_time": "Oct 31, 2022 3:00:39 PM",
                     "num_stops": 11
                 }
-            ]
+            ],
+            "total_trips": 42,
+            "total_driving_duration": 1671,
+            "total_distance": 367.0,
+            "days_utilization": 0.712,
+            "distance_utilization": 0.076,
+            "duration_utilization": 0.101,
+            "utilization_rate": 0.296
         },
         {
             "id": "UOFU4958",
@@ -10236,7 +10635,14 @@
             "model": "Tundra",
             "year": 2016.0,
             "vehicle_class": "Class E (6001 - 7000 lbs)",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "UOFU4961",
@@ -10466,7 +10872,14 @@
                     "end_time": "Oct 31, 2022 2:30:22 PM",
                     "num_stops": 6
                 }
-            ]
+            ],
+            "total_trips": 22,
+            "total_driving_duration": 983,
+            "total_distance": 426.0,
+            "days_utilization": 0.373,
+            "distance_utilization": 0.088,
+            "duration_utilization": 0.06,
+            "utilization_rate": 0.174
         },
         {
             "id": "UOFU4970",
@@ -10896,7 +11309,14 @@
                     "end_time": "Oct 31, 2022 11:34:52 AM",
                     "num_stops": 4
                 }
-            ]
+            ],
+            "total_trips": 42,
+            "total_driving_duration": 1634,
+            "total_distance": 395.0,
+            "days_utilization": 0.712,
+            "distance_utilization": 0.081,
+            "duration_utilization": 0.099,
+            "utilization_rate": 0.297
         },
         {
             "id": "UOFU4972",
@@ -11306,7 +11726,14 @@
                     "end_time": "Oct 28, 2022 9:46:13 AM",
                     "num_stops": 6
                 }
-            ]
+            ],
+            "total_trips": 40,
+            "total_driving_duration": 5854,
+            "total_distance": 2852.0,
+            "days_utilization": 0.678,
+            "distance_utilization": 0.587,
+            "duration_utilization": 0.355,
+            "utilization_rate": 0.54
         },
         {
             "id": "UOFU4973",
@@ -11726,7 +12153,14 @@
                     "end_time": "Oct 31, 2022 10:51:58 AM",
                     "num_stops": 8
                 }
-            ]
+            ],
+            "total_trips": 41,
+            "total_driving_duration": 4217,
+            "total_distance": 1370.0,
+            "days_utilization": 0.695,
+            "distance_utilization": 0.282,
+            "duration_utilization": 0.256,
+            "utilization_rate": 0.411
         },
         {
             "id": "UOFU4974",
@@ -12116,7 +12550,14 @@
                     "end_time": "Oct 31, 2022 1:23:25 PM",
                     "num_stops": 16
                 }
-            ]
+            ],
+            "total_trips": 38,
+            "total_driving_duration": 2202,
+            "total_distance": 872.0,
+            "days_utilization": 0.644,
+            "distance_utilization": 0.179,
+            "duration_utilization": 0.134,
+            "utilization_rate": 0.319
         },
         {
             "id": "UOFU4979",
@@ -12286,7 +12727,14 @@
                     "end_time": "Oct 26, 2022 11:59:47 AM",
                     "num_stops": 6
                 }
-            ]
+            ],
+            "total_trips": 16,
+            "total_driving_duration": 1051,
+            "total_distance": 271.0,
+            "days_utilization": 0.271,
+            "distance_utilization": 0.056,
+            "duration_utilization": 0.064,
+            "utilization_rate": 0.13
         },
         {
             "id": "UOFU5003",
@@ -12318,15 +12766,22 @@
                 },
                 {
                     "idle_duration": 0,
-                    "total_duration": 150,
+                    "total_duration": 0,
                     "driving_duration": 122,
-                    "stopped_duration": 28,
+                    "stopped_duration": 0,
                     "distance": 65.0,
                     "start_time": "Oct 07, 2022 9:59:35 AM",
                     "end_time": "Sep 01, 2022 8:30:08 PM",
                     "num_stops": 7
                 }
-            ]
+            ],
+            "total_trips": 3,
+            "total_driving_duration": 159,
+            "total_distance": 80.0,
+            "days_utilization": 0.051,
+            "distance_utilization": 0.016,
+            "duration_utilization": 0.01,
+            "utilization_rate": 0.026
         },
         {
             "id": "UOFU5004",
@@ -12926,7 +13381,14 @@
                     "end_time": "Oct 31, 2022 4:08:44 PM",
                     "num_stops": 4
                 }
-            ]
+            ],
+            "total_trips": 59,
+            "total_driving_duration": 2972,
+            "total_distance": 1384.0,
+            "days_utilization": 1.0,
+            "distance_utilization": 0.285,
+            "duration_utilization": 0.18,
+            "utilization_rate": 0.488
         },
         {
             "id": "UOFU5011",
@@ -12935,7 +13397,14 @@
             "model": "F-450",
             "year": 2017.0,
             "vehicle_class": "Class 3 (10001 - 14000 lb",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "UOFU5032",
@@ -13215,7 +13684,14 @@
                     "end_time": "Oct 17, 2022 9:56:31 AM",
                     "num_stops": 5
                 }
-            ]
+            ],
+            "total_trips": 27,
+            "total_driving_duration": 704,
+            "total_distance": 223.0,
+            "days_utilization": 0.458,
+            "distance_utilization": 0.046,
+            "duration_utilization": 0.043,
+            "utilization_rate": 0.182
         },
         {
             "id": "UOFU5057",
@@ -13595,7 +14071,14 @@
                     "end_time": "Oct 28, 2022 1:36:32 PM",
                     "num_stops": 3
                 }
-            ]
+            ],
+            "total_trips": 37,
+            "total_driving_duration": 4390,
+            "total_distance": 2083.0,
+            "days_utilization": 0.627,
+            "distance_utilization": 0.429,
+            "duration_utilization": 0.266,
+            "utilization_rate": 0.441
         },
         {
             "id": "UOFU5058",
@@ -13905,7 +14388,14 @@
                     "end_time": "Oct 31, 2022 9:25:32 AM",
                     "num_stops": 1
                 }
-            ]
+            ],
+            "total_trips": 30,
+            "total_driving_duration": 1075,
+            "total_distance": 498.0,
+            "days_utilization": 0.508,
+            "distance_utilization": 0.103,
+            "duration_utilization": 0.065,
+            "utilization_rate": 0.225
         },
         {
             "id": "UOFU5079",
@@ -13925,7 +14415,14 @@
                     "end_time": "Oct 31, 2022 11:45:42 AM",
                     "num_stops": 5
                 }
-            ]
+            ],
+            "total_trips": 1,
+            "total_driving_duration": 28,
+            "total_distance": 7.0,
+            "days_utilization": 0.017,
+            "distance_utilization": 0.001,
+            "duration_utilization": 0.002,
+            "utilization_rate": 0.007
         },
         {
             "id": "UOFU5081",
@@ -14325,7 +14822,14 @@
                     "end_time": "Oct 31, 2022 3:24:39 PM",
                     "num_stops": 11
                 }
-            ]
+            ],
+            "total_trips": 39,
+            "total_driving_duration": 1553,
+            "total_distance": 226.0,
+            "days_utilization": 0.661,
+            "distance_utilization": 0.047,
+            "duration_utilization": 0.094,
+            "utilization_rate": 0.267
         },
         {
             "id": "UOFU5082",
@@ -14625,7 +15129,14 @@
                     "end_time": "Oct 31, 2022 3:15:10 PM",
                     "num_stops": 6
                 }
-            ]
+            ],
+            "total_trips": 29,
+            "total_driving_duration": 757,
+            "total_distance": 186.0,
+            "days_utilization": 0.492,
+            "distance_utilization": 0.038,
+            "duration_utilization": 0.046,
+            "utilization_rate": 0.192
         },
         {
             "id": "UOFU5092",
@@ -14805,7 +15316,14 @@
                     "end_time": "Oct 28, 2022 2:12:21 PM",
                     "num_stops": 5
                 }
-            ]
+            ],
+            "total_trips": 17,
+            "total_driving_duration": 503,
+            "total_distance": 70.0,
+            "days_utilization": 0.288,
+            "distance_utilization": 0.014,
+            "duration_utilization": 0.031,
+            "utilization_rate": 0.111
         },
         {
             "id": "UOFU5097",
@@ -15215,7 +15733,14 @@
                     "end_time": "Oct 31, 2022 2:07:23 PM",
                     "num_stops": 13
                 }
-            ]
+            ],
+            "total_trips": 40,
+            "total_driving_duration": 1332,
+            "total_distance": 221.0,
+            "days_utilization": 0.678,
+            "distance_utilization": 0.045,
+            "duration_utilization": 0.081,
+            "utilization_rate": 0.268
         },
         {
             "id": "UOFU5099",
@@ -15575,7 +16100,14 @@
                     "end_time": "Oct 31, 2022 1:53:52 PM",
                     "num_stops": 8
                 }
-            ]
+            ],
+            "total_trips": 35,
+            "total_driving_duration": 1180,
+            "total_distance": 226.0,
+            "days_utilization": 0.593,
+            "distance_utilization": 0.047,
+            "duration_utilization": 0.072,
+            "utilization_rate": 0.237
         },
         {
             "id": "UOFU5100",
@@ -15955,7 +16487,14 @@
                     "end_time": "Oct 28, 2022 12:37:22 PM",
                     "num_stops": 3
                 }
-            ]
+            ],
+            "total_trips": 37,
+            "total_driving_duration": 1457,
+            "total_distance": 235.0,
+            "days_utilization": 0.627,
+            "distance_utilization": 0.048,
+            "duration_utilization": 0.088,
+            "utilization_rate": 0.254
         },
         {
             "id": "UOFU5102",
@@ -16355,7 +16894,14 @@
                     "end_time": "Oct 31, 2022 12:18:14 PM",
                     "num_stops": 8
                 }
-            ]
+            ],
+            "total_trips": 39,
+            "total_driving_duration": 3261,
+            "total_distance": 1553.0,
+            "days_utilization": 0.661,
+            "distance_utilization": 0.32,
+            "duration_utilization": 0.198,
+            "utilization_rate": 0.393
         },
         {
             "id": "UOFU5103",
@@ -16785,7 +17331,14 @@
                     "end_time": "Oct 31, 2022 8:44:48 AM",
                     "num_stops": 7
                 }
-            ]
+            ],
+            "total_trips": 42,
+            "total_driving_duration": 2753,
+            "total_distance": 710.0,
+            "days_utilization": 0.712,
+            "distance_utilization": 0.146,
+            "duration_utilization": 0.167,
+            "utilization_rate": 0.342
         },
         {
             "id": "UOFU5113",
@@ -16794,7 +17347,14 @@
             "model": "F-150",
             "year": 2017.0,
             "vehicle_class": "Class F (7001 - 8000 lbs)",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "UOFU5119",
@@ -17164,7 +17724,14 @@
                     "end_time": "Oct 31, 2022 3:00:06 PM",
                     "num_stops": 9
                 }
-            ]
+            ],
+            "total_trips": 36,
+            "total_driving_duration": 1512,
+            "total_distance": 322.0,
+            "days_utilization": 0.61,
+            "distance_utilization": 0.066,
+            "duration_utilization": 0.092,
+            "utilization_rate": 0.256
         },
         {
             "id": "UOFU5120",
@@ -17494,7 +18061,14 @@
                     "end_time": "Oct 31, 2022 11:57:21 AM",
                     "num_stops": 9
                 }
-            ]
+            ],
+            "total_trips": 32,
+            "total_driving_duration": 886,
+            "total_distance": 210.0,
+            "days_utilization": 0.542,
+            "distance_utilization": 0.043,
+            "duration_utilization": 0.054,
+            "utilization_rate": 0.213
         },
         {
             "id": "UOFU5121",
@@ -17934,7 +18508,14 @@
                     "end_time": "Oct 31, 2022 9:33:08 AM",
                     "num_stops": 1
                 }
-            ]
+            ],
+            "total_trips": 43,
+            "total_driving_duration": 978,
+            "total_distance": 206.0,
+            "days_utilization": 0.729,
+            "distance_utilization": 0.042,
+            "duration_utilization": 0.059,
+            "utilization_rate": 0.277
         },
         {
             "id": "UOFU5132",
@@ -18284,7 +18865,14 @@
                     "end_time": "Oct 31, 2022 9:40:59 AM",
                     "num_stops": 8
                 }
-            ]
+            ],
+            "total_trips": 34,
+            "total_driving_duration": 3733,
+            "total_distance": 1675.0,
+            "days_utilization": 0.576,
+            "distance_utilization": 0.345,
+            "duration_utilization": 0.227,
+            "utilization_rate": 0.383
         },
         {
             "id": "UOFU5133",
@@ -18293,7 +18881,14 @@
             "model": "Tundra",
             "year": 2017.0,
             "vehicle_class": "Class E (6001 - 7000 lbs)",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "UOFU5136",
@@ -18302,7 +18897,14 @@
             "model": "Silverado",
             "year": 2017.0,
             "vehicle_class": "Class 3 (10001 - 14000 lb",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "UOFU5140",
@@ -18712,7 +19314,14 @@
                     "end_time": "Oct 31, 2022 2:15:38 PM",
                     "num_stops": 9
                 }
-            ]
+            ],
+            "total_trips": 40,
+            "total_driving_duration": 1109,
+            "total_distance": 257.0,
+            "days_utilization": 0.678,
+            "distance_utilization": 0.053,
+            "duration_utilization": 0.067,
+            "utilization_rate": 0.266
         },
         {
             "id": "UOFU5141",
@@ -19122,7 +19731,14 @@
                     "end_time": "Oct 31, 2022 3:52:21 PM",
                     "num_stops": 12
                 }
-            ]
+            ],
+            "total_trips": 40,
+            "total_driving_duration": 957,
+            "total_distance": 215.0,
+            "days_utilization": 0.678,
+            "distance_utilization": 0.044,
+            "duration_utilization": 0.058,
+            "utilization_rate": 0.26
         },
         {
             "id": "UOFU5182",
@@ -19542,7 +20158,14 @@
                     "end_time": "Oct 31, 2022 2:32:50 PM",
                     "num_stops": 14
                 }
-            ]
+            ],
+            "total_trips": 41,
+            "total_driving_duration": 8112,
+            "total_distance": 1128.0,
+            "days_utilization": 0.695,
+            "distance_utilization": 0.232,
+            "duration_utilization": 0.492,
+            "utilization_rate": 0.473
         },
         {
             "id": "UOFU5183",
@@ -19922,7 +20545,14 @@
                     "end_time": "Oct 28, 2022 5:10:52 PM",
                     "num_stops": 18
                 }
-            ]
+            ],
+            "total_trips": 37,
+            "total_driving_duration": 4209,
+            "total_distance": 392.0,
+            "days_utilization": 0.627,
+            "distance_utilization": 0.081,
+            "duration_utilization": 0.255,
+            "utilization_rate": 0.321
         },
         {
             "id": "UOFU5184",
@@ -20082,7 +20712,14 @@
                     "end_time": "Oct 21, 2022 5:01:24 PM",
                     "num_stops": 1
                 }
-            ]
+            ],
+            "total_trips": 15,
+            "total_driving_duration": 895,
+            "total_distance": 586.0,
+            "days_utilization": 0.254,
+            "distance_utilization": 0.121,
+            "duration_utilization": 0.054,
+            "utilization_rate": 0.143
         },
         {
             "id": "UOFU5185",
@@ -20332,7 +20969,14 @@
                     "end_time": "Oct 31, 2022 2:10:24 PM",
                     "num_stops": 0
                 }
-            ]
+            ],
+            "total_trips": 24,
+            "total_driving_duration": 1819,
+            "total_distance": 1217.0,
+            "days_utilization": 0.407,
+            "distance_utilization": 0.251,
+            "duration_utilization": 0.11,
+            "utilization_rate": 0.256
         },
         {
             "id": "UOFU6005",
@@ -20762,7 +21406,14 @@
                     "end_time": "Oct 31, 2022 3:43:52 PM",
                     "num_stops": 9
                 }
-            ]
+            ],
+            "total_trips": 42,
+            "total_driving_duration": 1177,
+            "total_distance": 172.0,
+            "days_utilization": 0.712,
+            "distance_utilization": 0.035,
+            "duration_utilization": 0.071,
+            "utilization_rate": 0.273
         },
         {
             "id": "UOFU6021",
@@ -20872,7 +21523,14 @@
                     "end_time": "Oct 25, 2022 10:44:38 AM",
                     "num_stops": 5
                 }
-            ]
+            ],
+            "total_trips": 10,
+            "total_driving_duration": 204,
+            "total_distance": 94.0,
+            "days_utilization": 0.169,
+            "distance_utilization": 0.019,
+            "duration_utilization": 0.012,
+            "utilization_rate": 0.067
         },
         {
             "id": "UOFU6030",
@@ -21182,7 +21840,14 @@
                     "end_time": "Oct 31, 2022 12:23:47 PM",
                     "num_stops": 1
                 }
-            ]
+            ],
+            "total_trips": 30,
+            "total_driving_duration": 1203,
+            "total_distance": 930.0,
+            "days_utilization": 0.508,
+            "distance_utilization": 0.191,
+            "duration_utilization": 0.073,
+            "utilization_rate": 0.257
         },
         {
             "id": "UOFU6031",
@@ -21332,7 +21997,14 @@
                     "end_time": "Oct 31, 2022 11:46:04 AM",
                     "num_stops": 3
                 }
-            ]
+            ],
+            "total_trips": 14,
+            "total_driving_duration": 548,
+            "total_distance": 314.0,
+            "days_utilization": 0.237,
+            "distance_utilization": 0.065,
+            "duration_utilization": 0.033,
+            "utilization_rate": 0.112
         },
         {
             "id": "UOFU6039",
@@ -21452,7 +22124,14 @@
                     "end_time": "Oct 20, 2022 10:34:25 AM",
                     "num_stops": 3
                 }
-            ]
+            ],
+            "total_trips": 11,
+            "total_driving_duration": 1320,
+            "total_distance": 807.0,
+            "days_utilization": 0.186,
+            "distance_utilization": 0.166,
+            "duration_utilization": 0.08,
+            "utilization_rate": 0.144
         },
         {
             "id": "UOFU6066",
@@ -21461,7 +22140,14 @@
             "model": "Tundra",
             "year": 2018.0,
             "vehicle_class": "Class E (6001 - 7000 lbs)",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "UOFU6071",
@@ -21881,7 +22567,14 @@
                     "end_time": "Oct 31, 2022 2:31:33 PM",
                     "num_stops": 11
                 }
-            ]
+            ],
+            "total_trips": 41,
+            "total_driving_duration": 3399,
+            "total_distance": 1445.0,
+            "days_utilization": 0.695,
+            "distance_utilization": 0.297,
+            "duration_utilization": 0.206,
+            "utilization_rate": 0.399
         },
         {
             "id": "UOFU6072",
@@ -22231,7 +22924,14 @@
                     "end_time": "Oct 31, 2022 9:23:54 AM",
                     "num_stops": 1
                 }
-            ]
+            ],
+            "total_trips": 34,
+            "total_driving_duration": 1544,
+            "total_distance": 767.0,
+            "days_utilization": 0.576,
+            "distance_utilization": 0.158,
+            "duration_utilization": 0.094,
+            "utilization_rate": 0.276
         },
         {
             "id": "UOFU6081",
@@ -22591,7 +23291,14 @@
                     "end_time": "Oct 31, 2022 1:45:29 PM",
                     "num_stops": 9
                 }
-            ]
+            ],
+            "total_trips": 35,
+            "total_driving_duration": 1711,
+            "total_distance": 1081.0,
+            "days_utilization": 0.593,
+            "distance_utilization": 0.223,
+            "duration_utilization": 0.104,
+            "utilization_rate": 0.307
         },
         {
             "id": "UOFU6092",
@@ -22711,7 +23418,14 @@
                     "end_time": "Oct 26, 2022 12:59:19 PM",
                     "num_stops": 4
                 }
-            ]
+            ],
+            "total_trips": 11,
+            "total_driving_duration": 352,
+            "total_distance": 160.0,
+            "days_utilization": 0.186,
+            "distance_utilization": 0.033,
+            "duration_utilization": 0.021,
+            "utilization_rate": 0.08
         },
         {
             "id": "UOFU6105",
@@ -22720,7 +23434,14 @@
             "model": "Transit",
             "year": 2019.0,
             "vehicle_class": "Class G (8001 - 9000 lbs)",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "UOFU6107",
@@ -22810,7 +23531,14 @@
                     "end_time": "Oct 30, 2022 8:46:40 AM",
                     "num_stops": 3
                 }
-            ]
+            ],
+            "total_trips": 8,
+            "total_driving_duration": 111,
+            "total_distance": 28.0,
+            "days_utilization": 0.136,
+            "distance_utilization": 0.006,
+            "duration_utilization": 0.007,
+            "utilization_rate": 0.05
         },
         {
             "id": "UOFU6118",
@@ -22920,7 +23648,14 @@
                     "end_time": "Oct 27, 2022 6:15:32 PM",
                     "num_stops": 12
                 }
-            ]
+            ],
+            "total_trips": 10,
+            "total_driving_duration": 1374,
+            "total_distance": 1161.0,
+            "days_utilization": 0.169,
+            "distance_utilization": 0.239,
+            "duration_utilization": 0.083,
+            "utilization_rate": 0.164
         },
         {
             "id": "UOFU6119",
@@ -23140,7 +23875,14 @@
                     "end_time": "Oct 30, 2022 2:45:57 PM",
                     "num_stops": 6
                 }
-            ]
+            ],
+            "total_trips": 21,
+            "total_driving_duration": 4447,
+            "total_distance": 4133.0,
+            "days_utilization": 0.356,
+            "distance_utilization": 0.851,
+            "duration_utilization": 0.27,
+            "utilization_rate": 0.492
         },
         {
             "id": "UOFU6123",
@@ -23540,7 +24282,14 @@
                     "end_time": "Oct 31, 2022 3:50:03 PM",
                     "num_stops": 29
                 }
-            ]
+            ],
+            "total_trips": 39,
+            "total_driving_duration": 4949,
+            "total_distance": 517.0,
+            "days_utilization": 0.661,
+            "distance_utilization": 0.106,
+            "duration_utilization": 0.3,
+            "utilization_rate": 0.356
         },
         {
             "id": "UOFU6124",
@@ -23930,7 +24679,14 @@
                     "end_time": "Oct 31, 2022 2:53:19 PM",
                     "num_stops": 18
                 }
-            ]
+            ],
+            "total_trips": 38,
+            "total_driving_duration": 5832,
+            "total_distance": 566.0,
+            "days_utilization": 0.644,
+            "distance_utilization": 0.117,
+            "duration_utilization": 0.354,
+            "utilization_rate": 0.372
         },
         {
             "id": "UOFU6127",
@@ -24410,7 +25166,14 @@
                     "end_time": "Oct 31, 2022 8:39:04 AM",
                     "num_stops": 5
                 }
-            ]
+            ],
+            "total_trips": 47,
+            "total_driving_duration": 5284,
+            "total_distance": 2264.0,
+            "days_utilization": 0.797,
+            "distance_utilization": 0.466,
+            "duration_utilization": 0.321,
+            "utilization_rate": 0.528
         },
         {
             "id": "UOFU6128",
@@ -24460,7 +25223,14 @@
                     "end_time": "Oct 25, 2022 8:09:34 AM",
                     "num_stops": 6
                 }
-            ]
+            ],
+            "total_trips": 4,
+            "total_driving_duration": 262,
+            "total_distance": 76.0,
+            "days_utilization": 0.068,
+            "distance_utilization": 0.016,
+            "duration_utilization": 0.016,
+            "utilization_rate": 0.033
         },
         {
             "id": "UOFU6152",
@@ -24740,7 +25510,14 @@
                     "end_time": "Oct 31, 2022 11:47:14 AM",
                     "num_stops": 1
                 }
-            ]
+            ],
+            "total_trips": 27,
+            "total_driving_duration": 639,
+            "total_distance": 210.0,
+            "days_utilization": 0.458,
+            "distance_utilization": 0.043,
+            "duration_utilization": 0.039,
+            "utilization_rate": 0.18
         },
         {
             "id": "UOFU6153",
@@ -25090,7 +25867,14 @@
                     "end_time": "Oct 31, 2022 9:47:43 AM",
                     "num_stops": 1
                 }
-            ]
+            ],
+            "total_trips": 34,
+            "total_driving_duration": 611,
+            "total_distance": 205.0,
+            "days_utilization": 0.576,
+            "distance_utilization": 0.042,
+            "duration_utilization": 0.037,
+            "utilization_rate": 0.218
         },
         {
             "id": "UOFU6154",
@@ -25480,7 +26264,14 @@
                     "end_time": "Oct 31, 2022 9:54:54 AM",
                     "num_stops": 5
                 }
-            ]
+            ],
+            "total_trips": 38,
+            "total_driving_duration": 1484,
+            "total_distance": 640.0,
+            "days_utilization": 0.644,
+            "distance_utilization": 0.132,
+            "duration_utilization": 0.09,
+            "utilization_rate": 0.289
         },
         {
             "id": "UOFU6158",
@@ -25610,7 +26401,14 @@
                     "end_time": "Sep 01, 2022 12:14:05 PM",
                     "num_stops": 34
                 }
-            ]
+            ],
+            "total_trips": 12,
+            "total_driving_duration": 10270,
+            "total_distance": 1973.0,
+            "days_utilization": 0.203,
+            "distance_utilization": 0.406,
+            "duration_utilization": 0.623,
+            "utilization_rate": 0.411
         },
         {
             "id": "UOFU6170",
@@ -25619,7 +26417,14 @@
             "model": "Tacoma",
             "year": 2019.0,
             "vehicle_class": "Class D (5001 - 6000 lbs)",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "UOFU6171",
@@ -25939,7 +26744,14 @@
                     "end_time": "Oct 31, 2022 12:33:15 PM",
                     "num_stops": 9
                 }
-            ]
+            ],
+            "total_trips": 31,
+            "total_driving_duration": 1802,
+            "total_distance": 466.0,
+            "days_utilization": 0.525,
+            "distance_utilization": 0.096,
+            "duration_utilization": 0.109,
+            "utilization_rate": 0.243
         },
         {
             "id": "UOFU6172",
@@ -26279,7 +27091,14 @@
                     "end_time": "Oct 31, 2022 8:38:03 AM",
                     "num_stops": 5
                 }
-            ]
+            ],
+            "total_trips": 33,
+            "total_driving_duration": 1081,
+            "total_distance": 241.0,
+            "days_utilization": 0.559,
+            "distance_utilization": 0.05,
+            "duration_utilization": 0.066,
+            "utilization_rate": 0.225
         },
         {
             "id": "UOFU6176",
@@ -26669,7 +27488,14 @@
                     "end_time": "Oct 31, 2022 12:56:47 PM",
                     "num_stops": 9
                 }
-            ]
+            ],
+            "total_trips": 38,
+            "total_driving_duration": 1127,
+            "total_distance": 272.0,
+            "days_utilization": 0.644,
+            "distance_utilization": 0.056,
+            "duration_utilization": 0.068,
+            "utilization_rate": 0.256
         },
         {
             "id": "UOFU6177",
@@ -27059,7 +27885,14 @@
                     "end_time": "Oct 31, 2022 10:18:38 AM",
                     "num_stops": 6
                 }
-            ]
+            ],
+            "total_trips": 38,
+            "total_driving_duration": 1520,
+            "total_distance": 311.0,
+            "days_utilization": 0.644,
+            "distance_utilization": 0.064,
+            "duration_utilization": 0.092,
+            "utilization_rate": 0.267
         },
         {
             "id": "UOFU6222",
@@ -27161,15 +27994,22 @@
                 },
                 {
                     "idle_duration": 4,
-                    "total_duration": 210,
+                    "total_duration": 0,
                     "driving_duration": 167,
-                    "stopped_duration": 43,
+                    "stopped_duration": 0,
                     "distance": 78.0,
                     "start_time": "Oct 13, 2022 12:54:18 PM",
                     "end_time": "Sep 01, 2022 12:55:37 AM",
                     "num_stops": 14
                 }
-            ]
+            ],
+            "total_trips": 10,
+            "total_driving_duration": 1691,
+            "total_distance": 1505.0,
+            "days_utilization": 0.169,
+            "distance_utilization": 0.31,
+            "duration_utilization": 0.103,
+            "utilization_rate": 0.194
         },
         {
             "id": "UOFU6224",
@@ -27589,7 +28429,14 @@
                     "end_time": "Oct 29, 2022 9:25:59 AM",
                     "num_stops": 1
                 }
-            ]
+            ],
+            "total_trips": 41,
+            "total_driving_duration": 1608,
+            "total_distance": 1113.0,
+            "days_utilization": 0.695,
+            "distance_utilization": 0.229,
+            "duration_utilization": 0.098,
+            "utilization_rate": 0.341
         },
         {
             "id": "UOFU6227",
@@ -27729,7 +28576,14 @@
                     "end_time": "Oct 19, 2022 3:55:26 PM",
                     "num_stops": 9
                 }
-            ]
+            ],
+            "total_trips": 13,
+            "total_driving_duration": 710,
+            "total_distance": 380.0,
+            "days_utilization": 0.22,
+            "distance_utilization": 0.078,
+            "duration_utilization": 0.043,
+            "utilization_rate": 0.114
         },
         {
             "id": "UOFU6228",
@@ -28009,7 +28863,14 @@
                     "end_time": "Oct 27, 2022 2:52:37 PM",
                     "num_stops": 6
                 }
-            ]
+            ],
+            "total_trips": 27,
+            "total_driving_duration": 1338,
+            "total_distance": 672.0,
+            "days_utilization": 0.458,
+            "distance_utilization": 0.138,
+            "duration_utilization": 0.081,
+            "utilization_rate": 0.226
         },
         {
             "id": "UOFU6233",
@@ -28319,7 +29180,14 @@
                     "end_time": "Oct 31, 2022 2:28:23 PM",
                     "num_stops": 12
                 }
-            ]
+            ],
+            "total_trips": 30,
+            "total_driving_duration": 1880,
+            "total_distance": 707.0,
+            "days_utilization": 0.508,
+            "distance_utilization": 0.146,
+            "duration_utilization": 0.114,
+            "utilization_rate": 0.256
         },
         {
             "id": "UOFU6234",
@@ -28689,7 +29557,14 @@
                     "end_time": "Sep 01, 2022 12:47:47 PM",
                     "num_stops": 10
                 }
-            ]
+            ],
+            "total_trips": 36,
+            "total_driving_duration": 6528,
+            "total_distance": 4370.0,
+            "days_utilization": 0.61,
+            "distance_utilization": 0.9,
+            "duration_utilization": 0.396,
+            "utilization_rate": 0.635
         },
         {
             "id": "UOFU6252",
@@ -29149,7 +30024,14 @@
                     "end_time": "Oct 31, 2022 12:40:45 PM",
                     "num_stops": 16
                 }
-            ]
+            ],
+            "total_trips": 45,
+            "total_driving_duration": 6052,
+            "total_distance": 1028.0,
+            "days_utilization": 0.763,
+            "distance_utilization": 0.212,
+            "duration_utilization": 0.367,
+            "utilization_rate": 0.447
         },
         {
             "id": "UOFU6253",
@@ -29409,7 +30291,14 @@
                     "end_time": "Oct 31, 2022 11:06:24 AM",
                     "num_stops": 2
                 }
-            ]
+            ],
+            "total_trips": 25,
+            "total_driving_duration": 2400,
+            "total_distance": 341.0,
+            "days_utilization": 0.424,
+            "distance_utilization": 0.07,
+            "duration_utilization": 0.146,
+            "utilization_rate": 0.213
         },
         {
             "id": "UOFU6303",
@@ -29739,7 +30628,14 @@
                     "end_time": "Oct 31, 2022 2:16:57 PM",
                     "num_stops": 2
                 }
-            ]
+            ],
+            "total_trips": 32,
+            "total_driving_duration": 586,
+            "total_distance": 171.0,
+            "days_utilization": 0.542,
+            "distance_utilization": 0.035,
+            "duration_utilization": 0.036,
+            "utilization_rate": 0.204
         },
         {
             "id": "UOFU6304",
@@ -30099,7 +30995,14 @@
                     "end_time": "Oct 28, 2022 12:27:03 PM",
                     "num_stops": 5
                 }
-            ]
+            ],
+            "total_trips": 35,
+            "total_driving_duration": 668,
+            "total_distance": 202.0,
+            "days_utilization": 0.593,
+            "distance_utilization": 0.042,
+            "duration_utilization": 0.041,
+            "utilization_rate": 0.225
         },
         {
             "id": "UOFU6307",
@@ -30399,7 +31302,14 @@
                     "end_time": "Sep 05, 2022 10:52:26 AM",
                     "num_stops": 11
                 }
-            ]
+            ],
+            "total_trips": 29,
+            "total_driving_duration": 4414,
+            "total_distance": 769.0,
+            "days_utilization": 0.492,
+            "distance_utilization": 0.158,
+            "duration_utilization": 0.268,
+            "utilization_rate": 0.306
         },
         {
             "id": "UOFU6308",
@@ -30639,7 +31549,14 @@
                     "end_time": "Oct 31, 2022 6:59:59 AM",
                     "num_stops": 1
                 }
-            ]
+            ],
+            "total_trips": 23,
+            "total_driving_duration": 1255,
+            "total_distance": 754.0,
+            "days_utilization": 0.39,
+            "distance_utilization": 0.155,
+            "duration_utilization": 0.076,
+            "utilization_rate": 0.207
         },
         {
             "id": "UOFU6311",
@@ -30869,7 +31786,14 @@
                     "end_time": "Oct 31, 2022 12:29:33 PM",
                     "num_stops": 4
                 }
-            ]
+            ],
+            "total_trips": 22,
+            "total_driving_duration": 405,
+            "total_distance": 81.0,
+            "days_utilization": 0.373,
+            "distance_utilization": 0.017,
+            "duration_utilization": 0.025,
+            "utilization_rate": 0.138
         },
         {
             "id": "UOFU6324",
@@ -31209,7 +32133,14 @@
                     "end_time": "Oct 28, 2022 3:07:17 PM",
                     "num_stops": 5
                 }
-            ]
+            ],
+            "total_trips": 33,
+            "total_driving_duration": 1385,
+            "total_distance": 223.0,
+            "days_utilization": 0.559,
+            "distance_utilization": 0.046,
+            "duration_utilization": 0.084,
+            "utilization_rate": 0.23
         },
         {
             "id": "UOFU6325",
@@ -31499,7 +32430,14 @@
                     "end_time": "Oct 28, 2022 2:39:45 PM",
                     "num_stops": 11
                 }
-            ]
+            ],
+            "total_trips": 28,
+            "total_driving_duration": 1233,
+            "total_distance": 224.0,
+            "days_utilization": 0.475,
+            "distance_utilization": 0.046,
+            "duration_utilization": 0.075,
+            "utilization_rate": 0.199
         },
         {
             "id": "UOFU6336",
@@ -31869,7 +32807,14 @@
                     "end_time": "Oct 31, 2022 11:03:26 AM",
                     "num_stops": 12
                 }
-            ]
+            ],
+            "total_trips": 36,
+            "total_driving_duration": 6219,
+            "total_distance": 852.0,
+            "days_utilization": 0.61,
+            "distance_utilization": 0.175,
+            "duration_utilization": 0.378,
+            "utilization_rate": 0.388
         },
         {
             "id": "UOFU6348",
@@ -32269,7 +33214,14 @@
                     "end_time": "Oct 31, 2022 2:42:53 PM",
                     "num_stops": 5
                 }
-            ]
+            ],
+            "total_trips": 39,
+            "total_driving_duration": 836,
+            "total_distance": 105.0,
+            "days_utilization": 0.661,
+            "distance_utilization": 0.022,
+            "duration_utilization": 0.051,
+            "utilization_rate": 0.245
         },
         {
             "id": "UOFU6367",
@@ -32609,7 +33561,14 @@
                     "end_time": "Oct 13, 2022 1:39:22 PM",
                     "num_stops": 21
                 }
-            ]
+            ],
+            "total_trips": 33,
+            "total_driving_duration": 6602,
+            "total_distance": 1780.0,
+            "days_utilization": 0.559,
+            "distance_utilization": 0.366,
+            "duration_utilization": 0.401,
+            "utilization_rate": 0.442
         },
         {
             "id": "UOFU6377",
@@ -32779,7 +33738,14 @@
                     "end_time": "Oct 31, 2022 10:15:00 AM",
                     "num_stops": 4
                 }
-            ]
+            ],
+            "total_trips": 16,
+            "total_driving_duration": 469,
+            "total_distance": 254.0,
+            "days_utilization": 0.271,
+            "distance_utilization": 0.052,
+            "duration_utilization": 0.028,
+            "utilization_rate": 0.117
         },
         {
             "id": "UOFU6378",
@@ -33209,7 +34175,14 @@
                     "end_time": "Oct 31, 2022 11:54:37 AM",
                     "num_stops": 9
                 }
-            ]
+            ],
+            "total_trips": 42,
+            "total_driving_duration": 2648,
+            "total_distance": 1255.0,
+            "days_utilization": 0.712,
+            "distance_utilization": 0.258,
+            "duration_utilization": 0.161,
+            "utilization_rate": 0.377
         },
         {
             "id": "UOFU6391",
@@ -33669,7 +34642,14 @@
                     "end_time": "Oct 31, 2022 3:41:40 PM",
                     "num_stops": 6
                 }
-            ]
+            ],
+            "total_trips": 45,
+            "total_driving_duration": 2851,
+            "total_distance": 1257.0,
+            "days_utilization": 0.763,
+            "distance_utilization": 0.259,
+            "duration_utilization": 0.173,
+            "utilization_rate": 0.398
         },
         {
             "id": "UOFU6400",
@@ -34099,7 +35079,14 @@
                     "end_time": "Oct 31, 2022 5:00:01 PM",
                     "num_stops": 15
                 }
-            ]
+            ],
+            "total_trips": 42,
+            "total_driving_duration": 7405,
+            "total_distance": 3475.0,
+            "days_utilization": 0.712,
+            "distance_utilization": 0.715,
+            "duration_utilization": 0.449,
+            "utilization_rate": 0.625
         },
         {
             "id": "UOFU6401",
@@ -34349,7 +35336,14 @@
                     "end_time": "Oct 31, 2022 4:41:03 PM",
                     "num_stops": 15
                 }
-            ]
+            ],
+            "total_trips": 24,
+            "total_driving_duration": 5925,
+            "total_distance": 3409.0,
+            "days_utilization": 0.407,
+            "distance_utilization": 0.702,
+            "duration_utilization": 0.36,
+            "utilization_rate": 0.49
         },
         {
             "id": "UOFU6424",
@@ -34719,7 +35713,14 @@
                     "end_time": "Oct 31, 2022 2:47:18 PM",
                     "num_stops": 3
                 }
-            ]
+            ],
+            "total_trips": 36,
+            "total_driving_duration": 2052,
+            "total_distance": 1051.0,
+            "days_utilization": 0.61,
+            "distance_utilization": 0.216,
+            "duration_utilization": 0.125,
+            "utilization_rate": 0.317
         },
         {
             "id": "UOFU6425",
@@ -35149,7 +36150,14 @@
                     "end_time": "Oct 31, 2022 1:07:05 PM",
                     "num_stops": 13
                 }
-            ]
+            ],
+            "total_trips": 42,
+            "total_driving_duration": 6794,
+            "total_distance": 4294.0,
+            "days_utilization": 0.712,
+            "distance_utilization": 0.884,
+            "duration_utilization": 0.412,
+            "utilization_rate": 0.669
         },
         {
             "id": "UOFU6446",
@@ -35158,7 +36166,14 @@
             "model": "Tundra",
             "year": 2021.0,
             "vehicle_class": "Class F (7001 - 8000 lbs)",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "UOFU6448",
@@ -35167,7 +36182,14 @@
             "model": "RAV4 Hybrid",
             "year": 2021.0,
             "vehicle_class": "Class C (4001 - 5000 lbs)",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "UOFU6449",
@@ -35547,7 +36569,14 @@
                     "end_time": "Oct 31, 2022 3:39:25 PM",
                     "num_stops": 24
                 }
-            ]
+            ],
+            "total_trips": 37,
+            "total_driving_duration": 6013,
+            "total_distance": 635.0,
+            "days_utilization": 0.627,
+            "distance_utilization": 0.131,
+            "duration_utilization": 0.365,
+            "utilization_rate": 0.374
         },
         {
             "id": "UOFU6450",
@@ -36017,7 +37046,14 @@
                     "end_time": "Oct 31, 2022 12:28:44 PM",
                     "num_stops": 6
                 }
-            ]
+            ],
+            "total_trips": 46,
+            "total_driving_duration": 3161,
+            "total_distance": 311.0,
+            "days_utilization": 0.78,
+            "distance_utilization": 0.064,
+            "duration_utilization": 0.192,
+            "utilization_rate": 0.345
         },
         {
             "id": "UOFU6451",
@@ -36427,7 +37463,14 @@
                     "end_time": "Oct 31, 2022 3:45:41 PM",
                     "num_stops": 6
                 }
-            ]
+            ],
+            "total_trips": 40,
+            "total_driving_duration": 2018,
+            "total_distance": 182.0,
+            "days_utilization": 0.678,
+            "distance_utilization": 0.037,
+            "duration_utilization": 0.122,
+            "utilization_rate": 0.279
         },
         {
             "id": "UOFU6453",
@@ -36837,7 +37880,14 @@
                     "end_time": "Oct 26, 2022 3:29:27 PM",
                     "num_stops": 3
                 }
-            ]
+            ],
+            "total_trips": 40,
+            "total_driving_duration": 3958,
+            "total_distance": 1837.0,
+            "days_utilization": 0.678,
+            "distance_utilization": 0.378,
+            "duration_utilization": 0.24,
+            "utilization_rate": 0.432
         },
         {
             "id": "UOFU6454",
@@ -37307,7 +38357,14 @@
                     "end_time": "Oct 31, 2022 2:28:06 PM",
                     "num_stops": 22
                 }
-            ]
+            ],
+            "total_trips": 46,
+            "total_driving_duration": 6098,
+            "total_distance": 2991.0,
+            "days_utilization": 0.78,
+            "distance_utilization": 0.616,
+            "duration_utilization": 0.37,
+            "utilization_rate": 0.589
         },
         {
             "id": "UOFU6455",
@@ -37797,7 +38854,14 @@
                     "end_time": "Oct 31, 2022 4:51:19 PM",
                     "num_stops": 7
                 }
-            ]
+            ],
+            "total_trips": 48,
+            "total_driving_duration": 4771,
+            "total_distance": 2269.0,
+            "days_utilization": 0.814,
+            "distance_utilization": 0.467,
+            "duration_utilization": 0.29,
+            "utilization_rate": 0.524
         },
         {
             "id": "UOFU6456",
@@ -38227,7 +39291,14 @@
                     "end_time": "Oct 26, 2022 1:12:27 PM",
                     "num_stops": 7
                 }
-            ]
+            ],
+            "total_trips": 42,
+            "total_driving_duration": 3833,
+            "total_distance": 1738.0,
+            "days_utilization": 0.712,
+            "distance_utilization": 0.358,
+            "duration_utilization": 0.233,
+            "utilization_rate": 0.434
         },
         {
             "id": "UOFU6481",
@@ -38236,7 +39307,14 @@
             "model": "Outback",
             "year": 2022.0,
             "vehicle_class": "Class C (4001 - 5000 lbs)",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "UOFU6483",
@@ -38416,7 +39494,14 @@
                     "end_time": "Oct 28, 2022 2:08:38 PM",
                     "num_stops": 1
                 }
-            ]
+            ],
+            "total_trips": 17,
+            "total_driving_duration": 300,
+            "total_distance": 181.0,
+            "days_utilization": 0.288,
+            "distance_utilization": 0.037,
+            "duration_utilization": 0.018,
+            "utilization_rate": 0.114
         },
         {
             "id": "g72020ec927e",
@@ -38425,7 +39510,14 @@
             "model": "",
             "year": "",
             "vehicle_class": "",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         },
         {
             "id": "g9c22117d826",
@@ -38434,7 +39526,14 @@
             "model": "",
             "year": "",
             "vehicle_class": "",
-            "trips": []
+            "trips": [],
+            "total_trips": 0,
+            "total_driving_duration": 0,
+            "total_distance": 0,
+            "days_utilization": 0.0,
+            "distance_utilization": 0.0,
+            "duration_utilization": 0.0,
+            "utilization_rate": 0.0
         }
     ]
 }

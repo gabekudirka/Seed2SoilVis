@@ -6,7 +6,7 @@
             <!-- <input type="checkbox" v-model="allOn" @change="checkAll()" style="margin:0 0.6em"/> -->
             <div class="row-section-md" @click="sortVehicles('id')">Vehicle</div> 
             <div class="row-section-md" @click="sortVehicles('department')">Department</div>
-            <div class="row-section-sm" @click="sortVehicles('num_trips')"> Trips Taken </div>
+            <div class="row-section-sm" @click="sortVehicles('utilization_rate')"> Utilization </div>
         </li>
         <li v-for="item in fleet" 
             :key="item.id"
@@ -16,7 +16,7 @@
             <!-- <input class="row-section-checkbox" type="checkbox" name="check" checked="true" @change="checkOne(item.id)"/> -->
             <div class="row-section-md">{{ item.id }}</div>
             <div class="row-section-md">{{ item.department }}</div>
-            <div class="row-section-sm">{{ item.num_trips }}</div>
+            <div class="row-section-sm">{{ (item.utilization_rate * 100).toFixed(1) }}%</div>
         </li>
     </ul>
   </div>
@@ -92,8 +92,8 @@ export default {
                 bl = this.fleet.sort((a, b) => (a.id > b.id) ? -1 : 1);
             } else if (method === 'department') {
                 bl = this.fleet.sort((a, b) => (a.department > b.department) ? 1 : -1);
-            } else if (method === 'num_trips') {
-                bl = this.fleet.sort((a, b) => (a.num_trips > b.num_trips) ? 1 : -1);
+            } else if (method === 'utilization_rate') {
+                bl = this.fleet.sort((a, b) => (a.utilization_rate > b.utilization_rate) ? 1 : -1);
             }
             this.sortBy = method;
             this.fleet = bl;

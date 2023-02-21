@@ -1,9 +1,9 @@
 <template>
-    <div id='tooltip'>
+    <div id="vehicle-chart-container">
+         <svg id="vehicle-svg">
+            <g v-bind:id="chartName" transform="translate(27, 5)"> </g>
+        </svg>
     </div>
-    <svg id="vehicle-svg">
-        <g v-bind:id="chartName" transform="translate(27, 5)"> </g>
-    </svg>
 </template>
 
 <script>
@@ -60,7 +60,7 @@ export default {
             if (this.chartDataType === 'total_duration') {
                 return 'Total Usage Duration (minutes)';
             } else if (this.chartDataType === 'idle_duration') {
-                return 'Idle Duration (minutes)';
+                return 'Idling Cost ($)';
             } else if (this.chartDataType === 'distance') {
                 return 'Distance Traveled (miles)';
             } else if (this.chartDataType === 'driving_duration') {
@@ -158,7 +158,6 @@ export default {
                         }
                     });
             }
-            console.log(data);
             const xScale = d3.scalePoint()
                 .domain(rangeDates)
                 .range([this.margin.left, this.width]);
@@ -197,7 +196,7 @@ export default {
                 .text(this.yLabel)
                 .classed('y-axis-label', true)
                 .attr('text-anchor', 'end')
-                .attr('transform', 'rotate(-90) translate(-70, -15)')
+                .attr('transform', 'rotate(-90) translate(-75, -15)')
                 .style('font-size', '15px');
         },
         clearChart() {
@@ -236,4 +235,7 @@ export default {
       stroke-width: 2;
       fill: none;
     }
+#vehicle-chart-container{
+    padding-left: 30px;
+}
 </style>

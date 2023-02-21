@@ -44,7 +44,6 @@ export default {
             this.$store.dispatch('changeMainView', !this.showMapView);
         },
         changeToggle() {
-            console.log(this.showMapView);
             this.showMapView = !this.showMapView;
         }
     },
