@@ -18,7 +18,6 @@ import 'heatmap.js';
 import HeatmapOverlay from 'heatmap.js/plugins/leaflet-heatmap';
 import voronoi from '@turf/voronoi';
 import bbox from '@turf/bbox';
-import tazRegions from '../data/supplementary_data/taz_region_data.json';
 import idleContour from '../data/trip_data/idle_contour.json';
 import pollutantConcentrations from '../data/supplementary_data/pollutant_concentrations.json';
 import stopMarker from '../assets/images/orange_icon2.png';
@@ -103,8 +102,6 @@ export default {
 
       const pollutantConcentrationOverlay = this.drawPollutantConcentrationOverlay();
 
-      const economicOverlay = this.drawTazOverlay();
-
       // Add the heatmap overlays
       const idleHeatmapConfig = {
         radius: 0.005,
@@ -119,7 +116,7 @@ export default {
       const idleHeatmap = idleHeatmapLayer;
 
       const stopsHeatmapConfig = {
-        radius: 0.004,
+        radius: 0.002,
         maxOpacity: 5,
         scaleRadius: true,
         useLocalExtrema: true,
@@ -131,7 +128,6 @@ export default {
       const stopsHeatmap = stopsHeatmapLayer;
 
       const overlays = {
-        'Economic Data by Region': economicOverlay,
         'Pollutant Concentrations': pollutantConcentrationOverlay,
         'Idle Time Heatmap': idleHeatmap,
         'Stops Heatmap': stopsHeatmap,
@@ -148,25 +144,14 @@ export default {
       stopsHeatmapLayer.setData(this.heatmapData);
 
       this.map.on('overlayadd', (e) => {
-        if (e.name === 'Economic Data by Region') {
-          this.economicLegend.addTo(this.map);
-          this.info.addTo(this.map);
-        } else if (e.name === 'Pollutant Concentrations') {
+        if (e.name === 'Pollutant Concentrations') {
           this.pollutantLegend.addTo(this.map);
           this.info.addTo(this.map);
         }
       });
       this.map.on('overlayremove', (e) => {
-        if (e.name === 'Economic Data by Region') {
-          this.economicLegend.remove();
-          if (!this.map.hasLayer(pollutantConcentrationOverlay)) {
-            this.info.remove();
-          }
-        } else if (e.name === 'Pollutant Concentrations') {
+          if (e.name === 'Pollutant Concentrations') {
           this.pollutantLegend.remove();
-          if (!this.map.hasLayer(economicOverlay)) {
-            this.info.remove();
-          }
         }
       });
     },
@@ -255,47 +240,6 @@ export default {
       }
 
       this.info.show(layer); 
-    },
-    drawTazOverlay() {
-      const ref = this;
-
-      function displayTazInfo(props) {
-        ref.info._div.innerHTML = '<p>TAZ ID: <b>' + props.target.feature.properties.N___CO_TAZ + '</b> </p>'
-            + '<i>Households making:</i>'
-            + '<br/> $0-$34k per year: &nbsp&nbsp&nbsp&nbsp<b>' + props.target.feature.properties.inc_bracket1
-            + '%</b><br/> $35k-$50k per year: <b>' + props.target.feature.properties.inc_bracket2
-            + '%</b><br/> $50k-$99k per year: <b>' + props.target.feature.properties.inc_bracket3
-            + '%</b><br/> $100k+ per year: &nbsp&nbsp&nbsp&nbsp&nbsp<b>' + props.target.feature.properties.inc_bracket4
-            + '%</b><br/> Total number of households: <b>' + props.target.feature.properties.total_households + '</b>';
-      }
-
-      function onEachFeature(feature, layer) {
-        layer.on({
-            mouseover: ref.highlightFeature,
-            mouseout: function (e) {
-              economicOverlay.resetStyle(e.target);
-              ref.info.hide();
-            },
-            click: displayTazInfo
-        });
-      }
-
-      function tazOverlayStyle(feature) {
-        return {
-          fillColor: ref.getColor([0, 10, 20, 30, 40, 50, 60, 70], feature.properties.inc_bracket1, feature.properties.inc_bracket2, feature.properties.total_households),  
-          weight: 1,
-          opacity: 0.6,
-          color: 'black',
-          fillOpacity: 0.5,
-        };
-      }
-
-      const economicOverlay = L.geoJson(tazRegions, {
-        style: tazOverlayStyle,
-        onEachFeature: onEachFeature
-      });
-
-      return economicOverlay;
     },
     createLegend(overlayType) {
       const ref = this;
