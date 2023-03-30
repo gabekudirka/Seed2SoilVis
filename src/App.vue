@@ -123,7 +123,7 @@ body{
 .bottom-main{
   flex:1;
   max-height: 38vh;
-  overflow-y: hidden;
+  overflow-y: auto;
   overflow-x: hidden;
   z-index: 0;
 }
