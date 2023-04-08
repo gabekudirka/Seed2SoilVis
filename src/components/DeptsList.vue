@@ -16,7 +16,7 @@
             <!-- <input class="row-section-checkbox" type="checkbox" name="check" checked="true" @change="checkOne(item.id)"/> -->
             <div class="row-section-md">{{ item.name }}</div>
             <div class="row-section-sm">{{ item.num_vehicles }}</div>
-            <div class="row-section-sm">{{ (item.avg_utilization_rate * 100).toFixed(1) }}%</div>
+            <div class="row-section-sm">{{ (item.avg_utilization_rate * 100).toFixed(1) }}% </div>
 
         </li>
     </ul>

@@ -22,6 +22,7 @@ import idleContour from '../data/trip_data/idle_contour.json';
 import pollutantConcentrations from '../data/supplementary_data/pollutant_concentrations.json';
 import stopMarker from '../assets/images/orange_icon2.png';
 import heatmapDataJson from '../data/trip_data/heatmap_data.json';
+import pollutantOverlayJson from '../data/supplementary_data/pollutant_kriging.json';
 
 export default {
   name: 'BusMap',
@@ -32,6 +33,24 @@ export default {
       map: null,
       economicLegend: this.createLegend('economic'),
       pollutantLegend: this.createLegend('pollutant'),
+      idleHeatmapConfig: {
+        radius: 0.005,
+        maxOpacity: 5,
+        scaleRadius: true,
+        useLocalExtrema: true,
+        latField: 'lat',
+        lngField: 'lng',
+        valueField: 'idle_duration'
+      },
+      selectedIdleHeatmapConfig: {
+        radius: 0.005,
+        maxOpacity: 5,
+        scaleRadius: true,
+        useLocalExtrema: true,
+        latField: 'lat',
+        lngField: 'lng',
+        valueField: 'idle_duration'
+      }
     };
   },
   computed: {
@@ -47,6 +66,15 @@ export default {
     selectedTrips: function () {
       return this.$store.state.selectedTrips;
     },
+    showVehicles: function () {
+      return this.$store.state.showVehicles;
+    },
+    selectedVehicle: function () {
+      return this.$store.state.selectedVehicle;
+    },
+    selectedDept: function () {
+      return this.$store.state.selectedDept;
+    },
     stopIcon: function () {
       return L.icon({
         iconUrl: stopMarker,
@@ -59,6 +87,28 @@ export default {
         max: Math.max(...heatmapDataJson.stops.map(el => el.idle_duration)),
         data: heatmapDataJson.stops
       };
+    },
+    selectedHeatmapData: function () {
+      if (this.showVehicles) {
+        const selectedData = heatmapDataJson.stops.filter(el => {
+          return el.device === this.selectedVehicle;
+        });
+        return {
+          max: Math.max(...selectedData.map(el => el.idle_duration)),
+          data: selectedData
+        }; 
+      } else {
+        const selectedData = heatmapDataJson.stops.filter(el => {
+          return el.group === this.selectedDept;
+        });
+        return {
+          max: Math.max(...selectedData.map(el => el.idle_duration)),
+          data: selectedData
+        }; 
+      }
+    },
+    selectedIdleHeatmapLayer: function () {
+      return new HeatmapOverlay(this.selectedIdleHeatmapConfig);
     },
   },
   watch: {
@@ -74,6 +124,7 @@ export default {
     stateSelectedVehicle: function () {
       this.markerCluster.clearLayers();
       this.drawStops();
+      this.selectedIdleHeatmapLayer.setData(this.selectedHeatmapData);
     }, 
     selectedTrips: function () {
       if (this.markerCluster) {
@@ -81,6 +132,7 @@ export default {
       } 
       
       this.drawStops();
+      this.selectedIdleHeatmapLayer.setData(this.selectedHeatmapData);
     }, 
   },
   methods: {
@@ -89,31 +141,30 @@ export default {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       });
 
-      const googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
-          subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
-      });
+      // const googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+      //     subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+      // });
 
      this.map = L.map(this.$refs.mapElement, {
         center: this.center,
-        layers: [googleSat, osmMap],
+        // layers: [googleSat, osmMap],
+        layers: [osmMap],
         zoom: this.zoom,
         doubleClickZoom: false,
       });
 
-      const pollutantConcentrationOverlay = this.drawPollutantConcentrationOverlay();
+      // const pollutantConcentrationOverlay = this.drawPollutantConcentrationOverlay();
+      const img = pollutantOverlayJson.overlay_img;
+
+      const bnd = [[41.384924, -112.467771], [39.961038, -111.179579]];
+      const krigLayer = L.imageOverlay(img, bnd, { opacity: 0.7 });
 
       // Add the heatmap overlays
-      const idleHeatmapConfig = {
-        radius: 0.005,
-        maxOpacity: 5,
-        scaleRadius: true,
-        useLocalExtrema: true,
-        latField: 'lat',
-        lngField: 'lng',
-        valueField: 'idle_duration'
-      };
-      const idleHeatmapLayer = new HeatmapOverlay(idleHeatmapConfig);
+      const idleHeatmapLayer = new HeatmapOverlay(this.idleHeatmapConfig);
       const idleHeatmap = idleHeatmapLayer;
+      // This should become a computed variable that changes with data
+      // const selectedIdleHeatmapLayer = new HeatmapOverlay(this.selectedIdleHeatmapConfig);
+      // const selectedIdleHeatmap = this.selectedIdleHeatmapLayer;
 
       const stopsHeatmapConfig = {
         radius: 0.002,
@@ -128,25 +179,28 @@ export default {
       const stopsHeatmap = stopsHeatmapLayer;
 
       const overlays = {
-        'Pollutant Concentrations': pollutantConcentrationOverlay,
+        'Pollutant Concentrations': krigLayer,
+        // 'Pollutant Concentrations': pollutantConcentrationOverlay,
         'Idle Time Heatmap': idleHeatmap,
+        'Selection Idle Time Heatmap': this.selectedIdleHeatmapLayer,
         'Stops Heatmap': stopsHeatmap,
       };
 
       const baseMaps = {
-        'Google Sattelite': googleSat,
+        // 'Google Sattelite': googleSat,
         'Open Street Maps': osmMap,
       };
 
       L.control.layers(baseMaps, overlays).addTo(this.map);
 
       idleHeatmapLayer.setData(this.heatmapData);
+      this.selectedIdleHeatmapLayer.setData(this.selectedHeatmapData);
       stopsHeatmapLayer.setData(this.heatmapData);
 
       this.map.on('overlayadd', (e) => {
         if (e.name === 'Pollutant Concentrations') {
           this.pollutantLegend.addTo(this.map);
-          this.info.addTo(this.map);
+          // this.info.addTo(this.map);
         }
       });
       this.map.on('overlayremove', (e) => {
