@@ -27,9 +27,15 @@ npm run serve
 ### Code Overview
 There are two primary folders for this application, src and data_processing. The code for processing raw data from GeoTab is in data_processing and is written in Python. src contains all code to run the application and is written in JavaScript and HTML using the Vue.js framework.
 
+    ├── data_processing                 
+    │   ├── preprocess_trip_data.py          # Preprocesses trip data
+    │   ├── format_app_data.py:         # End-to-end, integration tests (alternatively `e2e`)
+    │   └── unit                # Unit tests
+    └── ...
+
 /data_processing
-    preprocess_trip_data.py: This file preprocesses data for trips using python. It formats some of the columns for consistency and uses a geocoder to convert named locations in the data to latitude and longitude coordinates.
-    format_app_data.py: This file should be run after preprocess_trip_data.py and extracts necessary data about vehicles, departments, and vehicle trips and exports them to json files which are readable by the application.
+&ensp;preprocess_trip_data.py: This file preprocesses data for trips using python. It formats some of the columns for  consistency and uses a geocoder to convert named locations in the data to latitude and longitude coordinates.
+&ensp;format_app_data.py: This file should be run after preprocess_trip_data.py and extracts necessary data about vehicles, departments, and vehicle trips and exports them to json files which are readable by the application.
 
 All of the code in the node_modules folder comes from external libraries/packages
 
