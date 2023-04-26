@@ -1,3 +1,4 @@
+// Currently unused. Originally created to be a toggleable panel which would replace the map and display fleetwide statistics/charts
 /* eslint-disable func-names */
 /* eslint-disable */
 <template>

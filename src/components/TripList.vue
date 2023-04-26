@@ -1,3 +1,4 @@
+// Displays trips taken by a vehicle in the bottom panel when vehicle details are present
 /* eslint-disable no-confusing-arrow */
 <template>
   <div id="trips-list-wrapper">

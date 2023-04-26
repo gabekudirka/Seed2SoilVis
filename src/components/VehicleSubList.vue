@@ -1,3 +1,4 @@
+// List the vehicles within a department on the bottom panel when the department view is selected
 /* eslint-disable no-confusing-arrow */
 <template>
   <div id="vehicles-list-wrapper">

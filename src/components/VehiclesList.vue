@@ -1,3 +1,4 @@
+// Displays the list of vehicles on the left panel
 /* eslint-disable no-confusing-arrow */
 <template>
   <div>

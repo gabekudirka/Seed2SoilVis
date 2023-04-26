@@ -1,3 +1,4 @@
+// Builds the line chart viewable on the bottom panel with vehicle details
 <template>
     <div id="vehicle-chart-container">
          <svg id="vehicle-svg">
@@ -56,6 +57,7 @@ export default {
         selectedVehicles: function () {
           return this.$store.state.selectedDeptVehicles;
         },
+        // Change the y label of the chart depending on the data being inputted
         yLabel: function () {
             if (this.chartDataType === 'total_duration') {
                 return 'Total Usage Duration (minutes)';
@@ -82,53 +84,7 @@ export default {
         },
     },
     methods: {
-        // renderVehicleChart() {
-        //     const ref = this;
-        //     console.log(this.getDatesInRange(this.fromDate, this.toDate));
-        //     const xScale = d3.scaleBand()
-        //         .domain(this.getDatesInRange(this.fromDate, this.toDate))
-        //         .range([this.margin.left, this.width])
-        //         .padding(0.3);
-        //     const max = this.chartData.length > 0 ? d3.max(this.chartData, d => d[ref.chartDataType]) : 500;
-        //     const yScale = d3.scaleLinear()
-        //         .domain([0, max])
-        //         .range([this.height + this.margin.top, 0]);
-
-        //     const xAxis = d3.axisBottom()
-        //                 .scale(xScale);
-        //     const yAxis = d3.axisLeft()
-        //                 .scale(yScale)
-        //                 .ticks(8); 
-
-        //     const g = d3.selectAll(`#${this.chartName}`);
-        //     g.append('g')
-        //         .call(xAxis)
-        //         .style('transform', `translateY(${this.containerHeight - this.margin.bottom}px)`);
-        //     g.append('g')
-        //         .call(yAxis)
-        //         .attr('transform', `translate(${this.margin.left}, 0)`);
-        //     g
-        //         .selectAll('rect')
-        //         .data(this.chartData)
-        //         .join('rect')
-        //         .attr('x', (d) => {
-        //             const tripDate = new Date(d.date);
-        //             const dateStr = tripDate.getMonth() + '/' + tripDate.getDate();
-        //             return xScale(dateStr);
-        //         })
-        //         .attr('width', xScale.bandwidth() - 5)
-        //         .attr('y', d => yScale(d[ref.chartDataType]) + this.margin.top)
-        //         .attr('fill', 'lightseagreen')
-        //         .attr('height', d => this.height - yScale(d[ref.chartDataType]));
-
-        //     const yLabel = this.chartDataType === 'total_duration' ? 'Usage Duration (minutes)' : 'Idle Duration (minutes)';
-        //     g.append('text')
-        //         .text(yLabel)
-        //         .classed('y-axis-label', true)
-        //         .attr('text-anchor', 'end')
-        //         .attr('transform', 'rotate(-90) translate(-70, -15)')
-        //         .style('font-size', '15px');
-        // },
+        // Uses d3 to create a chart with the inputted vehicle data
         renderVehicleChart() {
             const ref = this;
             const rangeDates = this.getDatesInRange(this.fromDate, this.toDate);
@@ -202,6 +158,7 @@ export default {
         clearChart() {
             d3.select(`#${this.chartName}`).selectAll('*').remove();
         },
+        // Get dates in the given range for the x axis 
         getDatesInRange(startDate, endDate) {
             const date = new Date(startDate.getTime());
 

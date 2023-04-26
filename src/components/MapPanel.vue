@@ -1,3 +1,4 @@
+// Container for the Map and date select
 /* eslint-disable max-len no-continue */
 <template>
     <div>

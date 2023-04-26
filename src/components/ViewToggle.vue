@@ -1,3 +1,4 @@
+// Currently unused. Controls toggling between map and stats panel view if implemented
 <template>
   <div class="toggle-switch" id="map-view-toggle">
     <button

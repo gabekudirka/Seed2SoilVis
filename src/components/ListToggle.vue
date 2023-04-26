@@ -1,3 +1,4 @@
+// This file controls the toggle which switches the left pane list from showing departments to vehicles
 <template>
   <div class="toggle-switch">
     <button

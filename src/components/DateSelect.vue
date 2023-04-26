@@ -1,3 +1,4 @@
+// This file contains the code which implements the date select field visible at the top of the application
 <template>
     <div id="vis">
         <div class="date-select-wrapper"> 
@@ -36,6 +37,7 @@ export default {
     },
     data() {
         return {
+            // Default dates are state variables
             fromDate: this.$store.state.fromDate,
             toDate: this.$store.state.toDate,
             minDate: this.$store.state.minDate,

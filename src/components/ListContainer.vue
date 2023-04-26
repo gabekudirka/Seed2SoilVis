@@ -1,3 +1,4 @@
+// Container for both the department and vehicles list on the left panel
 <template>
   <div>
     <ListToggle :initShowVehicleList="showVehicleList" /> 

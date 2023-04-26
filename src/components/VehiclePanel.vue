@@ -1,3 +1,4 @@
+// Displays vehicle details in the bottom panel. Also a container for the vehicle panel chart
 /* eslint-disable */
 <template>
     <div class="left-align" style="padding:1em">    
@@ -46,14 +47,12 @@
 
 <script>
 import VehiclePanelChart from './VehiclePanelChart.vue';
-import DateSelect from './DateSelect.vue';
 import TripList from './TripList.vue';
 
 export default {
     name: 'VehiclePanel',
     components: {
         VehiclePanelChart,
-        // DateSelect,
         TripList,
     },
     props: {
@@ -98,6 +97,7 @@ export default {
         stateSelectedTrips: function () {
             return this.$store.state.selectedTrips;
         },
+        // Get all trips within the selected date range
         timeSelectedTrips: function () {
             const tripsData = this.stateSelectedTrips.filter(trip => new Date(trip.date) >= this.fromDate && new Date(trip.date) <= this.toDate);
             const costData = [];
@@ -112,12 +112,14 @@ export default {
             
             return costData;
         },
+        // Accumulate idle cost of all trips taken by the vehicle
         totalIdlingCost: function () {
             const totalCost = this.timeSelectedTrips.reduce((a, b) => {
                 return a + b.idle_duration;
             }, 0);
             return totalCost;
         },
+        // Update the chart title depending on the data being displayed
         chartTitle: function () {
             if (this.chartDataType === 'total_duration') {
                 return 'Total Usage Duration';
@@ -132,11 +134,7 @@ export default {
             }
         }
     },
-    watch: {
-        // vehicleId: function () {
-        //     this.trips = this.allTrips.filter((trip) => trip.vehicle === this.vehicleId);
-        // },
-    },
+
     methods: {
         // When you select the vehicles department name, switch to the department view and change corresponding state variables
         showDept(deptName) {

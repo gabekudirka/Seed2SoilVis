@@ -17,9 +17,9 @@ import VehiclePanel from './components/VehiclePanel.vue';
 import DeptPanel from './components/DeptPanel.vue';
 import MapPanel from './components/MapPanel.vue';
 import ListContainer from './components/ListContainer.vue';
-import vehicles from './data/vehicle_details/fleet_details.json';
-import tripData from './data/trip_data/trips_sept-oct.json';
-import departments from './data/vehicle_details/depts_9-27_9-29.json';
+import vehicles from './data/fleet.json';
+import tripData from './data/trips.json';
+import departments from './data/depts.json';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 

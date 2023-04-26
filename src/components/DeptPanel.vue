@@ -1,3 +1,4 @@
+// Contains code displaying department details on the bottom panel
 /* eslint-disable */
 <template>
     <div class="left-align" style="padding:1em">    
@@ -86,12 +87,6 @@ export default {
         department: function () {
             return this.departments.find((dept) => dept.name === this.deptName);
         },
-        vehicleId: function () {
-            return this.$store.state.selectedVehicle;
-        },
-        vehicle: function () {
-            return this.fleet.find((vehicle) => vehicle.id === this.vehicleId);
-        },
         fromDate: function () {
             return this.$store.state.fromDate;
         },
@@ -101,6 +96,7 @@ export default {
         stateSelectedTrips: function () {
             return this.$store.state.selectedTrips;
         },
+        // Get all the trips in the selected time span
         timeSelectedTrips: function () {
             const tripsData = this.stateSelectedTrips.filter(trip => new Date(trip.date) >= this.fromDate && new Date(trip.date) <= this.toDate);
             const costData = [];
@@ -115,12 +111,14 @@ export default {
             
             return costData;
         },
+        // accumilate the total idling cost of all vehicles in the department
         totalIdlingCost: function () {
             const totalCost = this.timeSelectedTrips.reduce((a, b) => {
                 return a + b.idle_duration;
             }, 0);
             return totalCost;
         },
+        // Update the title of the chart based on the data being displayed in the chart
         chartTitle: function () {
             if (this.chartDataType === 'total_duration') {
                 return 'Total Usage Duration of Department Vehicles';
@@ -135,11 +133,6 @@ export default {
             }
         }
     },
-    // watch: {
-    //     vehicleId: function () {
-    //         this.trips = this.allTrips.filter((trip) => trip.vehicle === this.vehicleId);
-    //     },
-    // },
     methods: {
         // This method changes which chart is shown based on what the user has selected from the dropdown
         switchChart(event) {

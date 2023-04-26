@@ -1,3 +1,4 @@
+// This file displays the list of departments on the left panel
 /* eslint-disable no-confusing-arrow */
 <template>
   <div>
@@ -69,6 +70,7 @@ export default {
             this.$store.dispatch('changeSelectedTrips', selectedTrips);
             this.$store.dispatch('changePanelView', false);
         },
+        // Sorts the departments by a chosen column
         sortDepts: function (method) {
             let bl = this.departments;
             if (method === this.sortBy) {

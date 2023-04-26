@@ -1,3 +1,4 @@
+// This file displays the map and map visualizations
 /* eslint-disable func-names */
 /* eslint-disable */
 <template>
@@ -16,13 +17,9 @@ import 'leaflet.markercluster';
 import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 import 'heatmap.js';
 import HeatmapOverlay from 'heatmap.js/plugins/leaflet-heatmap';
-import voronoi from '@turf/voronoi';
-import bbox from '@turf/bbox';
-import idleContour from '../data/trip_data/idle_contour.json';
-import pollutantConcentrations from '../data/supplementary_data/pollutant_concentrations.json';
 import stopMarker from '../assets/images/orange_icon2.png';
-import heatmapDataJson from '../data/trip_data/heatmap_data.json';
-import pollutantOverlayJson from '../data/supplementary_data/pollutant_kriging.json';
+import heatmapDataJson from '../data/heatmap_data.json';
+import pollutantOverlayJson from '../data/pollutant_overlay.json';
 
 export default {
   name: 'BusMap',
@@ -82,16 +79,18 @@ export default {
         iconAnchor: [13, 26]
       });
     },
+    // Load heatmap data for all devices in the correct format
     heatmapData: function () {
       return {
         max: Math.max(...heatmapDataJson.stops.map(el => el.idle_duration)),
         data: heatmapDataJson.stops
       };
     },
+    // Load heatmap data for the selected vehicles in the selected time frame
     selectedHeatmapData: function () {
       if (this.showVehicles) {
         const selectedData = heatmapDataJson.stops.filter(el => {
-          return el.device === this.selectedVehicle;
+          return el.device === this.selectedVehicle && new Date(el.start_time) >= this.fromDate && new Date(el.end_time) <= this.toDate;
         });
         return {
           max: Math.max(...selectedData.map(el => el.idle_duration)),
@@ -99,7 +98,7 @@ export default {
         }; 
       } else {
         const selectedData = heatmapDataJson.stops.filter(el => {
-          return el.group === this.selectedDept;
+          return el.group === this.selectedDept && new Date(el.start_time) >= this.fromDate && new Date(el.end_time) <= this.toDate;
         });
         return {
           max: Math.max(...selectedData.map(el => el.idle_duration)),
@@ -141,6 +140,7 @@ export default {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       });
 
+      // Google satellite background map option. Removed due to slow rendering
       // const googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
       //     subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
       // });
@@ -153,7 +153,6 @@ export default {
         doubleClickZoom: false,
       });
 
-      // const pollutantConcentrationOverlay = this.drawPollutantConcentrationOverlay();
       const img = pollutantOverlayJson.overlay_img;
 
       const bnd = [[41.384924, -112.467771], [39.961038, -111.179579]];
@@ -162,9 +161,6 @@ export default {
       // Add the heatmap overlays
       const idleHeatmapLayer = new HeatmapOverlay(this.idleHeatmapConfig);
       const idleHeatmap = idleHeatmapLayer;
-      // This should become a computed variable that changes with data
-      // const selectedIdleHeatmapLayer = new HeatmapOverlay(this.selectedIdleHeatmapConfig);
-      // const selectedIdleHeatmap = this.selectedIdleHeatmapLayer;
 
       const stopsHeatmapConfig = {
         radius: 0.002,
@@ -180,7 +176,6 @@ export default {
 
       const overlays = {
         'Pollutant Concentrations': krigLayer,
-        // 'Pollutant Concentrations': pollutantConcentrationOverlay,
         'Idle Time Heatmap': idleHeatmap,
         'Selection Idle Time Heatmap': this.selectedIdleHeatmapLayer,
         'Stops Heatmap': stopsHeatmap,
@@ -197,10 +192,13 @@ export default {
       this.selectedIdleHeatmapLayer.setData(this.selectedHeatmapData);
       stopsHeatmapLayer.setData(this.heatmapData);
 
+      // Add and remove the legend when the pollutant concentrations overlay is visible
       this.map.on('overlayadd', (e) => {
         if (e.name === 'Pollutant Concentrations') {
           this.pollutantLegend.addTo(this.map);
           // this.info.addTo(this.map);
+        } else if (e.name === 'Selection Idle Time Heatmap') {
+          // this.selectedIdleHeatmapLayer.setData(this.selectedHeatmapData);
         }
       });
       this.map.on('overlayremove', (e) => {
@@ -209,61 +207,7 @@ export default {
         }
       });
     },
-    drawPollutantConcentrationOverlay() {
-      const ref = this;
-
-      const pollutantBbox = bbox(pollutantConcentrations);
-      const pollutantsVoronoi = voronoi(pollutantConcentrations, { pollutantBbox });
-      pollutantsVoronoi.features.forEach((feature, i) => {
-        feature.properties.PM25 = pollutantConcentrations.features[i].properties.PM25;
-      });
-
-      pollutantConcentrations.features.forEach((feature, i) => {
-        if (pollutantsVoronoi.features[i]) {
-          pollutantsVoronoi.features[i].properties.PM25 = feature.properties.PM25;
-        } else {
-          pollutantsVoronoi.features[i] = {
-            geometry: {
-                coordinates: [
-                    [[0, 0], [0, 0], [0, 0], [0, 0]]
-                ],
-                type: 'Polygon'
-            },
-            properties: {
-                PM25: '0'
-            },
-            type: 'Feature'
-          };
-        }
-      });
-
-      const onEachFeature = function (feature, layer) {
-        layer.on({
-            mouseover: ref.highlightFeature,
-            mouseout: function (e) {
-              pollutantConcentrationOverlay.resetStyle(e.target);
-              ref.info.hide();
-            },
-        });
-      };
-
-      function pollutantOverlayStyle(feature) {
-        return {
-          fillColor: ref.getColor([0, 5, 10, 15, 20, 25, 30, 35], feature.properties.PM25),  
-          weight: 1,
-          opacity: 0.6,
-          color: 'black',
-          fillOpacity: 0.5,
-        };
-      }
-      
-      const pollutantConcentrationOverlay = L.geoJson(pollutantsVoronoi, {
-        style: pollutantOverlayStyle,
-        onEachFeature: onEachFeature
-      });
-
-      return pollutantConcentrationOverlay;
-    },
+    // Get colors for pollutant concentration legend
     getColor(range, bracket1, bracket2 = 0, totalHouseholds = 1) {
       if (totalHouseholds === 0) {
         return '#fffefa';
@@ -280,21 +224,7 @@ export default {
             : b > range[0] ? '#FFEDA0'
             : '#fff7d6';
     },
-    highlightFeature(e) {
-      const layer = e.target;
-      layer.setStyle({
-          weight: 3,
-          color: '#666',
-          dashArray: '',
-          fillOpacity: 0.7
-      });
-
-      if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-          layer.bringToFront();
-      }
-
-      this.info.show(layer); 
-    },
+    // Draw the legend
     createLegend(overlayType) {
       const ref = this;
       const legend = L.control({ position: 'bottomleft' });

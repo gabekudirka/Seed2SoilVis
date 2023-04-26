@@ -1,3 +1,4 @@
+// Contains all state variables
 import { createStore } from 'vuex';
 import { ref } from 'vue';
 

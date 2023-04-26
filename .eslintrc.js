@@ -37,5 +37,6 @@ module.exports = {
     'consistent-return': 'off',
     'func-names': 'off',
     'arrow-body-style': 'off',
+    'import/no-unresolved': 'off',
     },
 };

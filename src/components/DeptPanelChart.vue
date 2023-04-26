@@ -1,3 +1,4 @@
+// This file builds the bar chart visible when a department is selected
 <template>
     <div id='tooltip'>
     </div>
@@ -54,15 +55,10 @@ export default {
         toDate: function () {
           return this.$store.state.toDate;
         },
-        viewBox: function () {
-            return `0 0 ${this.containerWidth} ${this.containerHeight}`;
-        },
         selectedVehicles: function () {
           return this.$store.state.selectedDeptVehicles;
         },
-        stateSelectedDeptVehicles: function () {
-            return this.$store.state.selectedDeptVehicles;
-        },
+        // Computes what the y label should be depending on the data being displayed
         yLabel: function () {
             if (this.chartDataType === 'total_duration') {
                 return 'Total Usage Duration (minutes)';
@@ -98,7 +94,6 @@ export default {
             
             // This is initial data processing for the visualization
             const dates = this.getDatesInRange(this.fromDate, this.toDate);
-            const testDate = new Date(this.fromDate.getTime());
             const dateData = dates.map(el => {
                 const dataPoint = { date: el };
                 ref.selectedVehicles.forEach(vehicle => {
@@ -224,86 +219,6 @@ export default {
                 .style('alignment-baseline', 'middle')
                 .style('font-size', 12);
         },
-        // renderByVehicleChart() {
-        //     const ref = this;
-        //     if (this.chartData.length === 0) {
-        //         return;
-        //     }
-
-        //     const xScale = d3.scaleBand()
-        //         .domain(this.selectedVehicles)
-        //         .range([this.width, this.margin.left])
-        //         .padding(0.3);
-
-        //     const max = this.chartData.length > 0 ? d3.max(this.chartData, d => d[ref.chartDataType]) : 500;
-        //     const yScale = d3.scaleLinear()
-        //         .domain([0, max])
-        //         .range([this.height + this.margin.top, 0]);
-        //     const colorScale = d3.scaleOrdinal()
-        //         .domain(this.selectedVehicles)
-        //         .range(d3.schemeSet3);
-
-        //     const xAxis = d3.axisBottom()
-        //                 .scale(xScale);
-        //     const yAxis = d3.axisLeft()
-        //                 .scale(yScale)
-        //                 .ticks(8); 
-
-        //     // const tooltip = d3.select('#tooltip')
-        //     //     .style('opacity', 0)
-        //     //     .attr('class', 'tooltip')
-        //     //     .style('background-color', 'white')
-        //     //     .style('border', 'solid')
-        //     //     .style('border-width', '1px')
-        //     //     .style('border-radius', '5px')
-        //     //     .style('padding', '10px');
-
-        //     // const mouseover = function (event, d) {
-        //     //     const vehicle = d3.select(this.parentNode).datum().key;
-        //     //     const vehicleDuration = d.data[vehicle];
-        //     //     tooltip
-        //     //         .html('vehicle: ' + vehicle + '<br>Duration: ' + vehicleDuration)
-        //     //         .style('opacity', 1);
-        //     // };
-        //     // const mousemove = function (event, d) {
-        //     //     tooltip
-        //     //         .style('left', event.layerX + 15 + 'px')
-        //     //         .style('top', event.layerY + 'px');
-        //     // };
-        //     // const mouseleave = function (event, d) {
-        //     //     tooltip
-        //     //         .style('opacity', 0);
-        //     // };
-
-        //     const g = d3.select(`#${this.chartName}`);
-        //     g
-        //         .selectAll('g')
-        //         .data(this.chartData)
-        //         .join('rect')
-        //         .attr('x', d => xScale(d.id))
-        //         .attr('width', xScale.bandwidth() - 5)
-        //         .attr('y', d => yScale(d[ref.chartDataType]) + this.margin.top)
-        //         .attr('fill', d => colorScale(d.id))
-        //         .attr('height', d => this.height - yScale(d[ref.chartDataType]));
-        //         // .on('mouseover', mouseover)
-        //         // .on('mousemove', mousemove)
-        //         // .on('mouseleave', mouseleave);
-                        
-        //     g.append('g')
-        //         .call(xAxis)
-        //         .style('transform', `translateY(${this.containerHeight - this.margin.bottom}px)`);
-        //     g.append('g')
-        //         .call(yAxis)
-        //         .attr('transform', `translate(${this.margin.left}, 0)`);
-
-        //     const yLabel = this.chartDataType === 'total_duration' ? 'Usage Duration (minutes)' : 'Idle Duration (minutes)';
-        //     g.append('text')
-        //         .text(yLabel)
-        //         .classed('y-axis-label', true)
-        //         .attr('text-anchor', 'end')
-        //         .attr('transform', 'rotate(-90) translate(-70, -15)')
-        //         .style('font-size', '15px');
-        // },
         clearChart() {
             d3.select(`#${this.chartName}`).selectAll('*').remove();
         },
